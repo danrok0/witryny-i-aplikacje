@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Zadanie 1</title>
+<script type="text/javascript"> 
+    function show_prompt() 
+    {
+        Math.pow(liczba1, 3);
+        Math.pow(liczba2, 3); 
+        var liczba1=prompt("Wpisz pierwszą liczbę: "," ");
+        var liczba2=prompt("Wpisz drugą liczbę: "," "); 
+        if (liczba1!=null && liczba1!="")  
+        {  
+        document.write("Wybrałeś pierwszą liczbę: " + liczba1 + "!" + "<br>");
+        document.write("Wybrałeś drugą liczbę: " + liczba2 + "!" + "<br>");
+        document.write("Wynik: " + (liczba1+liczba2) + "<br>");
+        } 
+    }
+</script> 
+<body>
+<input type="button" onclick="show_prompt()" value="Pokaż prompt box" />      
+</body>
+</head>
+</html>
