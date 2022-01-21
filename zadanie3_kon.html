@@ -1,0 +1,33 @@
+<html>
+
+<script>
+
+function helikopter(nazwa, kraj_pochodzenia, waga, zastosowanie, zużycie_paliwa)
+{
+this.nazwa=nazwa;
+this.kraj_pochodzenia=kraj_pochodzenia;
+this.waga=waga;
+this.zastosowanie=zastosowanie;
+this.zużycie_paliwa=zużycie_paliwa;
+}
+
+
+helikopter1 = new helikopter("SM-1", "Polska", "23t"," wojskowe", "70l");
+helikopter2 = new helikopter("Kaman SH-2G Super Seasprite", "USA", "25t", "wojskowe", "85l" );
+helikopter3 = new helikopter("Mi-14,Rosja","30t","transportowe","65l");
+
+
+document.write("nazwa: "+  helikopter1.nazwa + ", kraj_pochodzenia: "+ helikopter1.kraj_pochodzenia +  ", waga: "+ helikopter1.waga + ", zastosowanie: "+ helikopter1.zastosowanie + ", zużycie_paliwa: " + helikopter1.zużycie_paliwa +"<br>");
+document.write("nazwa: "+  helikopter2.nazwa + ", kraj_pochodzenia: "+ helikopter2.kraj_pochodzenia +  ", waga: "+ helikopter2.waga + ", zastosowanie: "+ helikopter2.zastosowanie + ", zużycie_paliwa: " + helikopter2.zużycie_paliwa +"<br>");
+document.write("nazwa: "+  helikopter3.nazwa + ", kraj_pochodzenia: "+ helikopter3.kraj_pochodzenia +  ", waga: "+ helikopter3.waga + ", zastosowanie: "+ helikopter3.zastosowanie + ", zużycie_paliwa: " + helikopter3.zużycie_paliwa +"<br>");
+
+
+
+
+
+
+
+
+
+</script>
+</html>
