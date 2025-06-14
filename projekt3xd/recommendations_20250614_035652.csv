@@ -1,0 +1,536 @@
+Miasto,Nazwa,Długość (km),Trudność,Typ terenu,Kategoria,Indeks komfortu,Wynik ważony,Szacowany czas
+Warszawa,Ogród Krasińskich,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Skwer pułkownika Antoniego Władysława Żurowskiego,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Wybieg dla goryli,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Nahur chiński,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Park Enklawa,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Wybieg dla hipopotamów,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Skwer Anki Kowalskiej,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Irbis śnieżny,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Skwer 16 Września 1944 r.,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Tr6-39,4.9,1/3,mixed,RODZINNA,94.6/100,75.25/100,1h 13min
+Warszawa,Park Obwodu Praga AK,4.8,1/3,mixed,RODZINNA,94.6/100,75.0/100,1h 11min
+Warszawa,Park Stefana Wiecheckiego „Wiecha”,4.8,1/3,mixed,RODZINNA,94.6/100,75.0/100,1h 11min
+Warszawa,Ptaki wodne,4.8,1/3,mixed,RODZINNA,94.6/100,75.0/100,1h 11min
+Warszawa,SM41-190,4.8,1/3,mixed,RODZINNA,94.6/100,75.0/100,1h 11min
+Warszawa,Park Józefa Polińskiego,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Potok Służewiecki,4.9,1/3,riverside,RODZINNA,94.6/100,74.75/100,1h 13min
+Warszawa,Wikunia,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Park Olszyna,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,OSIR Włochy,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Rezerwat Łęgi Czarnej Strugi,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Bociani Zakątek,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Kanał Bródnowski Dolny,4.9,1/3,riverside,RODZINNA,94.6/100,74.75/100,1h 13min
+Warszawa,Pałacyk w Morysinie,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Skwer 30. Pułku Strzelców Kaniowskich,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Kanał Kawęczyński,4.9,1/3,riverside,RODZINNA,94.6/100,74.75/100,1h 13min
+Warszawa,Ogród społecznościowy - Fort Bema,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,"Park linearny ""Suwak""",4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,"Replika samochodu pancernego ""Kubuś""",4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Rośliny Pienin,4.7,1/3,mixed,RODZINNA,94.6/100,74.75/100,1h 10min
+Warszawa,Park przy Lesie Bielańskim,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,Ogród Botaniczny PAN,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,Makak czubaty,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,Plaża Miejska przy Moście Północnym,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,Skwer Ekologiczny,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,Rów Natoliński,4.8,1/3,riverside,RODZINNA,94.6/100,74.5/100,1h 11min
+Warszawa,Lipkowska Woda,4.8,1/3,riverside,RODZINNA,94.6/100,74.5/100,1h 11min
+Warszawa,Park im. Marszałka Edwarda Rydza-Śmigłego,4.6,1/3,mixed,RODZINNA,94.6/100,74.5/100,1h 8min
+Warszawa,"Skwer Kapitana Stanisława Skibniewskiego ""Cubryny""",4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Fort Piłsudskiego,4.9,1/3,historical,RODZINNA,94.6/100,74.25/100,1h 13min
+Warszawa,Potok Służewiecki,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Markur turkmeński,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Rów Wolicki,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Pałac Sierakowskiego,4.9,1/3,historical,RODZINNA,94.6/100,74.25/100,1h 13min
+Warszawa,Arkadia,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Wieża Zegarowa,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Skwer Psa Fafika,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Latoszka,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Poniatówka,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Kanał Wawerski,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Stara Wisła,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Rów Jeziorki,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Kanał Siekierkowski,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Pm3,4.9,1/3,historical,RODZINNA,94.6/100,74.25/100,1h 13min
+Warszawa,Kanał Bródnowski,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,ST44-001,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Wodny Park Warszawianka,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Kanał Sielecki,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Drna,4.7,1/3,riverside,RODZINNA,94.6/100,74.25/100,1h 10min
+Warszawa,Pole Mokotowskie,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Rezerwat Park Natoliński - Latoszki,4.5,1/3,mixed,RODZINNA,94.6/100,74.25/100,1h 7min
+Warszawa,Skwer Antoniego Słonimskiego,4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,Pałac Czapskich,4.8,1/3,historical,RODZINNA,94.6/100,74.0/100,1h 11min
+Warszawa,"Skwer Batalionu AK ""Zaremba-Piorun""",4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,"Przepompownia ścieków ""Służewiec""",4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,Żubr,4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,Kanał Czerniakowski,4.6,1/3,riverside,RODZINNA,94.6/100,74.0/100,1h 8min
+Warszawa,Rów Natoliński,4.6,1/3,riverside,RODZINNA,94.6/100,74.0/100,1h 8min
+Warszawa,Ty2,4.8,1/3,historical,RODZINNA,94.6/100,74.0/100,1h 11min
+Warszawa,Okl27,4.8,1/3,historical,RODZINNA,94.6/100,74.0/100,1h 11min
+Warszawa,"TS-11 ""Iskra""",4.8,1/3,historical,RODZINNA,94.6/100,74.0/100,1h 11min
+Warszawa,Tężnia solankowa,4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,TKZ211,4.4,1/3,mixed,RODZINNA,94.6/100,74.0/100,1h 6min
+Warszawa,Nowa Ulga,4.5,1/3,riverside,RODZINNA,94.6/100,73.75/100,1h 7min
+Warszawa,Skwer Gwary Warszawskiej,4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,Rezerwat Bagno Jacka,4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,Jordanek,4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,Mur Getta Warszawskiego,4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,Wilanówka,4.5,1/3,riverside,RODZINNA,94.6/100,73.75/100,1h 7min
+Warszawa,Jan Kiliński,4.7,1/3,historical,RODZINNA,94.6/100,73.75/100,1h 10min
+Warszawa,Polanka,4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,Kanał Wawerski,4.5,1/3,riverside,RODZINNA,94.6/100,73.75/100,1h 7min
+Warszawa,"Dawny stadion RKS ""Sarmata""",4.3,1/3,mixed,RODZINNA,94.6/100,73.75/100,1h 4min
+Warszawa,27D24,4.7,1/3,historical,RODZINNA,94.6/100,73.75/100,1h 10min
+Warszawa,30D43,4.7,1/3,historical,RODZINNA,94.6/100,73.75/100,1h 10min
+Warszawa,Kanał Bródnowski,4.4,1/3,riverside,RODZINNA,94.6/100,73.5/100,1h 6min
+Warszawa,Skwer płk. dr Strehla,4.2,1/3,mixed,RODZINNA,94.6/100,73.5/100,1h 3min
+Warszawa,Mauzoleum Żydów Bojowników o Niepodległość Polski,4.6,1/3,historical,RODZINNA,94.6/100,73.5/100,1h 8min
+Warszawa,Pałacyk Rembielińskiego,4.5,1/3,historical,RODZINNA,94.6/100,73.25/100,1h 7min
+Warszawa,Mrówkojad wielki,4.1,1/3,mixed,RODZINNA,94.6/100,73.25/100,1h 1min
+Warszawa,"Fort P Twierdzy Warszawa ""Bema""",4.5,1/3,historical,RODZINNA,94.6/100,73.25/100,1h 7min
+Warszawa,Potok Służewiecki,4.3,1/3,riverside,RODZINNA,94.6/100,73.25/100,1h 4min
+Warszawa,Park Harcerskiej Poczty Polowej Powstania Warszawskiego,4.1,1/3,mixed,RODZINNA,94.6/100,73.25/100,1h 1min
+Warszawa,"Fort M Twierdzy Warszawa ""Mokotów""",4.5,1/3,historical,RODZINNA,94.6/100,73.25/100,1h 7min
+Warszawa,Electio Viritim,4.5,1/3,historical,RODZINNA,94.6/100,73.25/100,1h 7min
+Warszawa,Kanał Siekierkowski,4.3,1/3,riverside,RODZINNA,94.6/100,73.25/100,1h 4min
+Warszawa,MIG-21 PF,4.5,1/3,historical,RODZINNA,94.6/100,73.25/100,1h 7min
+Warszawa,Tamaryna czerwonobrzucha,4.1,1/3,mixed,RODZINNA,94.6/100,73.25/100,1h 1min
+Warszawa,OKa1-1,4.1,1/3,mixed,RODZINNA,94.6/100,73.25/100,1h 1min
+Warszawa,"Ścieżka przyrodnicza ""Z biegiem Wisły""",4.1,1/3,mixed,RODZINNA,94.6/100,73.25/100,1h 1min
+Warszawa,Latoszka,4.3,1/3,riverside,RODZINNA,94.6/100,73.25/100,1h 4min
+Warszawa,Ogrody Ulrychów,4.4,1/3,historical,RODZINNA,94.6/100,73.0/100,1h 6min
+Warszawa,Koneser,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,Latoszka,4.2,1/3,riverside,RODZINNA,94.6/100,73.0/100,1h 3min
+Warszawa,Multimedialny Park Fontann,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,Powsinek - użytek 622,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,"Fort I Twierdzy Warszawa ""Bielany""",4.4,1/3,historical,RODZINNA,94.6/100,73.0/100,1h 6min
+Warszawa,Park Rozkosz,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,32D43,4.4,1/3,historical,RODZINNA,94.6/100,73.0/100,1h 6min
+Warszawa,Dwuosiowy wagon kryty budowy węgierskiej,4.4,1/3,historical,RODZINNA,94.6/100,73.0/100,1h 6min
+Warszawa,Park kieszonkowy,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,Kanał Siekierkowski,4.2,1/3,riverside,RODZINNA,94.6/100,73.0/100,1h 3min
+Warszawa,Zamek Ujazdowski,4.4,1/3,historical,RODZINNA,94.6/100,73.0/100,1h 6min
+Warszawa,Warszawska Droga św. Jakuba,4.0,1/3,mixed,RODZINNA,94.6/100,73.0/100,1h
+Warszawa,Kanał Czerniakowski,4.2,1/3,riverside,RODZINNA,94.6/100,73.0/100,1h 3min
+Warszawa,Ogrody Zamkowe,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Pomnik Powstańców Warszawy,4.3,1/3,historical,RODZINNA,94.6/100,72.75/100,1h 4min
+Warszawa,Park Olkówek,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Skwer Stanisława Wisłockiego,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Rów Natoliński,4.1,1/3,riverside,RODZINNA,94.6/100,72.75/100,1h 1min
+Warszawa,Strefa zabaw Zielone Zacisze,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Os24,4.3,1/3,historical,RODZINNA,94.6/100,72.75/100,1h 4min
+Warszawa,Wagon artyleryjski,4.3,1/3,historical,RODZINNA,94.6/100,72.75/100,1h 4min
+Warszawa,Tkt48-36,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Rezerwat Olszynka Grochowska,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Rośliny Tatr,3.9,1/3,mixed,RODZINNA,94.6/100,72.75/100,58min
+Warszawa,Skwer Tadeusza Kahla,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Sadek Natoliński,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Potok Służewiecki,4.0,1/3,riverside,RODZINNA,94.6/100,72.5/100,1h
+Warszawa,Park Bródnowski,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Łazienki Królewskie,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Szkolny Park Sportowy imienia Janusza Kusocińskiego,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Pływalnia Polonez,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Skwer Franciszka Pieniaka,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Polana rekreacyjna,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Rudawka,4.0,1/3,riverside,RODZINNA,94.6/100,72.5/100,1h
+Warszawa,Odkryta pływalnia OSiR Ochota,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Pomnik Ofiar Tragedii Smoleńskiej,4.2,1/3,historical,RODZINNA,94.6/100,72.5/100,1h 3min
+Warszawa,Plac Pod Skrzydłami,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,"Fort IX Twierdzy Warszawa ""Czerniaków""",4.2,1/3,historical,RODZINNA,94.6/100,72.5/100,1h 3min
+Warszawa,Kanał Kawęczyński,4.0,1/3,riverside,RODZINNA,94.6/100,72.5/100,1h
+Warszawa,Ogród Tarasowy,3.8,1/3,mixed,RODZINNA,94.6/100,72.5/100,57min
+Warszawa,Ofiarom Rzezi Pragi,4.2,1/3,historical,RODZINNA,94.6/100,72.5/100,1h 3min
+Warszawa,Rów Wolicki,4.0,1/3,riverside,RODZINNA,94.6/100,72.5/100,1h
+Warszawa,24Z,4.2,1/3,historical,RODZINNA,94.6/100,72.5/100,1h 3min
+Warszawa,Park Mirowski,4.1,1/3,historical,RODZINNA,94.6/100,72.25/100,1h 1min
+Warszawa,Hałda,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Baseny Kora,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Kanał Wawerski,3.9,1/3,riverside,RODZINNA,94.6/100,72.25/100,58min
+Warszawa,"Fort VIII Twierdzy Warszawa ""Służew""",4.1,1/3,historical,RODZINNA,94.6/100,72.25/100,1h 1min
+Warszawa,Park nad Jeziorem Zgorzała,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Skwer Prymasowski,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Kanał Zaciszański,3.9,1/3,riverside,RODZINNA,94.6/100,72.25/100,58min
+Warszawa,Lipkowska Woda,3.9,1/3,riverside,RODZINNA,94.6/100,72.25/100,58min
+Warszawa,Goral chiński,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,SM15-17,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Rośliny wydm i solnisk,3.7,1/3,mixed,RODZINNA,94.6/100,72.25/100,55min
+Warszawa,Nowa Ulga,3.9,1/3,riverside,RODZINNA,94.6/100,72.25/100,58min
+Warszawa,Park Szczęśliwicki,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Skwer Michała i Marii Radziwiłłów,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Sajmiri,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Skwer Jerzego Jarnuszkiewicza,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Skwer Batalionu AK „Miłosz”,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Park Moczydełko,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Plac Opolski,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,"Pomnik gen. Emila Fieldorfa ""Nila""",4.0,1/3,historical,RODZINNA,94.6/100,72.0/100,1h
+Warszawa,Baseny Błękit,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Park Ogrody Mehoffera,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Lipkowska Woda,3.8,1/3,riverside,RODZINNA,94.6/100,72.0/100,57min
+Warszawa,Kanał Czerniakowski,3.8,1/3,riverside,RODZINNA,94.6/100,72.0/100,57min
+Warszawa,Skwer Janusza Głowackiego,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Rów Natoliński,3.8,1/3,riverside,RODZINNA,94.6/100,72.0/100,57min
+Warszawa,Skwer Hanki Bielickiej,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Ty43-17,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Wrzosowisko,3.6,1/3,mixed,RODZINNA,94.6/100,72.0/100,54min
+Warszawa,Kanał Zaciszański,3.8,1/3,riverside,RODZINNA,94.6/100,72.0/100,57min
+Warszawa,Skwer gen. Jana Jura-Gorzechowskiego,3.5,1/3,mixed,RODZINNA,94.6/100,71.75/100,52min
+Warszawa,Lew afrykański,3.5,1/3,mixed,RODZINNA,94.6/100,71.75/100,52min
+Warszawa,Park Henrykowski,3.5,1/3,mixed,RODZINNA,94.6/100,71.75/100,52min
+Warszawa,Lipkowska Woda,3.7,1/3,riverside,RODZINNA,94.6/100,71.75/100,55min
+Warszawa,"Ścieżka biegowa ""Las Sobieskiego""",3.5,1/3,mixed,RODZINNA,94.6/100,71.75/100,52min
+Warszawa,Potok Służewiecki,3.7,1/3,riverside,RODZINNA,94.6/100,71.75/100,55min
+Warszawa,Park Józefa Sowińskiego,3.4,1/3,mixed,RODZINNA,94.6/100,71.5/100,51min
+Warszawa,Koń Przewalskiego,3.4,1/3,mixed,RODZINNA,94.6/100,71.5/100,51min
+Warszawa,Kanał Bródnowski Dolny,3.6,1/3,riverside,RODZINNA,94.6/100,71.5/100,54min
+Warszawa,Skwer Jolanty Brzeskiej,3.4,1/3,mixed,RODZINNA,94.6/100,71.5/100,51min
+Warszawa,Ogród Społeczny,3.4,1/3,mixed,RODZINNA,94.6/100,71.5/100,51min
+Warszawa,Ol49,3.8,1/3,historical,RODZINNA,94.6/100,71.5/100,57min
+Warszawa,27D51,3.8,1/3,historical,RODZINNA,94.6/100,71.5/100,57min
+Warszawa,Lipkowska Woda,3.6,1/3,riverside,RODZINNA,94.6/100,71.5/100,54min
+Warszawa,32D47,3.4,1/3,mixed,RODZINNA,94.6/100,71.5/100,51min
+Warszawa,Park Romana Kozłowskiego,3.3,1/3,mixed,RODZINNA,94.6/100,71.25/100,49min
+Warszawa,Pingwiny przylądkowe,3.3,1/3,mixed,RODZINNA,94.6/100,71.25/100,49min
+Warszawa,Park Picassa,3.3,1/3,mixed,RODZINNA,94.6/100,71.25/100,49min
+Warszawa,Park Powstańców Warszawy,3.3,1/3,mixed,RODZINNA,94.6/100,71.25/100,49min
+Warszawa,Rudawka,3.5,1/3,riverside,RODZINNA,94.6/100,71.25/100,52min
+Warszawa,Kanał Wawerski,3.5,1/3,riverside,RODZINNA,94.6/100,71.25/100,52min
+Warszawa,Syrena,3.7,1/3,historical,RODZINNA,94.6/100,71.25/100,55min
+Warszawa,Kanał Czerniakowski,3.5,1/3,riverside,RODZINNA,94.6/100,71.25/100,52min
+Warszawa,Kanał Siekierkowski,3.5,1/3,riverside,RODZINNA,94.6/100,71.25/100,52min
+Warszawa,Kanał Kawęczyński,3.5,1/3,riverside,RODZINNA,94.6/100,71.25/100,52min
+Warszawa,"Ścieżka biegowa ""Falenica""",3.3,1/3,mixed,RODZINNA,94.6/100,71.25/100,49min
+Warszawa,Dolina Szwajcarska,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Autonomia,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Skwer Wandy Lurie,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Park im. Cichociemnych Spadochroniarzy AK,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Park Odkrywców,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Kanał Bródnowski Dolny,3.4,1/3,riverside,RODZINNA,94.6/100,71.0/100,51min
+Warszawa,Ogród Bylinowy,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Barbakan,3.6,1/3,historical,RODZINNA,94.6/100,71.0/100,54min
+Warszawa,Wybieg dla słoni,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Kanał Wawerski,3.4,1/3,riverside,RODZINNA,94.6/100,71.0/100,51min
+Warszawa,Dom Kereta,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Herpetarium,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Wesolandia,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,25D201,3.6,1/3,historical,RODZINNA,94.6/100,71.0/100,54min
+Warszawa,Kanał Sielecki,3.4,1/3,riverside,RODZINNA,94.6/100,71.0/100,51min
+Warszawa,Park Hassów,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Świętokrzyska Droga św. Jakuba,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Park Zasława Malickiego,3.2,1/3,mixed,RODZINNA,94.6/100,71.0/100,48min
+Warszawa,Skwer Wasyla Stusa,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Kanał Sielecki,3.3,1/3,riverside,RODZINNA,94.6/100,70.75/100,49min
+Warszawa,Ptaki wodne,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Walabia Bennetta,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Takin syczuański,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Antylopy bongo,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,"Skwer Bazy Lotniczej Armii Krajowej ""Łużyce""",3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Osiedle Central Garden (budowa wstrzymana),3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Kanał Bródnowski Dolny,3.3,1/3,riverside,RODZINNA,94.6/100,70.75/100,49min
+Warszawa,Skwer Andrzeja Woyciechowskiego,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Rów Jeziorki,3.3,1/3,riverside,RODZINNA,94.6/100,70.75/100,49min
+Warszawa,Park Polskich Wynalazców,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Skwer Markowska,3.1,1/3,mixed,RODZINNA,94.6/100,70.75/100,46min
+Warszawa,Rudawka,3.3,1/3,riverside,RODZINNA,94.6/100,70.75/100,49min
+Warszawa,Potok Służewiecki,3.3,1/3,riverside,RODZINNA,94.6/100,70.75/100,49min
+Warszawa,Pałac Szustra,3.4,1/3,historical,RODZINNA,94.6/100,70.5/100,51min
+Warszawa,Ptaki,3.0,1/3,mixed,RODZINNA,94.6/100,70.5/100,45min
+Warszawa,Plac Zamkowy,3.0,1/3,mixed,RODZINNA,94.6/100,70.5/100,45min
+Warszawa,Skwer Małkowskich,3.0,1/3,mixed,RODZINNA,94.6/100,70.5/100,45min
+Warszawa,32D3,3.4,1/3,historical,RODZINNA,94.6/100,70.5/100,51min
+Warszawa,Kanał Bródnowski,3.2,1/3,riverside,RODZINNA,94.6/100,70.5/100,48min
+Warszawa,Rudawka,3.2,1/3,riverside,RODZINNA,94.6/100,70.5/100,48min
+Warszawa,Łącznik Falenicki,3.0,1/3,mixed,RODZINNA,94.6/100,70.5/100,45min
+Warszawa,Park Kaskada,3.0,1/3,mixed,RODZINNA,94.6/100,70.5/100,45min
+Warszawa,OSiR Żoliborz,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Koczkodan błotny,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Zieleniec przy ul. Koronacyjnej,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Skwer Karoliny Lanckorońskiej,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Eko Park Ursus,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Rów Wolicki,3.1,1/3,riverside,RODZINNA,94.6/100,70.25/100,46min
+Warszawa,Fundamenty kuźni,3.3,1/3,historical,RODZINNA,94.6/100,70.25/100,49min
+Warszawa,Park Akcji „Burza”,2.9,1/3,mixed,RODZINNA,94.6/100,70.25/100,43min
+Warszawa,Pałac na Wyspie,3.3,1/3,historical,RODZINNA,94.6/100,70.25/100,49min
+Warszawa,Wydra europejska,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Lemur katta,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Skwerek Złotówki,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Kanał Czerniakowski,3.0,1/3,riverside,RODZINNA,94.6/100,70.0/100,45min
+Warszawa,Park Jazdów,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Stefan Wyszyński,3.2,1/3,historical,RODZINNA,94.6/100,70.0/100,48min
+Warszawa,Dżungla,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Plaża Żoliborska,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Kanał Kawęczyński,3.0,1/3,riverside,RODZINNA,94.6/100,70.0/100,45min
+Warszawa,Rów Natoliński,3.0,1/3,riverside,RODZINNA,94.6/100,70.0/100,45min
+Warszawa,Rów Jeziorki,3.0,1/3,riverside,RODZINNA,94.6/100,70.0/100,45min
+Warszawa,414S,3.2,1/3,historical,RODZINNA,94.6/100,70.0/100,48min
+Warszawa,Fundamenty wartowni,3.2,1/3,historical,RODZINNA,94.6/100,70.0/100,48min
+Warszawa,ET21-66,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,SM25-02,2.8,1/3,mixed,RODZINNA,94.6/100,70.0/100,42min
+Warszawa,Park Wielkopolski,2.7,1/3,mixed,RODZINNA,94.6/100,69.75/100,40min
+Warszawa,Jak,2.7,1/3,mixed,RODZINNA,94.6/100,69.75/100,40min
+Warszawa,Wilanówka,2.9,1/3,riverside,RODZINNA,94.6/100,69.75/100,43min
+Warszawa,Pałac Prezydencki,3.1,1/3,historical,RODZINNA,94.6/100,69.75/100,46min
+Warszawa,Pałac Kultury i Nauki,3.1,1/3,historical,RODZINNA,94.6/100,69.75/100,46min
+Warszawa,Kanał Bródnowski,2.8,1/3,riverside,RODZINNA,94.6/100,69.5/100,42min
+Warszawa,Skwer Radiowej Rodziny Matysiaków,2.6,1/3,mixed,RODZINNA,94.6/100,69.5/100,39min
+Warszawa,Pampasowiec grzywiasty,2.6,1/3,mixed,RODZINNA,94.6/100,69.5/100,39min
+Warszawa,Kanał Gocławski,2.8,1/3,riverside,RODZINNA,94.6/100,69.5/100,42min
+Warszawa,Potok Służewiecki,2.8,1/3,riverside,RODZINNA,94.6/100,69.5/100,42min
+Warszawa,Pamięci o Marszałku Piłsudskim,3.0,1/3,historical,RODZINNA,94.6/100,69.5/100,45min
+Warszawa,Park Dreszera,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Kanał Sobieskiego,2.7,1/3,riverside,RODZINNA,94.6/100,69.25/100,40min
+Warszawa,Pałac w Wilanowie,2.9,1/3,historical,RODZINNA,94.6/100,69.25/100,43min
+Warszawa,Skwer Mieczysława Fogga,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Ptaki wodne,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Zebra Hartmanna,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Foka szara,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Park Chomicza,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Cmentarz Żołnierzy Włoskich,2.9,1/3,historical,RODZINNA,94.6/100,69.25/100,43min
+Warszawa,Stawy Kellera,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Syrenka Warszawska,2.9,1/3,historical,RODZINNA,94.6/100,69.25/100,43min
+Warszawa,Park Magiczna,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Psi Park,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Sika wietnamska,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Kanał Sielecki,2.7,1/3,riverside,RODZINNA,94.6/100,69.25/100,40min
+Warszawa,Kanał Wawerski,2.7,1/3,riverside,RODZINNA,94.6/100,69.25/100,40min
+Warszawa,Państwomiasto,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,Park ze Stawem Koziorożca,2.5,1/3,mixed,RODZINNA,94.6/100,69.25/100,37min
+Warszawa,34D44,2.9,1/3,historical,RODZINNA,94.6/100,69.25/100,43min
+Warszawa,Kanał Siekierkowski,2.7,1/3,riverside,RODZINNA,94.6/100,69.25/100,40min
+Warszawa,pl:Ruiny wieży nr 7 Transatlantyckiej Centrali Radiotelegraficznej Bemowo,2.9,1/3,historical,RODZINNA,94.6/100,69.25/100,43min
+Warszawa,Kea,2.4,1/3,mixed,RODZINNA,94.6/100,69.0/100,36min
+Warszawa,Potok Służewiecki,2.6,1/3,riverside,RODZINNA,94.6/100,69.0/100,39min
+Warszawa,Park Planeta Ursus,2.4,1/3,mixed,RODZINNA,94.6/100,69.0/100,36min
+Warszawa,EU20 - 24,2.4,1/3,mixed,RODZINNA,94.6/100,69.0/100,36min
+Warszawa,Kanał Sielecki,2.6,1/3,riverside,RODZINNA,94.6/100,69.0/100,39min
+Warszawa,Alpaka,2.3,1/3,mixed,RODZINNA,94.6/100,68.75/100,34min
+Warszawa,Latoszka,2.5,1/3,riverside,RODZINNA,94.6/100,68.75/100,37min
+Warszawa,Skwer „Sierpnia 1944”,2.3,1/3,mixed,RODZINNA,94.6/100,68.75/100,34min
+Warszawa,Wielbłąd dwugarbny,2.3,1/3,mixed,RODZINNA,94.6/100,68.75/100,34min
+Warszawa,Kanał Bródnowski Dolny,2.5,1/3,riverside,RODZINNA,94.6/100,68.75/100,37min
+Warszawa,Tężnia solankowa,2.3,1/3,mixed,RODZINNA,94.6/100,68.75/100,34min
+Warszawa,Park Ujazdowski,2.2,1/3,mixed,RODZINNA,94.6/100,68.5/100,33min
+Warszawa,Wisła,2.4,1/3,riverside,RODZINNA,94.6/100,68.5/100,36min
+Warszawa,Park przy Bażantarni,2.2,1/3,mixed,RODZINNA,94.6/100,68.5/100,33min
+Warszawa,Pałac Potockich,2.6,1/3,historical,RODZINNA,94.6/100,68.5/100,39min
+Warszawa,Skwer Kaliny,2.2,1/3,mixed,RODZINNA,94.6/100,68.5/100,33min
+Warszawa,Potok Służewiecki,2.4,1/3,riverside,RODZINNA,94.6/100,68.5/100,36min
+Warszawa,TKh,2.6,1/3,historical,RODZINNA,94.6/100,68.5/100,39min
+Warszawa,Dwuosiowy wagon kryty budowy pruskiej,2.6,1/3,historical,RODZINNA,94.6/100,68.5/100,39min
+Warszawa,Dwuosiowy wagon kryty specjalny budowy włoskiej,2.6,1/3,historical,RODZINNA,94.6/100,68.5/100,39min
+Warszawa,202Lc,2.6,1/3,historical,RODZINNA,94.6/100,68.5/100,39min
+Warszawa,Kanał Bródnowski,2.4,1/3,riverside,RODZINNA,94.6/100,68.5/100,36min
+Warszawa,Skwer Więźniów Politycznych Stalinizmu,2.2,1/3,mixed,RODZINNA,94.6/100,68.5/100,33min
+Warszawa,Kanał Wawerski,2.4,1/3,riverside,RODZINNA,94.6/100,68.5/100,36min
+Warszawa,Pigmejka karłowata,2.2,1/3,mixed,RODZINNA,94.6/100,68.5/100,33min
+Warszawa,Kanał Kamionkowski,2.4,1/3,riverside,RODZINNA,94.6/100,68.5/100,36min
+Warszawa,Kapucynka czubata,2.1,1/3,mixed,RODZINNA,94.6/100,68.25/100,31min
+Warszawa,Park Nad Balatonem,2.1,1/3,mixed,RODZINNA,94.6/100,68.25/100,31min
+Warszawa,Kanał Bródnowski Dolny,2.3,1/3,riverside,RODZINNA,94.6/100,68.25/100,34min
+Warszawa,Lipkowska Woda,2.3,1/3,riverside,RODZINNA,94.6/100,68.25/100,34min
+Warszawa,Ścieżka spacerowa,2.1,1/3,mixed,RODZINNA,94.6/100,68.25/100,31min
+Warszawa,Park Traugutta,2.1,1/3,mixed,RODZINNA,94.6/100,68.25/100,31min
+Warszawa,Kamionkowskie Błonia Elekcyjne,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Kanał Gocławski,2.2,1/3,riverside,RODZINNA,94.6/100,68.0/100,33min
+Warszawa,Park im. Edwarda Szymańskiego,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Wybieg dla małp,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Park/Ogród przy Kościele,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Fort Traugutta,2.4,1/3,historical,RODZINNA,94.6/100,68.0/100,36min
+Warszawa,"Fort X Twierdzy Warszawa ""Augustówka""",2.4,1/3,historical,RODZINNA,94.6/100,68.0/100,36min
+Warszawa,Opuszczona restauracja Baszta,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Tr203,2.4,1/3,historical,RODZINNA,94.6/100,68.0/100,36min
+Warszawa,Lipkowska Woda,2.2,1/3,riverside,RODZINNA,94.6/100,68.0/100,33min
+Warszawa,OKi1-28,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Tężnia solankowa,2.0,1/3,mixed,RODZINNA,94.6/100,68.0/100,30min
+Warszawa,Kanał Kawęczyński,2.2,1/3,riverside,RODZINNA,94.6/100,68.0/100,33min
+Warszawa,Park im. Księcia Janusza,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,"Park Żołnierzy ""Żywiciela""",1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Kanał Zaciszański,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,"Skwer Batalionu AK ""Czata 49""",1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Park Fosa,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Jeziorko Imielińskie - użytek 623,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Kanał Wawerski,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,Rów Wolicki,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,Rudawka,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,Lipkowska Woda,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,SN52,2.3,1/3,historical,RODZINNA,94.6/100,67.75/100,34min
+Warszawa,Wagon salonowy Ashx,2.3,1/3,historical,RODZINNA,94.6/100,67.75/100,34min
+Warszawa,Dwuosiowy wagon kryty budowy niemieckiej,2.3,1/3,historical,RODZINNA,94.6/100,67.75/100,34min
+Warszawa,Tkb3-129,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Dawne kino W-Z,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Krajobrazy biocenotyczne,1.9,1/3,mixed,RODZINNA,94.6/100,67.75/100,28min
+Warszawa,Rów Natoliński,2.1,1/3,riverside,RODZINNA,94.6/100,67.75/100,31min
+Warszawa,Skwer Alojzego Pawełka,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Park na Książęcem,2.2,1/3,historical,RODZINNA,94.6/100,67.5/100,33min
+Warszawa,Plac Wielkiej Przygody,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Pałac Błękitny,2.2,1/3,historical,RODZINNA,94.6/100,67.5/100,33min
+Warszawa,Skwer Herberta Clarka Hoovera,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Niedźwiedź polarny,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Kanał Żerański,2.0,1/3,riverside,RODZINNA,94.6/100,67.5/100,30min
+Warszawa,Plac Miejski,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,VIII Ogród Jordanowski,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Rów Natoliński,2.0,1/3,riverside,RODZINNA,94.6/100,67.5/100,30min
+Warszawa,Ogród Różana,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,"Dom Samotnej Matki i Dziecka ""Nazaret""",1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Pm2,2.2,1/3,historical,RODZINNA,94.6/100,67.5/100,33min
+Warszawa,Serwal,1.8,1/3,mixed,RODZINNA,94.6/100,67.5/100,27min
+Warszawa,Skwer Bohdana Wodiczko,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Park Tadeusza Mazowieckiego,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Synagoga Nożyków,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Gibon Czubaty,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Ptaki wodne,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Plaża Jeziorko Czerniakowskie,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Zieleniec przy ul. Królów Polskich,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Punkt Zagospodarowania Turystycznego,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Skwer Teherański,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Rów Natoliński,1.9,1/3,riverside,RODZINNA,94.6/100,67.25/100,28min
+Warszawa,Lipkowska Woda,1.9,1/3,riverside,RODZINNA,94.6/100,67.25/100,28min
+Warszawa,Pt47-104,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,PU29-3,1.7,1/3,mixed,RODZINNA,94.6/100,67.25/100,25min
+Warszawa,Potok Bielański,1.9,1/3,riverside,RODZINNA,94.6/100,67.25/100,28min
+Warszawa,Kanał Żerański,1.8,1/3,riverside,RODZINNA,94.6/100,67.0/100,27min
+Warszawa,Park Jana Pawła II,1.6,1/3,mixed,RODZINNA,94.6/100,67.0/100,24min
+Warszawa,Ogrody Kosmosu,1.6,1/3,mixed,RODZINNA,94.6/100,67.0/100,24min
+Warszawa,Sajmirki,1.6,1/3,mixed,RODZINNA,94.6/100,67.0/100,24min
+Warszawa,Chwała Saperom,2.0,1/3,historical,RODZINNA,94.6/100,67.0/100,30min
+Warszawa,Kanał Wawerski,1.8,1/3,riverside,RODZINNA,94.6/100,67.0/100,27min
+Warszawa,"Fort V Twierdzy Warszawa ""Włochy""",2.0,1/3,historical,RODZINNA,94.6/100,67.0/100,30min
+Warszawa,Park linearny nad POW,1.6,1/3,mixed,RODZINNA,94.6/100,67.0/100,24min
+Warszawa,"Skwer Stanisława Broniewskiego ""Orszy""",1.5,1/3,mixed,RODZINNA,94.6/100,66.75/100,22min
+Warszawa,Lasek Brzozowy,1.5,1/3,mixed,RODZINNA,94.6/100,66.75/100,22min
+Warszawa,Kanał Bródnowski,1.7,1/3,riverside,RODZINNA,94.6/100,66.75/100,25min
+Warszawa,Kanał Zaciszański,1.7,1/3,riverside,RODZINNA,94.6/100,66.75/100,25min
+Warszawa,Dawne koszary fortu Śliwickiego,1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Poległym i Pomordowanym na Wschodzie,1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Ruiny w Lasku na Kole,1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Skwer Straży Obywatelskiej 1939 r.,1.5,1/3,mixed,RODZINNA,94.6/100,66.75/100,22min
+Warszawa,Jak-40,1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Katastrofa lotu 007,1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Oryks szablorogi,1.5,1/3,mixed,RODZINNA,94.6/100,66.75/100,22min
+Warszawa,"Fort II Twierdzy Warszawa ""Wawrzyszew""",1.9,1/3,historical,RODZINNA,94.6/100,66.75/100,28min
+Warszawa,Wilanówka,1.7,1/3,riverside,RODZINNA,94.6/100,66.75/100,25min
+Warszawa,Lipkowska Woda,1.7,1/3,riverside,RODZINNA,94.6/100,66.75/100,25min
+Warszawa,"Skwer Kompanii AK ""Żniwiarz""",1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,"Park Pułkownika Jana Szypowskiego ""Leśnika""",1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Nowa Ulga,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,Pałac Myślewicki,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Kangur czerwony,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Reduta Bank Polski,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Fundamenty mostku kolejki Jabłonowskiej,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Kolumna Zygmunta,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Skwer Barbary i Stanisława Brukalskich,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Kanał Kawęczyński,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,Kanał Wawerski,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,Skwer Duśki Trafankowskiej,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Pomnik Męczenników Terroru Komunistycznego 1944–1956,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Altana Chińska,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Pamięci Polaków poległych w II wojnie światowej,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Kanał Bródnowski Dolny,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,"Fort IV Twierdzy Warszawa ""Chrzanów""",1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Rów Natoliński,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,Żuraw mandżurski,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Akwedukt przy IV Bastionie,1.8,1/3,historical,RODZINNA,94.6/100,66.5/100,27min
+Warszawa,Plaża Aluzyjna,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Rów Jeziorki,1.6,1/3,riverside,RODZINNA,94.6/100,66.5/100,24min
+Warszawa,Skwer Wiesława Michnikowskiego,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Plaża naturystów - dolna plaża,1.4,1/3,mixed,RODZINNA,94.6/100,66.5/100,21min
+Warszawa,Skwer Tarasa Szewczenki,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Ogród BUW (Dolny),1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Małpie wyspy,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Opuszczona budowa osiedla,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Potok Bielański,1.5,1/3,riverside,RODZINNA,94.6/100,66.25/100,22min
+Warszawa,Park Stanisława Dygata,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Rezerwat Jeziorko Czerniakowskie,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Kanał Bródnowski Dolny,1.5,1/3,riverside,RODZINNA,94.6/100,66.25/100,22min
+Warszawa,"Skwer rekreacyjno-wypoczynkowy ""KOTWICA""",1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,"Mortui sunt, ut liberi vivamus",1.7,1/3,historical,RODZINNA,94.6/100,66.25/100,25min
+Warszawa,Amfiteatr Służew,1.3,1/3,mixed,RODZINNA,94.6/100,66.25/100,19min
+Warszawa,Kanał Zaciszański,1.5,1/3,riverside,RODZINNA,94.6/100,66.25/100,22min
+Warszawa,"Ścieżka biegowa ""Lucerny""",1.25,1/3,mixed,RODZINNA,94.6/100,66.12/100,18min
+Warszawa,Kępa Potocka,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Park Marii Skłodowskiej-Curie,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Kanał Czerniakowski,1.4,1/3,riverside,RODZINNA,94.6/100,66.0/100,21min
+Warszawa,Kanał Drewnowski,1.4,1/3,riverside,RODZINNA,94.6/100,66.0/100,21min
+Warszawa,Flaming chilijski,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Nosorożec indyjski,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Urson amerykański,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Gepard,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Zieleniec Zaczarowanej Dorożki,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Rezerwat Las Natoliński,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Rynek Nowego Miasta,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Park Agrykola,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Skwer Bolesława Dubickiego,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Rów Natoliński,1.4,1/3,riverside,RODZINNA,94.6/100,66.0/100,21min
+Warszawa,Wagon cysterna,1.6,1/3,historical,RODZINNA,94.6/100,66.0/100,24min
+Warszawa,Park Wolności,1.2,1/3,mixed,RODZINNA,94.6/100,66.0/100,18min
+Warszawa,Morskie Oko,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Pałac Królikarnia,1.5,1/3,historical,RODZINNA,94.6/100,65.75/100,22min
+Warszawa,Kanał Kawęczyński,1.3,1/3,riverside,RODZINNA,94.6/100,65.75/100,19min
+Warszawa,Jak,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Eco Skwerek,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Pomnik Czynu Zbrojnego Polonii Amerykańskiej,1.5,1/3,historical,RODZINNA,94.6/100,65.75/100,22min
+Warszawa,Fort Szczęśliwice,1.5,1/3,historical,RODZINNA,94.6/100,65.75/100,22min
+Warszawa,Wege Park,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Rów Natoliński,1.3,1/3,riverside,RODZINNA,94.6/100,65.75/100,19min
+Warszawa,Tamaryna białoczuba,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,EP02 - 02,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Kanał Siekierkowski,1.3,1/3,riverside,RODZINNA,94.6/100,65.75/100,19min
+Warszawa,Kampinoski Park Narodowy,1.1,1/3,mixed,RODZINNA,94.6/100,65.75/100,16min
+Warszawa,Kanał Wystawowy,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,Nowa Ulga,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,Lemur Katta,1.0,1/3,mixed,RODZINNA,94.6/100,65.5/100,15min
+Warszawa,Wybieg dla żyraf,1.0,1/3,mixed,RODZINNA,94.6/100,65.5/100,15min
+Warszawa,Kanał Kawęczyński,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,34D74-54,1.0,1/3,mixed,RODZINNA,94.6/100,65.5/100,15min
+Warszawa,Kanał Czerniakowski,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,Kanał Siekierkowski,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,Rów Natoliński,1.2,1/3,riverside,RODZINNA,94.6/100,65.5/100,18min
+Warszawa,Kolumna Zygmunta,1.4,1/3,historical,RODZINNA,94.6/100,65.5/100,21min
+Warszawa,Rynek Starego Miasta,1.4,1/3,historical,RODZINNA,94.6/100,65.5/100,21min
+Warszawa,Ogród Saski,1.3,1/3,historical,RODZINNA,94.6/100,65.25/100,19min
+Warszawa,Kanał Kawęczyński,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Kanał Siekierkowski,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Kanał Gocławski,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Długa,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Pawiany,0.9,1/3,mixed,RODZINNA,94.6/100,65.25/100,13min
+Warszawa,"Fort VIIA Twierdzy Warszawa ""Służewiec""",1.3,1/3,historical,RODZINNA,94.6/100,65.25/100,19min
+Warszawa,Rów Natoliński,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Kanał Drewnowski,1.1,1/3,riverside,RODZINNA,94.6/100,65.25/100,16min
+Warszawa,Panzertriebwagen 16,1.3,1/3,historical,RODZINNA,94.6/100,65.25/100,19min
+Warszawa,Wisła,1.047,1/3,riverside,RODZINNA,94.6/100,65.12/100,15min
+Warszawa,Kanał Sielecki,1.0,1/3,riverside,RODZINNA,94.6/100,65.0/100,15min
+Warszawa,"Skwer ""Starszych Panów""",0.8,1/3,mixed,RODZINNA,94.6/100,65.0/100,12min
+Warszawa,Jeleń,0.8,1/3,mixed,RODZINNA,94.6/100,65.0/100,12min
+Warszawa,Pomnik Bohaterów Getta,1.2,1/3,historical,RODZINNA,94.6/100,65.0/100,18min
+Warszawa,Park Górczewska,0.8,1/3,mixed,RODZINNA,94.6/100,65.0/100,12min
+Warszawa,Kob nilowy,0.8,1/3,mixed,RODZINNA,94.6/100,65.0/100,12min
+Warszawa,Ty42,1.2,1/3,historical,RODZINNA,94.6/100,65.0/100,18min
+Warszawa,IS-2,1.2,1/3,historical,RODZINNA,94.6/100,65.0/100,18min
+Warszawa,Centrum Lokalne Kamionek,0.8,1/3,mixed,RODZINNA,94.6/100,65.0/100,12min
+Warszawa,Warszawski Południk Zerowy,1.2,1/3,historical,RODZINNA,94.6/100,65.0/100,18min
+Warszawa,"Skwer Grupy AK ""Granat""",0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,Wybieg dla szympansów,0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,Pałac w Natolinie,1.1,1/3,historical,RODZINNA,94.6/100,64.75/100,16min
+Warszawa,Kościół św. Elżbiety w Powsinie,0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,"Fort VI Twierdzy Warszawa ""Okęcie""",1.1,1/3,historical,RODZINNA,94.6/100,64.75/100,16min
+Warszawa,Park Bartłomieja,0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,Surykatki,0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,Ogród Społecznościowy „Odnowa”,0.7,1/3,mixed,RODZINNA,94.6/100,64.75/100,10min
+Warszawa,Ty51,1.1,1/3,historical,RODZINNA,94.6/100,64.75/100,16min
+Warszawa,Zabytkowy rozkład jazdy,1.1,1/3,historical,RODZINNA,94.6/100,64.75/100,16min
+Warszawa,pl:Ruiny wieży nr 10 Transatlantyckiej Centrali Radiotelegraficznej Bemowo,1.1,1/3,historical,RODZINNA,94.6/100,64.75/100,16min
+Warszawa,Park Wilanowski,0.6,1/3,mixed,RODZINNA,94.6/100,64.5/100,9min
+Warszawa,Skwer Oleandrów,0.6,1/3,mixed,RODZINNA,94.6/100,64.5/100,9min
+Warszawa,Skwer Ormiański,0.6,1/3,mixed,RODZINNA,94.6/100,64.5/100,9min
+Warszawa,Park Achera,0.6,1/3,mixed,RODZINNA,94.6/100,64.5/100,9min
+Warszawa,"Fort VII Twierdzy Warszawa ""Zbarż""",1.0,1/3,historical,RODZINNA,94.6/100,64.5/100,15min
+Warszawa,MiG-29G,1.0,1/3,historical,RODZINNA,94.6/100,64.5/100,15min
+Warszawa,Pomnik Lotników Polskich,1.0,1/3,historical,RODZINNA,94.6/100,64.5/100,15min
+Warszawa,Wagon bagażowo-pocztowy,1.0,1/3,historical,RODZINNA,94.6/100,64.5/100,15min
+Warszawa,Kondor królewski,0.5,1/3,mixed,RODZINNA,94.6/100,64.25/100,7min
+Warszawa,Lemur Wari,0.5,1/3,mixed,RODZINNA,94.6/100,64.25/100,7min
+Warszawa,Ptaki,0.5,1/3,mixed,RODZINNA,94.6/100,64.25/100,7min
+Warszawa,Park Natoliński,0.5,1/3,mixed,RODZINNA,94.6/100,64.25/100,7min
+Warszawa,BCi-29,0.8,1/3,historical,RODZINNA,94.6/100,64.0/100,12min
+Warszawa,TKbb,0.7,1/3,historical,RODZINNA,94.6/100,63.75/100,10min
+Warszawa,25D49,0.4,1/3,historical,RODZINNA,94.6/100,63.0/100,6min

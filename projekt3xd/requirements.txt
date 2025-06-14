@@ -1,0 +1,36 @@
+# ============================================================================
+# SYSTEM REKOMENDACJI TRAS TURYSTYCZNYCH - ETAP 4
+# Wymagane zależności Python
+# ============================================================================
+
+# PODSTAWOWE BIBLIOTEKI DO ANALIZY DANYCH
+pandas==2.1.0                  # Analiza i manipulacja danych
+numpy==1.24.3                  # Obliczenia numeryczne
+
+# INTEGRACJA Z API ZEWNĘTRZNYMI (ETAP 4)
+requests==2.31.0               # HTTP requests do OpenStreetMap i Open-Meteo API
+aiohttp==3.8.5                 # Asynchroniczne zapytania API
+urllib3==2.0.4                 # Backend dla requests
+python-dotenv==1.0.0           # Zarządzanie zmiennymi środowiskowymi
+
+# PRZETWARZANIE DANYCH ZEWNĘTRZNYCH
+beautifulsoup4==4.12.2         # Parsing HTML/XML z API
+lxml==4.9.3                    # Parser XML/HTML (backend dla BeautifulSoup)
+
+# WIZUALIZACJA I RAPORTY
+matplotlib==3.7.2              # Podstawowe wykresy i plots
+seaborn==0.12.2                # Zaawansowana wizualizacja statystyczna
+plotly==5.15.0                 # Interaktywne wykresy i mapy
+reportlab==4.0.4               # Generowanie raportów PDF
+Pillow==10.0.0                 # Przetwarzanie obrazów i map
+
+# PRZETWARZANIE JĘZYKA NATURALNEGO
+textblob==0.17.1               # Analiza tekstu i sentiment analysis
+nltk==3.8.1                   # Zaawansowane NLP
+
+# ============================================================================
+# NOTATKI DOTYCZĄCE BAZY DANYCH:
+# - SQLite: Wbudowane w Python (nie wymaga instalacji)
+# - Baza danych: data/database/routes.db (~15 MB)
+# - Backup automatyczny w menu systemu
+# ============================================================================ 

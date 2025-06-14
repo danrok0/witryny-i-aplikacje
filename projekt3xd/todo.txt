@@ -1,0 +1,180 @@
+TODO - Lista zadań do ukończenia projektu "System Rekomendacji Tras Turystycznych"
+==============================================================================
+
+📅 DATA UTWORZENIA: 2024-12-12
+🎯 CEL: Finalizacja projektu zgodnie z wymaganiami z updatelist.txt i updatelist2.txt
+
+===============================================================================
+🔍 ZADANIA DO WERYFIKACJI I TESTOWANIA
+===============================================================================
+
+1. 🧪 TESTOWANIE WYRAŻEŃ REGULARNYCH (WYSOKIE PRIORYTETY)
+   ============================================================
+   [ ] Sprawdź czy TextProcessor poprawnie rozpoznaje wszystkie formaty czasu:
+       - "2h 30min", "150 minut", "2.5 godziny", "około 4h", "3-5 godzin"
+   [ ] Zweryfikuj ekstrakcję wysokości: "1650 m n.p.m.", "przewyższenie 800m"
+   [ ] Przetestuj rozpoznawanie współrzędnych GPS w różnych formatach
+   [ ] Sprawdź czy ostrzeżenia są poprawnie wydobywane z tekstów opisów
+   [ ] Zweryfikuj identyfikację punktów charakterystycznych (schroniska, szczyty)
+
+2. 📊 WERYFIKACJA ANALIZY RECENZJI (ŚREDNIE PRIORYTETY)
+   ====================================================
+   [ ] Przetestuj ReviewAnalyzer z przykładowymi recenzjami
+   [ ] Sprawdź czy sentiment analysis działa poprawnie (pozytywne/negatywne/neutralne)
+   [ ] Zweryfikuj ekstrakcję ocen w formatach: "4/5", "8/10", "★★★★☆"
+   [ ] Przetestuj wydobywanie dat z recenzji
+   [ ] Sprawdź identyfikację aspektów tras (widoki, trudność, oznakowanie)
+
+3. 🌐 TESTOWANIE POBIERANIA DANYCH Z INTERNETU (ŚREDNIE PRIORYTETY)
+   ================================================================
+   [ ] Przetestuj WebDataCollector z rzeczywistymi stronami internetowymi
+   [ ] Sprawdź czy HTMLRouteExtractor poprawnie parsuje różne struktury HTML
+   [ ] Zweryfikuj mechanizm cache'owania pobranych danych
+   [ ] Przetestuj obsługę błędów sieciowych i timeoutów
+   [ ] Sprawdź czy integracja z API pogodowymi działa poprawnie
+
+4. 📄 WERYFIKACJA GENEROWANIA RAPORTÓW PDF (WYSOKIE PRIORYTETY)
+   ============================================================
+   [ ] Sprawdź czy PDFReportGenerator tworzy wszystkie wymagane sekcje:
+       - Strona tytułowa z datą i parametrami wyszukiwania
+       - Spis treści z linkami
+       - Podsumowanie wykonawcze
+       - Szczegółowe opisy tras
+       - Aneks z danymi źródłowymi
+   [ ] Zweryfikuj czy ChartGenerator tworzy wszystkie typy wykresów:
+       - Histogram długości tras
+       - Wykres kołowy kategorii tras
+       - Wykres słupkowy ocen użytkowników
+       - Mapa ciepła dostępności tras
+       - Wykresy radarowe
+   [ ] Przetestuj numerację stron i nagłówki/stopki
+   [ ] Sprawdź czy tabele porównawcze są poprawnie formatowane
+
+5. 💾 TESTOWANIE BAZY DANYCH (WYSOKIE PRIORYTETY)
+   ==============================================
+   [ ] Przetestuj migrację danych z CSV/JSON do SQLite
+   [ ] Sprawdź czy wszystkie tabele są tworzone z poprawnymi schematami
+   [ ] Zweryfikuj czy indeksy są tworzone i poprawiają wydajność
+   [ ] Przetestuj wszystkie operacje CRUD w repozytoriach
+   [ ] Sprawdź mechanizmy backup'u i restore
+   [ ] Zweryfikuj walidację danych podczas zapisu
+   [ ] Przetestuj zapytania złożone (JOIN, agregacje)
+
+6. 🔧 WERYFIKACJA FUNKCJI ADMINISTRACYJNYCH (ŚREDNIE PRIORYTETY)
+   =============================================================
+   [ ] Przetestuj DatabaseAdmin - wyświetlanie statystyk
+   [ ] Sprawdź sprawdzanie integralności danych
+   [ ] Zweryfikuj tworzenie i przywracanie kopii zapasowych
+   [ ] Przetestuj czyszczenie starych danych
+   [ ] Sprawdź raportowanie błędów w konsoli
+
+===============================================================================
+🔨 ZADANIA IMPLEMENTACYJNE (JEŚLI BRAKUJE)
+===============================================================================
+
+7. 📝 DODANIE BRAKUJĄCYCH ELEMENTÓW
+   ================================
+   [ ] Sprawdź czy pole 'recenzje' jest dodane do modelu Route
+   [ ] Zweryfikuj czy wszystkie wzorce regex z wymagań są zaimplementowane:
+       - Czas: r'(\d+(?:\.\d+)?)\s*(?:h|godz|hours?)|(\d+)\s*(?:min|minut)'
+       - Wysokości: r'(\d{3,4})\s*m\s*n\.p\.m\.'
+       - Współrzędne: r'([NS]?\d{1,2}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)\s*,?\s*([EW]?\d{1,3}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)'
+       - Oceny: r'(\d(?:\.\d)?)/5|(\d{1,2})/10|★{1,5}'
+       - Daty: r'(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})'
+
+8. 🎨 SPRAWDZENIE STRUKTURY HTML
+   =============================
+   [ ] Zweryfikuj czy HTMLRouteExtractor rozpoznaje:
+       - <table class="route-params">
+       - <div class="route-description">
+       - <div class="gallery">
+       - <div id="map">
+       - <div class="user-review">
+
+===============================================================================
+🧪 ZADANIA TESTOWE I PRZYKŁADY
+===============================================================================
+
+9. 📋 TESTY INTEGRACYJNE
+   ====================
+   [ ] Utworzyć plik test_examples.py z przykładami z updatelist.txt:
+       - Test analizy tekstu: "Trasa średnio trudna, czas przejścia około 3h 45min..."
+       - Test parsowania HTML z przykładowym kodem
+       - Test generowania raportu z przykładowymi danymi
+   [ ] Przetestować cały flow: od pobierania danych do generowania raportu PDF
+   [ ] Sprawdzić wydajność przy dużej liczbie tras (>1000)
+
+10. 📊 PRZYKŁADOWE DANE TESTOWE
+    ===========================
+    [ ] Utworzyć zestaw przykładowych recenzji do testowania ReviewAnalyzer
+    [ ] Przygotować przykładowe strony HTML do testowania HTMLRouteExtractor
+    [ ] Utworzyć testową bazę danych z różnorodnymi trasami
+    [ ] Przygotować przykładowe dane pogodowe dla różnych regionów
+
+===============================================================================
+🎯 ZADANIA OPTYMALIZACYJNE (NISKIE PRIORYTETY)
+===============================================================================
+
+11. ⚡ OPTYMALIZACJE WYDAJNOŚCI
+    ===========================
+    [ ] Optymalizacja zapytań do bazy danych
+    [ ] Cache'owanie wyników analizy tekstu
+    [ ] Asynchroniczne pobieranie danych z internetu
+    [ ] Kompresja generowanych raportów PDF
+
+12. 🛡️ OBSŁUGA BŁĘDÓW
+    =================
+    [ ] Lepsze komunikaty błędów w konsoli
+    [ ] Graceful handling nietypowych formatów danych
+    [ ] Walidacja danych wejściowych od użytkownika
+    [ ] Logging operacji w plikach
+
+===============================================================================
+📚 DOKUMENTACJA I FINALIZACJA
+===============================================================================
+
+13. 📖 DOKUMENTACJA
+    ===============
+    [ ] Aktualizacja README.md z nowymi funkcjonalnościami
+    [ ] Dokumentacja API dla nowych klas
+    [ ] Instrukcja instalacji i konfiguracji bazy danych
+    [ ] Przykłady użycia dla deweloperów
+
+14. ✅ FINALNE SPRAWDZENIE
+    =====================
+    [ ] Sprawdzenie czy wszystkie wymagania z updatelist.txt są spełnione
+    [ ] Sprawdzenie czy wszystkie wymagania z updatelist2.txt są spełnione
+    [ ] Test całego systemu end-to-end
+    [ ] Weryfikacja czy istniejące funkcje nadal działają
+
+===============================================================================
+🚀 PRIORYTETY WYKONANIA
+===============================================================================
+
+WYSOKIE PRIORYTETY (DO ZROBIENIA PIERWSZYCH):
+- Testowanie wyrażeń regularnych (punkt 1)
+- Weryfikacja generowania raportów PDF (punkt 4)  
+- Testowanie bazy danych (punkt 5)
+
+ŚREDNIE PRIORYTETY:
+- Weryfikacja analizy recenzji (punkt 2)
+- Testowanie pobierania danych z internetu (punkt 3)
+- Weryfikacja funkcji administracyjnych (punkt 6)
+
+NISKIE PRIORYTETY (na końcu):
+- Optymalizacje wydajności (punkt 11)
+- Obsługa błędów (punkt 12)
+- Dokumentacja (punkt 13)
+
+===============================================================================
+📝 NOTATKI
+===============================================================================
+
+- Projekt wydaje się być w ~95% kompletny pod względem implementacji
+- Głównie potrzebne jest testowanie i weryfikacja istniejących funkcji
+- Większość wymaganych klas i modułów jest już zaimplementowana
+- Focus na testowaniu rzeczywistych scenariuszy użycia
+
+===============================================================================
+🏁 STATUS: PROJEKT GOTOWY DO FINALIZACJI I TESTOWANIA
+=============================================================================== 

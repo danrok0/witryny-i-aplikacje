@@ -1,0 +1,254 @@
+[
+  {
+    "temperature": 8.5,
+    "precipitation": 0.0,
+    "sunshine_hours": 8.615705555555556,
+    "wind_speed": 18.5,
+    "cloud_cover": 70,
+    "date": "2025-04-11",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 9.049999999999999,
+    "precipitation": 0.0,
+    "sunshine_hours": 7.880705555555556,
+    "wind_speed": 14.6,
+    "cloud_cover": 76,
+    "date": "2025-04-12",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 12.55,
+    "precipitation": 0.0,
+    "sunshine_hours": 8.579541666666666,
+    "wind_speed": 14.6,
+    "cloud_cover": 57,
+    "date": "2025-04-13",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 11.9,
+    "precipitation": 0.0,
+    "sunshine_hours": 10.374430555555556,
+    "wind_speed": 11.7,
+    "cloud_cover": 65,
+    "date": "2025-04-14",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 12.950000000000001,
+    "precipitation": 1.5,
+    "sunshine_hours": 6.359905555555556,
+    "wind_speed": 18.9,
+    "cloud_cover": 94,
+    "date": "2025-04-15",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 17.2,
+    "precipitation": 1.8,
+    "sunshine_hours": 11.229469444444444,
+    "wind_speed": 14.6,
+    "cloud_cover": 74,
+    "date": "2025-04-16",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 11.9,
+    "precipitation": 1.5,
+    "sunshine_hours": 9.107627777777777,
+    "wind_speed": 10.3,
+    "cloud_cover": 88,
+    "date": "2025-04-17",
+    "region": "Gdańsk"
+  },
+  {
+    "temperature": 5.2,
+    "precipitation": 10.2,
+    "sunshine_hours": 0.0,
+    "wind_speed": 18.0,
+    "cloud_cover": 91,
+    "date": "2025-04-11",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 7.55,
+    "precipitation": 0.0,
+    "sunshine_hours": 0.27694722222222223,
+    "wind_speed": 13.7,
+    "cloud_cover": 82,
+    "date": "2025-04-12",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 13.15,
+    "precipitation": 0.0,
+    "sunshine_hours": 3.0,
+    "wind_speed": 15.1,
+    "cloud_cover": 97,
+    "date": "2025-04-13",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 16.4,
+    "precipitation": 0.9,
+    "sunshine_hours": 12.470525,
+    "wind_speed": 13.6,
+    "cloud_cover": 48,
+    "date": "2025-04-14",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 16.35,
+    "precipitation": 0.0,
+    "sunshine_hours": 11.604786111111112,
+    "wind_speed": 19.9,
+    "cloud_cover": 64,
+    "date": "2025-04-15",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 18.35,
+    "precipitation": 1.2,
+    "sunshine_hours": 12.858205555555555,
+    "wind_speed": 17.6,
+    "cloud_cover": 50,
+    "date": "2025-04-16",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 19.1,
+    "precipitation": 0.0,
+    "sunshine_hours": 11.578777777777777,
+    "wind_speed": 17.2,
+    "cloud_cover": 27,
+    "date": "2025-04-17",
+    "region": "Warszawa"
+  },
+  {
+    "temperature": 6.15,
+    "precipitation": 2.4,
+    "sunshine_hours": 0.0,
+    "wind_speed": 21.2,
+    "cloud_cover": 98,
+    "date": "2025-04-11",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 10.05,
+    "precipitation": 0.0,
+    "sunshine_hours": 2.0018944444444444,
+    "wind_speed": 9.4,
+    "cloud_cover": 80,
+    "date": "2025-04-12",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 13.3,
+    "precipitation": 0.0,
+    "sunshine_hours": 7.960952777777778,
+    "wind_speed": 14.4,
+    "cloud_cover": 59,
+    "date": "2025-04-13",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 16.35,
+    "precipitation": 0.0,
+    "sunshine_hours": 12.328022222222222,
+    "wind_speed": 15.4,
+    "cloud_cover": 42,
+    "date": "2025-04-14",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 15.149999999999999,
+    "precipitation": 2.7,
+    "sunshine_hours": 4.990900000000001,
+    "wind_speed": 10.5,
+    "cloud_cover": 73,
+    "date": "2025-04-15",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 18.3,
+    "precipitation": 0.3,
+    "sunshine_hours": 12.764133333333332,
+    "wind_speed": 13.3,
+    "cloud_cover": 3,
+    "date": "2025-04-16",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 17.15,
+    "precipitation": 0.0,
+    "sunshine_hours": 11.509363888888888,
+    "wind_speed": 15.8,
+    "cloud_cover": 28,
+    "date": "2025-04-17",
+    "region": "Kraków"
+  },
+  {
+    "temperature": 8.3,
+    "precipitation": 0.0,
+    "sunshine_hours": 0.004750000000000001,
+    "wind_speed": 24.4,
+    "cloud_cover": 96,
+    "date": "2025-04-11",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 11.75,
+    "precipitation": 0.0,
+    "sunshine_hours": 7.101016666666666,
+    "wind_speed": 7.9,
+    "cloud_cover": 79,
+    "date": "2025-04-12",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 13.3,
+    "precipitation": 0.0,
+    "sunshine_hours": 9.710875,
+    "wind_speed": 14.7,
+    "cloud_cover": 55,
+    "date": "2025-04-13",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 16.95,
+    "precipitation": 0.1,
+    "sunshine_hours": 11.525427777777779,
+    "wind_speed": 9.7,
+    "cloud_cover": 75,
+    "date": "2025-04-14",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 18.0,
+    "precipitation": 0.0,
+    "sunshine_hours": 11.297277777777778,
+    "wind_speed": 24.4,
+    "cloud_cover": 85,
+    "date": "2025-04-15",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 18.05,
+    "precipitation": 0.9,
+    "sunshine_hours": 12.314741666666666,
+    "wind_speed": 10.9,
+    "cloud_cover": 58,
+    "date": "2025-04-16",
+    "region": "Wrocław"
+  },
+  {
+    "temperature": 18.549999999999997,
+    "precipitation": 0.0,
+    "sunshine_hours": 12.78988611111111,
+    "wind_speed": 17.6,
+    "cloud_cover": 63,
+    "date": "2025-04-17",
+    "region": "Wrocław"
+  }
+]

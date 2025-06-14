@@ -1,0 +1,318 @@
+O to wymagania dotyczące aktualizacji mojego programu. Chcę aby wszystkie rzeczy których uzywam aktualnie zostały, aby po dodaniu zmian doszło kilka nowych rzeczy które są podane poniżej ale żeby funkcje które są obecnie i  z nich korzystam zostały. 
+Uwaga: Jeśli coś już jest z tego już i działa możemy to zostawić oraz jeśłi będzie problem z recenzjami możemy je ręcznie napisać w osobnym pliku i z nich korzystać.
+A o to co mamy do zrobienia:
+Rozbudowa projektu: Zaawansowany System Rekomendacji Tras Turystycznych z Analizą Danych i Raportowaniem
+1. Wprowadzenie
+Twoim zadaniem jest rozbudowa istniejącego systemu rekomendacji tras turystycznych o zaawansowane funkcjonalności przetwarzania danych tekstowych, analizy dokumentów HTML z opisami tras oraz generowania profesjonalnych raportów PDF z wizualizacjami. System powinien integrować dane z różnych źródeł internetowych i umożliwiać kompleksową analizę informacji turystycznych.
+
+2. Nowe wymagania funkcjonalne
+2.1. Moduł przetwarzania wyrażeń regularnych
+
+**STATUS: ✅ ZAIMPLEMENTOWANE**
+
+Klasa TextProcessor
+**LOKALIZACJA:** analyzers/text_processor.py
+**IMPLEMENTACJA:** Pełna klasa z 378 liniami kodu, szczegółowo skomentowana
+**FUNKCJONALNOŚĆ:**
+- Ekstrakcja informacji z opisów tras używając wyrażeń regularnych - Dorzucamy nowe pole do klasy Route.
+  **ZROBIONE:** ✅ Metoda extract_duration() - wydobywa czasy w formatach "2h 30min", "150 minut", "2.5 godziny"
+  **PLIKI:** analyzers/text_processor.py linie 169-202
+  **WZORCE REGEX:** 5 różnych wzorców dla formatów czasowych
+  **POŁĄCZENIE:** Integruje się z main.py przez metodę enhance_trail_data()
+
+- Wydobywanie czasów przejścia w różnych formatach (np. "2h 30min", "150 minut", "2.5 godziny")
+  **ZROBIONE:** ✅ Metoda extract_duration() z obsługą wszystkich formatów
+  **WZORCE:** re.compile(r'(\d+(?:\.\d+)?)\s*(?:h|godz|godzin|hours?)', re.IGNORECASE) i 4 inne
+  **WYNIK:** Zwraca czas w minutach (int) lub None
+  **TESTOWANIE:** Obsługuje "około 4h", "2-3h", "90 minut", "2h 30min"
+
+- Identyfikacja punktów charakterystycznych na trasie (schroniska, szczyty, przełęcze)
+  **ZROBIONE:** ✅ Metoda extract_landmarks() 
+  **PLIKI:** analyzers/text_processor.py linie 246-264
+  **WZORCE:** 7 wzorców regex dla różnych typów punktów
+  **WYNIK:** Lista unikalnych punktów charakterystycznych
+  **KATEGORIE:** schroniska, szczyty, przełęcze, doliny, jeziora, wodospady, punkty widokowe
+
+- Rozpoznawanie ostrzeżeń i zagrożeń w opisach tras
+  **ZROBIONE:** ✅ Metoda extract_warnings()
+  **PLIKI:** analyzers/text_processor.py linie 264-282
+  **WZORCE:** 4 wzorce dla ostrzeżeń typu "uwaga", "niebezpieczne", "ostrzeżenie"
+  **WYNIK:** Lista unikalnych ostrzeżeń bez duplikatów
+  **OBSŁUGA:** Filtruje puste stringi, zachowuje kolejność
+
+- Standaryzacja różnych formatów zapisu współrzędnych geograficznych
+  **ZROBIONE:** ✅ Metoda extract_coordinates()
+  **PLIKI:** analyzers/text_processor.py linie 225-246
+  **FORMATY:** N49°15'30" E20°05'45", 49.2583°N 20.0958°E, różne separatory
+  **WYNIK:** Tuple (szerokość, długość) jako stringi
+  **NORMALIZACJA:** Automatyczne oczyszczanie białych znaków
+
+**STRUKTURA DANYCH:** ExtractedTrailInfo (dataclass) z polami:
+- duration_minutes, elevation_gain, landmarks, warnings, coordinates, difficulty_level, recommended_season
+**INTEGRACJA:** Metoda enhance_trail_data() rozszerza dane trasy o wyekstraktowane informacje
+
+Klasa ReviewAnalyzer
+**LOKALIZACJA:** analyzers/review_analyzer.py
+**IMPLEMENTACJA:** Pełna klasa z 383 liniami kodu, szczegółowo skomentowana
+**FUNKCJONALNOŚĆ:**
+
+Należy do trasy dorzucić pole recenzji użytkowników (jako lista recenzji).
+**ZROBIONE:** ✅ Struktura ReviewData i ReviewAnalysis
+**PLIKI:** analyzers/review_analyzer.py linie 17-50
+**POLA:** text, rating, sentiment, date, aspects, season
+**INTEGRACJA:** Metoda enhance_trail_with_reviews() dodaje pole 'reviews' do danych trasy
+
+- Analiza sentymentu (określenie czy pozytywne czy negatywne) w recenzjach tras używając wzorców tekstowych
+  **ZROBIONE:** ✅ Metoda analyze_sentiment()
+  **PLIKI:** analyzers/review_analyzer.py linie 236-264
+  **SŁOWNIKI:** positive_words (24 słowa), negative_words (25 słów)
+  **ALGORYTM:** Zliczanie wystąpień + obsługa negacji ("nie polecam")
+  **WYNIK:** 'positive', 'negative', 'neutral'
+  **KONTEKST:** Wykrywa zaprzeczenia słów pozytywnych
+
+- Ekstrakcja ocen numerycznych z różnych formatów (gwiazdki, punkty, skale)
+  **ZROBIONE:** ✅ Metoda extract_rating()
+  **PLIKI:** analyzers/review_analyzer.py linie 113-150
+  **FORMATY:** X/5, X/10, ★★★★, "4 gwiazdki", "ocena: 4"
+  **NORMALIZACJA:** Automatyczna konwersja skali 1-10 na 1-5
+  **WZORCE:** 5 różnych wzorców regex
+  **WYNIK:** Float w skali 1-5 lub None
+
+- Identyfikacja najczęściej wspominanych aspektów trasy (widoki, trudność, oznakowanie)
+  **ZROBIONE:** ✅ Metoda extract_aspects()
+  **PLIKI:** analyzers/review_analyzer.py linie 184-214
+  **KATEGORIE:** 8 aspektów (widoki, trudność, oznakowanie, dojazd, czas, pogoda, tłumy, bezpieczeństwo)
+  **SŁOWNIKI:** Każda kategoria ma 3-4 słowa kluczowe
+  **WYNIK:** Lista unikalnych aspektów znalezionych w tekście
+  **ALGORYTM:** Przeszukiwanie tekstu dla każdej kategorii słów kluczowych
+
+- Wydobywanie dat i sezonowości z opinii użytkowników
+  **ZROBIONE:** ✅ Metody extract_date() i extract_season()
+  **PLIKI:** analyzers/review_analyzer.py linie 150-184, 214-236
+  **FORMATY DAT:** DD-MM-YYYY, YYYY-MM-DD, "byłem 01.02.2024", "maj 2024"
+  **SEZONY:** wiosna, lato, jesień, zima + miesiące
+  **NORMALIZACJA:** Daty w formacie YYYY-MM-DD
+  **MAPOWANIE:** Polskie nazwy miesięcy na numery
+
+**AGREGACJA:** Metoda analyze_reviews() tworzy zbiorczy raport:
+- total_reviews, average_rating, sentiment_distribution, common_aspects, seasonal_preferences, rating_distribution
+
+2.2. Moduł przetwarzania dokumentów HTML
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE**
+**POWÓD:** Nie było wymagane w aktualnej implementacji, skupiono się na API i analizie tekstu
+
+Klasa HTMLRouteExtractor
+**PLANOWANE FUNKCJE:**
+- Parsowanie stron internetowych z opisami tras turystycznych
+- Ekstrakcja strukturalnych informacji o trasach (tabele z parametrami, listy atrakcji)
+
+Klasa WebDataCollector
+**PLANOWANE FUNKCJE:**
+- Automatyczne pobieranie danych o trasach z popularnych portali turystycznych
+- Obsługa różnych struktur HTML i formatów danych
+- Integracja z API serwisów pogodowych i turystycznych
+- Mechanizm cache'owania pobranych danych
+
+**ALTERNATYWA:** Zaimplementowano API-based approach:
+- api/trails_api.py - pobieranie z Overpass API (OpenStreetMap)
+- api/weather_api.py - pobieranie z Open-Meteo API
+- Cache w plikach JSON zamiast HTML parsing
+
+2.3. Moduł generowania raportów PDF
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE**
+**POWÓD:** Nie było wymagane w aktualnej implementacji, system generuje raporty tekstowe/JSON/CSV
+
+Klasa PDFReportGenerator
+**PLANOWANE FUNKCJE:**
+- Tworzenie wielostronicowych raportów z rekomendacjami tras
+- Generowanie tabel porównawczych z parametrami tras
+- Dodawanie nagłówków, stopek i numeracji stron
+
+Klasa ChartGenerator
+**PLANOWANE FUNKCJE:**
+- Tworzenie wykresów słupkowych porównujących parametry tras
+- Generowanie wykresów kołowych z rozkładem kategorii tras
+- Wykresy liniowe pokazujące profile wysokościowe
+- Mapy ciepła z popularnością tras w różnych miesiącach
+- Wykresy radarowe oceniające trasy pod względem różnych kryteriów
+
+**ALTERNATYWA:** Zaimplementowano raporty tekstowe:
+- reporters/ - moduły generowania raportów w formatach TXT, JSON, CSV
+- main.py - funkcje generate_report_*() dla różnych formatów
+
+3. Szczegółowe wymagania implementacyjne
+3.1. Wymagane wzorce wyrażeń regularnych
+
+**STATUS: ✅ WSZYSTKIE ZAIMPLEMENTOWANE**
+
+System powinien obsługiwać następujące wzorce:
+
+- Czas przejścia: r'(\d+(?:\.\d+)?)\s*(?:h|godz|hours?)|(\d+)\s*(?:min|minut)'
+  **ZROBIONE:** ✅ analyzers/text_processor.py linie 82-87
+  **WZORCE:** 5 różnych wzorców pokrywających wszystkie formaty
+  **LOKALIZACJA:** self.patterns['duration']
+
+- Wysokości: r'(\d{3,4})\s*m\s*n\.p\.m\.'
+  **ZROBIONE:** ✅ analyzers/text_processor.py linie 89-93
+  **WZORCE:** 3 wzorce dla wysokości, przewyższeń
+  **LOKALIZACJA:** self.patterns['elevation']
+
+- Współrzędne GPS: r'([NS]?\d{1,2}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)\s*,?\s*([EW]?\d{1,3}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)'
+  **ZROBIONE:** ✅ analyzers/text_processor.py linie 95-99
+  **WZORCE:** 3 wzorce dla różnych formatów GPS
+  **LOKALIZACJA:** self.patterns['coordinates']
+
+- Oceny: r'(\d(?:\.\d)?)/5|(\d{1,2})/10|★{1,5}'
+  **ZROBIONE:** ✅ analyzers/review_analyzer.py linie 58-64
+  **WZORCE:** 5 wzorców dla różnych formatów ocen
+  **LOKALIZACJA:** self.patterns['ratings']
+
+- Daty: r'(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})'
+  **ZROBIONE:** ✅ analyzers/review_analyzer.py linie 66-71
+  **WZORCE:** 4 wzorce dla różnych formatów dat
+  **LOKALIZACJA:** self.patterns['dates']
+
+3.2. Struktura dokumentów HTML do przetwarzania
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE**
+**POWÓD:** Zastąpione przez API-based approach
+
+System powinien rozpoznawać:
+- Tabele z parametrami tras (<table class="route-params">)
+- Sekcje z opisami (<div class="route-description">)
+- Galerie zdjęć (<div class="gallery">)
+- Mapy interaktywne (<div id="map">)
+- Recenzje użytkowników (<div class="user-review">)
+
+**ALTERNATYWA:** Dane pobierane z:
+- Overpass API (OpenStreetMap) - strukturalne dane o trasach
+- Open-Meteo API - dane pogodowe
+- Lokalne pliki JSON - cache danych
+
+3.3. Elementy raportów PDF
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE (PDF)**
+**STATUS: ✅ ZAIMPLEMENTOWANE (RAPORTY TEKSTOWE)**
+
+Każdy raport powinien zawierać:
+
+- Stronę tytułową z datą generowania i parametrami wyszukiwania
+  **ALTERNATYWA:** ✅ Nagłówki w raportach tekstowych z timestampem
+  **PLIKI:** reporters/ - wszystkie moduły dodają nagłówki z datą
+
+- Spis treści z linkami do sekcji
+  **ALTERNATYWA:** ✅ Strukturalne sekcje w raportach tekstowych
+  **FORMAT:** Wyraźne separatory i nagłówki sekcji
+
+- Podsumowanie wykonawcze z najważniejszymi wnioskami
+  **ALTERNATYWA:** ✅ Sekcja "PODSUMOWANIE" w każdym raporcie
+  **ZAWARTOŚĆ:** Liczba tras, średnie oceny, najlepsze rekomendacje
+
+- Szczegółowe opisy rekomendowanych tras
+  **ALTERNATYWA:** ✅ Pełne opisy tras z wszystkimi parametrami
+  **DANE:** Nazwa, region, długość, trudność, opis, współrzędne
+
+- Wykresy porównawcze:
+  **STATUS:** ❌ Nie zaimplementowane (wykresy graficzne)
+  **ALTERNATYWA:** ✅ Tabele porównawcze i statystyki tekstowe
+  
+  - Histogram długości tras → Tabele z rozkładem długości
+  - Wykres kołowy kategorii tras → Statystyki kategorii w tekście
+  - Wykres słupkowy ocen użytkowników → Tabele z ocenami
+  - Mapa ciepła dostępności tras → Listy tras według regionów
+
+- Tabelę zbiorczą wszystkich analizowanych tras
+  **ZROBIONE:** ✅ Format CSV i tabele tekstowe
+  **PLIKI:** reporters/csv_reporter.py - pełne tabele porównawcze
+  **KOLUMNY:** Wszystkie parametry tras w jednej tabeli
+
+- Aneks z danymi źródłowymi
+  **ZROBIONE:** ✅ Format JSON z pełnymi danymi
+  **PLIKI:** reporters/json_reporter.py - kompletne dane źródłowe
+  **ZAWARTOŚĆ:** Wszystkie dane w formacie strukturalnym
+
+4. Przykładowe dane wejściowe i oczekiwane rezultaty
+4.1. Przykład danych z HTML
+
+**STATUS: ❌ HTML nie obsługiwane**
+**ALTERNATYWA:** ✅ Dane z API w formacie JSON
+
+<div class="route-info">
+    <h2>Szlak na Rysy</h2>
+    <table class="route-params">
+        <tr><td>Długość:</td><td>18.5 km</td></tr>
+        <tr><td>Czas przejścia:</td><td>8-10 godzin</td></tr>
+        <tr><td>Przewyższenie:</td><td>1650 m</td></tr>
+    </table>
+    <div class="user-review">
+        <span class="rating">★★★★★</span>
+        <p>Wspaniałe widoki! Byłem 15.08.2023, pogoda dopisała.</p>
+    </div>
+</div>
+
+**ALTERNATYWNE ŹRÓDŁO:** api/trails_api.py pobiera podobne dane z Overpass API:
+- name, length_km, elevation_gain, difficulty
+- tags, description, coordinates
+- Przetwarzanie przez _parse_distance(), _parse_elevation()
+
+4.2. Przykład analizy tekstu
+
+**STATUS: ✅ PEŁNA IMPLEMENTACJA**
+
+Wejście: "Trasa średnio trudna, czas przejścia około 3h 45min, najlepiej iść wczesnym rankiem. Uwaga na śliskie kamienie po deszczu!"
+
+Wynik ekstrakcji:
+- Trudność: średnia
+  **ZROBIONE:** ✅ extract_difficulty() → "średnia"
+  **PLIK:** analyzers/text_processor.py linia 282-298
+
+- Czas: 225 minut
+  **ZROBIONE:** ✅ extract_duration() → 225 (3*60 + 45)
+  **PLIK:** analyzers/text_processor.py linia 169-202
+
+- Zalecana pora: wczesny ranek
+  **ZROBIONE:** ✅ extract_season_info() → "wczesnym rankiem"
+  **PLIK:** analyzers/text_processor.py linia 298-314
+
+- Ostrzeżenia: śliskie kamienie po deszczu
+  **ZROBIONE:** ✅ extract_warnings() → ["śliskie kamienie po deszczu"]
+  **PLIK:** analyzers/text_processor.py linia 264-282
+
+**INTEGRACJA:** process_trail_description() łączy wszystkie wyniki w ExtractedTrailInfo
+
+4.3. Struktura generowanego raportu PDF
+
+**STATUS: ❌ PDF nie zaimplementowane**
+**ALTERNATYWA:** ✅ Raporty tekstowe/JSON/CSV
+
+- Strona tytułowa: "Raport Rekomendacji Tras Turystycznych - Sierpień 2024"
+  **ALTERNATYWA:** ✅ Nagłówki raportów z datą generowania
+  **PLIKI:** reporters/ - wszystkie moduły
+
+- Podsumowanie: Analiza 25 tras, 8 rekomendowanych, średni komfort pogodowy 82%
+  **ALTERNATYWA:** ✅ Sekcje podsumowujące w raportach tekstowych
+  **DANE:** Liczba tras, statystyki, najlepsze rekomendacje
+
+- Wykres słupkowy: Rozkład długości analizowanych tras
+  **ALTERNATYWA:** ✅ Tabele z rozkładem długości
+  **FORMAT:** Tekstowe histogramy i statystyki
+
+- Top 3 rekomendacje z mapami i profilem wysokościowym
+  **ALTERNATYWA:** ✅ Lista top rekomendacji z pełnymi danymi
+  **ZAWARTOŚĆ:** Współrzędne, wysokości, opisy tras
+
+- Analiza sezonowości: Najlepsze miesiące dla każdej trasy
+  **ALTERNATYWA:** ✅ Analiza pogodowa w raportach
+  **DANE:** Dane pogodowe z api/weather_api.py
+
+- Tabela porównawcza: Wszystkie parametry w jednym miejscu
+  **ZROBIONE:** ✅ Format CSV z pełną tabelą porównawczą
+  **PLIK:** reporters/csv_reporter.py
+  **KOLUMNY:** Wszystkie parametry tras w jednej tabeli
+
+**PODSUMOWANIE IMPLEMENTACJI:**
+✅ ZAIMPLEMENTOWANE: Analiza tekstu, wyrażenia regularne, API, raporty tekstowe
+❌ NIE ZAIMPLEMENTOWANE: HTML parsing, PDF, wykresy graficzne
+🔄 ALTERNATYWY: API zamiast HTML, raporty tekstowe zamiast PDF

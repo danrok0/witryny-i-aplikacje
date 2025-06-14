@@ -1,0 +1,260 @@
+# TŁUMACZENIE KODU I DOKUMENTACJA PROJEKTU
+# System Rekomendacji Tras Turystycznych
+
+## SPIS TREŚCI
+1. Tłumaczenie kodu
+2. Połączenia między plikami
+3. Funkcje użytkowe
+4. Implementacja etapów 3 i 4
+5. Programowanie obiektowe
+6. Dodatkowe informacje
+
+# =============================================================================
+# 1. TŁUMACZENIE KODU
+# =============================================================================
+
+## main.py - Główny plik aplikacji
+
+```python
+def display_main_menu():
+    """
+    Wyświetla główne menu systemu.
+    - Pokazuje 8 opcji do wyboru
+    - Używa emoji dla lepszej czytelności
+    - Formatuje tekst w ramce
+    """
+```
+
+Tłumaczenie każdej linii:
+1. Importy na początku:
+   - os: operacje na systemie plików
+   - sys: operacje systemowe
+   - json: obsługa formatu JSON
+   - datetime: operacje na datach
+
+2. Konfiguracja ścieżek:
+   ```python
+   project_root = os.path.dirname(os.path.abspath(__file__))
+   ```
+   - Pobiera ścieżkę do katalogu głównego projektu
+   - Dodaje ją do ścieżki Pythona dla importów
+
+3. Menu główne:
+   ```python
+   print("1. 🚶 Standardowe rekomendacje tras")
+   ```
+   - Wyświetla opcję menu
+   - Używa emoji dla lepszej czytelności
+
+## analyzers/text_processor.py - Przetwarzanie tekstu
+
+```python
+class TextProcessor:
+    """
+    Przetwarza opisy tras używając wyrażeń regularnych.
+    - Wydobywa czasy przejścia
+    - Identyfikuje punkty charakterystyczne
+    - Rozpoznaje ostrzeżenia
+    """
+```
+
+Tłumaczenie głównych metod:
+1. extract_duration():
+   - Znajduje czas przejścia w tekście
+   - Konwertuje różne formaty na minuty
+   - Obsługuje "2h 30min", "150 minut", itp.
+
+2. extract_landmarks():
+   - Znajduje punkty charakterystyczne
+   - Rozpoznaje schroniska, szczyty, przełęcze
+   - Zwraca listę znalezionych punktów
+
+[... kontynuacja tłumaczenia dla każdego pliku ...]
+
+# =============================================================================
+# 2. POŁĄCZENIA MIĘDZY PLIKAMI
+# =============================================================================
+
+## Główna struktura zależności:
+
+```
+main.py
+  ├── database/
+  │   ├── database_manager.py  # Zarządzanie bazą
+  │   └── repositories/        # Dostęp do danych
+  ├── analyzers/
+  │   ├── text_processor.py    # Analiza tekstu
+  │   └── review_analyzer.py   # Analiza recenzji
+  ├── extractors/
+  │   ├── html_extractor.py    # Pobieranie danych
+  │   └── web_collector.py     # Scraping
+  └── reporters/
+      ├── pdf_generator.py     # Generowanie PDF
+      └── chart_generator.py   # Wykresy
+```
+
+## Przepływ danych:
+
+1. Pobieranie danych:
+   ```
+   html_extractor.py -> text_processor.py -> database_manager.py
+   ```
+   - Pobiera dane ze stron WWW
+   - Przetwarza tekst
+   - Zapisuje do bazy
+
+2. Generowanie rekomendacji:
+   ```
+   database_manager.py -> review_analyzer.py -> pdf_generator.py
+   ```
+   - Pobiera dane z bazy
+   - Analizuje recenzje
+   - Generuje raport PDF
+
+[... szczegółowy opis wszystkich połączeń ...]
+
+# =============================================================================
+# 3. FUNKCJE UŻYTKOWE
+# =============================================================================
+
+## Rekomendacje tras:
+
+```python
+def get_trail_recommendations(criteria):
+    """
+    Główna funkcja rekomendacji.
+    
+    Wagi:
+    - Trudność: 30%
+    - Długość: 20%
+    - Pogoda: 20%
+    - Oceny: 20%
+    - Dostępność: 10%
+    """
+```
+
+## Generowanie PDF:
+
+```python
+def generate_pdf_report(trails):
+    """
+    Tworzy raport PDF.
+    
+    Struktura:
+    1. Strona tytułowa
+    2. Spis treści
+    3. Wykresy
+    4. Opisy tras
+    5. Tabela porównawcza
+    """
+```
+
+[... opis wszystkich głównych funkcji użytkowych ...]
+
+# =============================================================================
+# 4. IMPLEMENTACJA ETAPÓW 3 i 4
+# =============================================================================
+
+## ETAP 3 (updatelist.txt):
+
+1. Moduł przetwarzania wyrażeń regularnych ✅
+   - Lokalizacja: analyzers/text_processor.py
+   - Funkcje: extract_duration(), extract_landmarks()
+   - Połączenia: main.py, html_extractor.py
+
+2. Moduł przetwarzania HTML ✅
+   - Lokalizacja: extractors/html_extractor.py
+   - Funkcje: parse_page(), extract_data()
+   - Połączenia: text_processor.py, database_manager.py
+
+[... szczegółowy opis wszystkich punktów z etapów 3 i 4 ...]
+
+# =============================================================================
+# 5. PROGRAMOWANIE OBIEKTOWE
+# =============================================================================
+
+## Klasy i dziedziczenie:
+
+```python
+class BaseRepository:
+    """Klasa bazowa dla repozytoriów"""
+    def __init__(self, db):
+        self.db = db
+
+class RouteRepository(BaseRepository):
+    """Repozytorium tras - dziedziczy po BaseRepository"""
+    def find_by_region(self, region):
+        return self.db.query("SELECT * FROM routes WHERE region = ?", region)
+```
+
+## Enkapsulacja:
+
+```python
+class DatabaseManager:
+    """
+    Przykład enkapsulacji - ukrywanie szczegółów implementacji
+    """
+    def __init__(self):
+        self._connection = None  # Pole prywatne
+        
+    def execute_query(self, query):  # Metoda publiczna
+        with self._get_connection() as conn:  # Metoda prywatna
+            return conn.execute(query)
+```
+
+[... szczegółowe wyjaśnienie konceptów OOP z przykładami ...]
+
+# =============================================================================
+# 6. DODATKOWE INFORMACJE
+# =============================================================================
+
+## Wzorce projektowe użyte w projekcie:
+
+1. Singleton (database_manager.py):
+   ```python
+   class DatabaseManager:
+       _instance = None
+       
+       def __new__(cls):
+           if cls._instance is None:
+               cls._instance = super().__new__(cls)
+           return cls._instance
+   ```
+
+2. Factory (extractors/factory.py):
+   ```python
+   class ExtractorFactory:
+       @staticmethod
+       def create_extractor(type):
+           if type == "html":
+               return HTMLExtractor()
+           elif type == "json":
+               return JSONExtractor()
+   ```
+
+## Dobre praktyki:
+
+1. Dokumentacja:
+   ```python
+   def process_trail(trail: Dict) -> Dict:
+       """
+       Przetwarza dane trasy.
+       
+       Args:
+           trail: Słownik z danymi trasy
+           
+       Returns:
+           Przetworzone dane trasy
+       """
+   ```
+
+2. Obsługa błędów:
+   ```python
+   try:
+       data = process_trail(trail)
+   except TrailProcessingError as e:
+       logger.error(f"Błąd przetwarzania trasy: {e}")
+       return None
+   ```
+
+[... więcej dobrych praktyk i przykładów ...] 

@@ -1,0 +1,357 @@
+{
+    "metadata": {
+        "date": "2025-05-31",
+        "generated_at": "2025-05-31T04:45:31.269104"
+    },
+    "cities": {
+        "Wrocław": {
+            "weather": {
+                "temperature_max": 26.1,
+                "temperature_min": 16.2,
+                "temperature_avg": 21.15,
+                "precipitation": 6.2,
+                "sunshine_hours": 9.933530555555555,
+                "cloud_cover": 77,
+                "wind_speed": 18.6
+            },
+            "trails": [
+                {
+                    "id": "7128968",
+                    "name": "Trzciana",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 9.3,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [],
+                    "category": "sportowa",
+                    "estimated_time": 2.33,
+                    "comfort_index": 33.8,
+                    "weighted_score": 85.0
+                },
+                {
+                    "id": "18747665",
+                    "name": "Ścieżka historyczno-przyrodnicza wokół Maślic",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 7.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "historical",
+                    "tags": [
+                        "educational",
+                        "historic",
+                        "roundtrip"
+                    ],
+                    "category": "sportowa",
+                    "estimated_time": 1.75,
+                    "comfort_index": 33.8,
+                    "weighted_score": 85.0
+                },
+                {
+                    "id": "11008511",
+                    "name": "Grabiszynka",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 2.01,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [],
+                    "category": "rodzinna",
+                    "estimated_time": 0.5,
+                    "comfort_index": 33.8,
+                    "weighted_score": 69.02
+                },
+                {
+                    "id": "127211801",
+                    "name": "Śluza Rędzin II",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 0.226,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "rodzinna",
+                    "estimated_time": 0.06,
+                    "comfort_index": 33.8,
+                    "weighted_score": 65.45
+                },
+                {
+                    "id": "127211797",
+                    "name": "Śluza Rędzin I",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 0.203,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "rodzinna",
+                    "estimated_time": 0.05,
+                    "comfort_index": 33.8,
+                    "weighted_score": 65.4
+                },
+                {
+                    "id": "127209497",
+                    "name": "Śluza Różanka",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 0.193,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "rodzinna",
+                    "estimated_time": 0.05,
+                    "comfort_index": 33.8,
+                    "weighted_score": 65.38
+                },
+                {
+                    "id": "127208699",
+                    "name": "Śluza Bartoszowice",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 0.18769999999999998,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "rodzinna",
+                    "estimated_time": 0.05,
+                    "comfort_index": 33.8,
+                    "weighted_score": 65.37
+                },
+                {
+                    "id": "127336873",
+                    "name": "Śluza Zacisze",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 0.187,
+                    "elevation_m": 0.0,
+                    "difficulty": 1,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "rodzinna",
+                    "estimated_time": 0.05,
+                    "comfort_index": 33.8,
+                    "weighted_score": 65.37
+                },
+                {
+                    "id": "5742239",
+                    "name": "Topór",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 18.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 2,
+                    "terrain_type": "riverside",
+                    "tags": [],
+                    "category": "ekstremalna",
+                    "estimated_time": 5.14,
+                    "comfort_index": 33.8,
+                    "weighted_score": 59.0
+                },
+                {
+                    "id": "49947176",
+                    "name": "Śluza Opatowice",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 74.6,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 24.87,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "127207811",
+                    "name": "śluza Szczytniki",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 55.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "boat",
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 18.33,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "127209490",
+                    "name": "Śluza Miejska",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 55.8,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 18.6,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "127212601",
+                    "name": "Śluza Mieszczańska",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 42.8,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "boat",
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 14.27,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "127351893",
+                    "name": "Śluza Piaskowa",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 39.1,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "boat",
+                        "lock",
+                        "oneway"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 13.03,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "987120792",
+                    "name": "Śluza Mieszczańska",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 42.8,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "boat",
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 14.27,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "987120793",
+                    "name": "Śluza Mieszczańska",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 42.8,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [
+                        "boat",
+                        "lock"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 14.27,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "5333057",
+                    "name": "Wrocław Muchobór Wielki - Sobótka, PKP",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 35.6,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "mixed",
+                    "tags": [],
+                    "category": "ekstremalna",
+                    "estimated_time": 11.87,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "6467330",
+                    "name": "Uraz - Kąty Wrocławskie",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 219.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "mixed",
+                    "tags": [],
+                    "category": "ekstremalna",
+                    "estimated_time": 73.0,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "7501880",
+                    "name": "Ślęza",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 84.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "riverside",
+                    "tags": [],
+                    "category": "ekstremalna",
+                    "estimated_time": 28.0,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                },
+                {
+                    "id": "12592231",
+                    "name": "Via Regia",
+                    "region": "Wrocław",
+                    "coordinates": null,
+                    "length_km": 61.0,
+                    "elevation_m": 0.0,
+                    "difficulty": 3,
+                    "terrain_type": "mixed",
+                    "tags": [
+                        "pilgrimage"
+                    ],
+                    "category": "ekstremalna",
+                    "estimated_time": 20.33,
+                    "comfort_index": 33.8,
+                    "weighted_score": 25.0
+                }
+            ]
+        }
+    }
+}

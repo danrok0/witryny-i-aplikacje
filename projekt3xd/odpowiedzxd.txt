@@ -1,0 +1,133 @@
+# Wyjaśnienie składni Python: difficulty: Optional[int] = None, @dataclass, @staticmethod, @method
+
+1. difficulty: Optional[int] = None
+--------------------------------------------------
+Oznacza, że pole 'difficulty' może być liczbą całkowitą (int) lub None (brak wartości).
+- 'Optional[int]' to podpowiedź typu (type hint) z typing, czyli: int LUB None.
+- '= None' ustawia domyślną wartość na None.
+Przykład:
+    difficulty = 2      # OK
+    difficulty = None   # OK
+    difficulty = 3.5    # BŁĄD (to float, nie int)
+
+2. @dataclass
+--------------------------------------------------
+Dekorator z biblioteki 'dataclasses', który automatycznie generuje metody __init__, __repr__, __eq__ itd. dla klasy.
+Ułatwia tworzenie klas do przechowywania danych.
+Przykład:
+    @dataclass
+    class Example:
+        x: int
+        y: str = "abc"
+    # Tworzenie obiektu: obj = Example(5)
+
+3. @staticmethod
+--------------------------------------------------
+Dekorator, który oznacza metodę jako statyczną:
+- Nie ma dostępu do self (obiektu) ani cls (klasy)
+- Można ją wywołać bez tworzenia obiektu
+Przykład:
+    class Math:
+        @staticmethod
+        def add(a, b):
+            return a + b
+    Math.add(2, 3)  # = 5
+
+4. @method
+--------------------------------------------------
+W Pythonie NIE MA dekoratora @method!
+Najczęściej spotykane dekoratory dla metod w klasie to:
+- @staticmethod   # metoda statyczna (patrz wyżej)
+- @classmethod    # metoda klasowa (pierwszy argument to cls)
+- @property       # pozwala używać metody jak atrybutu
+
+Przykład @classmethod:
+    class Example:
+        @classmethod
+        def create_default(cls):
+            return cls(0)
+
+Przykład @property:
+    class Circle:
+        def __init__(self, r):
+            self.r = r
+        @property
+        def area(self):
+            return 3.14 * self.r ** 2
+    c = Circle(2)
+    print(c.area)  # = 12.56
+
+Podsumowanie:
+--------------------------------------------------
+- Optional[int] = None: pole może być int lub None
+- @dataclass: automatyczne generowanie metod dla klasy danych
+- @staticmethod: metoda w klasie, która nie korzysta z self/cls
+- @method: NIE ISTNIEJE w Pythonie, są za to @staticmethod, @classmethod, @property
+
+# Wyjaśnienie składni Python: difficulty: Optional[int] = None, @dataclass, @staticmethod, @method 
+
+==================================================================================================================
+
+# Jak system pobiera informacje o punktach charakterystycznych w pobliżu tras (schroniska, szczyty, itp.)?
+
+5. System identyfikacji punktów charakterystycznych
+--------------------------------------------------
+System automatycznie wykrywa punkty charakterystyczne w pobliżu tras używając klasy TextProcessor 
+z modułu analyzers/text_processor.py. Proces działa w następujący sposób:
+
+MECHANIZM DZIAŁANIA:
+1. Analiza opisów tras za pomocą wyrażeń regularnych (regex)
+2. Identyfikacja różnych typów punktów charakterystycznych
+3. Przechowywanie w strukturze danych ExtractedTrailInfo
+4. Integracja z danymi trasy i bazą danych
+
+TYPY ROZPOZNAWANYCH PUNKTÓW:
+- Schroniska: regex pattern (schronisko\s+\w+)
+- Szczyty: regex pattern (szczyt\s+\w+)  
+- Przełęcze: regex pattern (przełęcz\s+\w+)
+- Doliny: regex pattern (dolina\s+\w+)
+- Jeziora: regex pattern (jezioro\s+\w+)
+- Wodospady: regex pattern (wodospad\s+\w+)
+- Punkty widokowe: regex pattern (punkt\s+widokowy)
+
+PRZYKŁADY UŻYCIA:
+```python
+processor = TextProcessor()
+landmarks = processor.extract_landmarks("Przejście przez schronisko Morskie Oko")
+# Zwróci: ["schronisko Morskie Oko"]
+
+landmarks = processor.extract_landmarks("Szczyt Rysy oferuje wspaniałe widoki")
+# Zwróci: ["szczyt Rysy"]
+
+landmarks = processor.extract_landmarks("Przełęcz Zawrat jest punktem widokowym")
+# Zwróci: ["przełęcz Zawrat", "punkt widokowy"]
+```
+
+STRUKTURA DANYCH:
+```python
+@dataclass
+class ExtractedTrailInfo:
+    duration_minutes: Optional[int] = None      # Czas przejścia
+    elevation_gain: Optional[int] = None        # Przewyższenie
+    landmarks: List[str] = None                 # Punkty charakterystyczne
+    warnings: List[str] = None                  # Ostrzeżenia
+    coordinates: Optional[Tuple[str, str]] = None # Współrzędne GPS
+    difficulty_level: Optional[str] = None      # Poziom trudności
+    recommended_season: Optional[str] = None    # Zalecana pora roku
+```
+
+INTEGRACJA Z SYSTEMEM:
+- Metoda extract_landmarks(text) analizuje tekst opisu trasy
+- Zwraca listę unikalnych punktów (bez duplikatów)
+- Punkty są wyświetlane w interfejsie: "🏛️ Punkty charakterystyczne: schronisko Morskie Oko, szczyt Rysy"
+- Dane są przechowywane w bazie danych i powiązane z trasami
+- Metoda enhance_trail_data() rozszerza dane trasy o wyekstraktowane informacje
+
+OBSŁUGA BŁĘDÓW:
+- System loguje informacje o przetwarzaniu
+- Obsługuje przypadki braku punktów charakterystycznych
+- Zachowuje spójność danych nawet przy błędach przetwarzania
+- Dodaje znacznik czasu przetwarzania
+
+Ten system pozwala na automatyczne wzbogacanie informacji o trasach bez konieczności 
+ręcznego wprowadzania danych o punktach charakterystycznych. 

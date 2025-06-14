@@ -1,0 +1,5367 @@
+=== Rekomendacje szlaków na dzień 2025-06-14 ===
+Data wygenerowania: 2025-06-14 03:56:52
+
+=== Warszawa ===
+
+Dane pogodowe:
+Temperatura: 12.4°C - 23.7°C
+Średnia temperatura: 18.05°C
+Opady: 0.0 mm
+Zachmurzenie: 19%
+Godziny słoneczne: 11.467227777777778 h
+Prędkość wiatru: 10.8 km/h
+
+
+Znaleziono 535 tras:
+
+1. Ogród Krasińskich
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+2. Skwer pułkownika Antoniego Władysława Żurowskiego
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+3. Wybieg dla goryli
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+4. Nahur chiński
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+5. Park Enklawa
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+6. Wybieg dla hipopotamów
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+7. Skwer Anki Kowalskiej
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+8. Irbis śnieżny
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+9. Skwer 16 Września 1944 r.
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+10. Tr6-39
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.25/100
+   Szacowany czas przejścia: 1h 13min
+
+11. Park Obwodu Praga AK
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.0/100
+   Szacowany czas przejścia: 1h 11min
+
+12. Park Stefana Wiecheckiego „Wiecha”
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.0/100
+   Szacowany czas przejścia: 1h 11min
+
+13. Ptaki wodne
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.0/100
+   Szacowany czas przejścia: 1h 11min
+
+14. SM41-190
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 75.0/100
+   Szacowany czas przejścia: 1h 11min
+
+15. Park Józefa Polińskiego
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+16. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 13min
+
+17. Wikunia
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+18. Park Olszyna
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+19. OSIR Włochy
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+20. Rezerwat Łęgi Czarnej Strugi
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+21. Bociani Zakątek
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+22. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 13min
+
+23. Pałacyk w Morysinie
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+24. Skwer 30. Pułku Strzelców Kaniowskich
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+25. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 13min
+
+26. Ogród społecznościowy - Fort Bema
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+27. Park linearny "Suwak"
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+28. Replika samochodu pancernego "Kubuś"
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+29. Rośliny Pienin
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.75/100
+   Szacowany czas przejścia: 1h 10min
+
+30. Park przy Lesie Bielańskim
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+31. Ogród Botaniczny PAN
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+32. Makak czubaty
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+33. Plaża Miejska przy Moście Północnym
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+34. Skwer Ekologiczny
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+35. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 11min
+
+36. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 11min
+
+37. Park im. Marszałka Edwarda Rydza-Śmigłego
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.5/100
+   Szacowany czas przejścia: 1h 8min
+
+38. Skwer Kapitana Stanisława Skibniewskiego "Cubryny"
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+39. Fort Piłsudskiego
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 13min
+
+40. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+41. Markur turkmeński
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+42. Rów Wolicki
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+43. Pałac Sierakowskiego
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 13min
+
+44. Arkadia
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+45. Wieża Zegarowa
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+46. Skwer Psa Fafika
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+47. Latoszka
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+48. Poniatówka
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+49. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+50. Stara Wisła
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+51. Rów Jeziorki
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+52. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+53. Pm3
+   Miasto: Warszawa
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 13min
+
+54. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+55. ST44-001
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+56. Wodny Park Warszawianka
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+57. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+58. Drna
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 10min
+
+59. Pole Mokotowskie
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+60. Rezerwat Park Natoliński - Latoszki
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.25/100
+   Szacowany czas przejścia: 1h 7min
+
+61. Skwer Antoniego Słonimskiego
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+62. Pałac Czapskich
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 11min
+
+63. Skwer Batalionu AK "Zaremba-Piorun"
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+64. Przepompownia ścieków "Służewiec"
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+65. Żubr
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+66. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 8min
+
+67. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 8min
+
+68. Ty2
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 11min
+
+69. Okl27
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 11min
+
+70. TS-11 "Iskra"
+   Miasto: Warszawa
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 11min
+
+71. Tężnia solankowa
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+72. TKZ211
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 74.0/100
+   Szacowany czas przejścia: 1h 6min
+
+73. Nowa Ulga
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 7min
+
+74. Skwer Gwary Warszawskiej
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+75. Rezerwat Bagno Jacka
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+76. Jordanek
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+77. Mur Getta Warszawskiego
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+78. Wilanówka
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 7min
+
+79. Jan Kiliński
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 10min
+
+80. Polanka
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+81. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 7min
+
+82. Dawny stadion RKS "Sarmata"
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 4min
+
+83. 27D24
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 10min
+
+84. 30D43
+   Miasto: Warszawa
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.75/100
+   Szacowany czas przejścia: 1h 10min
+
+85. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 6min
+
+86. Skwer płk. dr Strehla
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 3min
+
+87. Mauzoleum Żydów Bojowników o Niepodległość Polski
+   Miasto: Warszawa
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 8min
+
+88. Pałacyk Rembielińskiego
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 7min
+
+89. Mrówkojad wielki
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 1min
+
+90. Fort P Twierdzy Warszawa "Bema"
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 7min
+
+91. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 4min
+
+92. Park Harcerskiej Poczty Polowej Powstania Warszawskiego
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 1min
+
+93. Fort M Twierdzy Warszawa "Mokotów"
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 7min
+
+94. Electio Viritim
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 7min
+
+95. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 4min
+
+96. MIG-21 PF
+   Miasto: Warszawa
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 7min
+
+97. Tamaryna czerwonobrzucha
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 1min
+
+98. OKa1-1
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 1min
+
+99. Ścieżka przyrodnicza "Z biegiem Wisły"
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 1min
+
+100. Latoszka
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.25/100
+   Szacowany czas przejścia: 1h 4min
+
+101. Ogrody Ulrychów
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 6min
+
+102. Koneser
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+103. Latoszka
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 3min
+
+104. Multimedialny Park Fontann
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+105. Powsinek - użytek 622
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+106. Fort I Twierdzy Warszawa "Bielany"
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 6min
+
+107. Park Rozkosz
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+108. 32D43
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 6min
+
+109. Dwuosiowy wagon kryty budowy węgierskiej
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 6min
+
+110. Park kieszonkowy
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+111. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 3min
+
+112. Zamek Ujazdowski
+   Miasto: Warszawa
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 6min
+
+113. Warszawska Droga św. Jakuba
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h
+
+114. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 73.0/100
+   Szacowany czas przejścia: 1h 3min
+
+115. Ogrody Zamkowe
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+116. Pomnik Powstańców Warszawy
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 1h 4min
+
+117. Park Olkówek
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+118. Skwer Stanisława Wisłockiego
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+119. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 1h 1min
+
+120. Strefa zabaw Zielone Zacisze
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+121. Os24
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 1h 4min
+
+122. Wagon artyleryjski
+   Miasto: Warszawa
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 1h 4min
+
+123. Tkt48-36
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+124. Rezerwat Olszynka Grochowska
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+125. Rośliny Tatr
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.75/100
+   Szacowany czas przejścia: 58min
+
+126. Skwer Tadeusza Kahla
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+127. Sadek Natoliński
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+128. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h
+
+129. Park Bródnowski
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+130. Łazienki Królewskie
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+131. Szkolny Park Sportowy imienia Janusza Kusocińskiego
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+132. Pływalnia Polonez
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+133. Skwer Franciszka Pieniaka
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+134. Polana rekreacyjna
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+135. Rudawka
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h
+
+136. Odkryta pływalnia OSiR Ochota
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+137. Pomnik Ofiar Tragedii Smoleńskiej
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h 3min
+
+138. Plac Pod Skrzydłami
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+139. Fort IX Twierdzy Warszawa "Czerniaków"
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h 3min
+
+140. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h
+
+141. Ogród Tarasowy
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 57min
+
+142. Ofiarom Rzezi Pragi
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h 3min
+
+143. Rów Wolicki
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h
+
+144. 24Z
+   Miasto: Warszawa
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.5/100
+   Szacowany czas przejścia: 1h 3min
+
+145. Park Mirowski
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 1h 1min
+
+146. Hałda
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+147. Baseny Kora
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+148. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 58min
+
+149. Fort VIII Twierdzy Warszawa "Służew"
+   Miasto: Warszawa
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 1h 1min
+
+150. Park nad Jeziorem Zgorzała
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+151. Skwer Prymasowski
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+152. Kanał Zaciszański
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 58min
+
+153. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 58min
+
+154. Goral chiński
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+155. SM15-17
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+156. Rośliny wydm i solnisk
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 55min
+
+157. Nowa Ulga
+   Miasto: Warszawa
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.25/100
+   Szacowany czas przejścia: 58min
+
+158. Park Szczęśliwicki
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+159. Skwer Michała i Marii Radziwiłłów
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+160. Sajmiri
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+161. Skwer Jerzego Jarnuszkiewicza
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+162. Skwer Batalionu AK „Miłosz”
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+163. Park Moczydełko
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+164. Plac Opolski
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+165. Pomnik gen. Emila Fieldorfa "Nila"
+   Miasto: Warszawa
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+166. Baseny Błękit
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+167. Park Ogrody Mehoffera
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+168. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 57min
+
+169. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 57min
+
+170. Skwer Janusza Głowackiego
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+171. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 57min
+
+172. Skwer Hanki Bielickiej
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+173. Ty43-17
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+174. Wrzosowisko
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 54min
+
+175. Kanał Zaciszański
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 57min
+
+176. Skwer gen. Jana Jura-Gorzechowskiego
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 52min
+
+177. Lew afrykański
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 52min
+
+178. Park Henrykowski
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 52min
+
+179. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 55min
+
+180. Ścieżka biegowa "Las Sobieskiego"
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 52min
+
+181. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.75/100
+   Szacowany czas przejścia: 55min
+
+182. Park Józefa Sowińskiego
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 51min
+
+183. Koń Przewalskiego
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 51min
+
+184. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 54min
+
+185. Skwer Jolanty Brzeskiej
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 51min
+
+186. Ogród Społeczny
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 51min
+
+187. Ol49
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 57min
+
+188. 27D51
+   Miasto: Warszawa
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 57min
+
+189. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 54min
+
+190. 32D47
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.5/100
+   Szacowany czas przejścia: 51min
+
+191. Park Romana Kozłowskiego
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 49min
+
+192. Pingwiny przylądkowe
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 49min
+
+193. Park Picassa
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 49min
+
+194. Park Powstańców Warszawy
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 49min
+
+195. Rudawka
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 52min
+
+196. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 52min
+
+197. Syrena
+   Miasto: Warszawa
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 55min
+
+198. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 52min
+
+199. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 52min
+
+200. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 52min
+
+201. Ścieżka biegowa "Falenica"
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.25/100
+   Szacowany czas przejścia: 49min
+
+202. Dolina Szwajcarska
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+203. Autonomia
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+204. Skwer Wandy Lurie
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+205. Park im. Cichociemnych Spadochroniarzy AK
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+206. Park Odkrywców
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+207. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 51min
+
+208. Ogród Bylinowy
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+209. Barbakan
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 54min
+
+210. Wybieg dla słoni
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+211. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 51min
+
+212. Dom Kereta
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+213. Herpetarium
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+214. Wesolandia
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+215. 25D201
+   Miasto: Warszawa
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 54min
+
+216. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 51min
+
+217. Park Hassów
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+218. Świętokrzyska Droga św. Jakuba
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+219. Park Zasława Malickiego
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 71.0/100
+   Szacowany czas przejścia: 48min
+
+220. Skwer Wasyla Stusa
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+221. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 49min
+
+222. Ptaki wodne
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+223. Walabia Bennetta
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+224. Takin syczuański
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+225. Antylopy bongo
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+226. Skwer Bazy Lotniczej Armii Krajowej "Łużyce"
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+227. Osiedle Central Garden (budowa wstrzymana)
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+228. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 49min
+
+229. Skwer Andrzeja Woyciechowskiego
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+230. Rów Jeziorki
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 49min
+
+231. Park Polskich Wynalazców
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+232. Skwer Markowska
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 46min
+
+233. Rudawka
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 49min
+
+234. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.75/100
+   Szacowany czas przejścia: 49min
+
+235. Pałac Szustra
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 51min
+
+236. Ptaki
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 45min
+
+237. Plac Zamkowy
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 45min
+
+238. Skwer Małkowskich
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 45min
+
+239. 32D3
+   Miasto: Warszawa
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 51min
+
+240. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 48min
+
+241. Rudawka
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 48min
+
+242. Łącznik Falenicki
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 45min
+
+243. Park Kaskada
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 45min
+
+244. OSiR Żoliborz
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+245. Koczkodan błotny
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+246. Zieleniec przy ul. Koronacyjnej
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+247. Skwer Karoliny Lanckorońskiej
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+248. Eko Park Ursus
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+249. Rów Wolicki
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 46min
+
+250. Fundamenty kuźni
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 49min
+
+251. Park Akcji „Burza”
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 43min
+
+252. Pałac na Wyspie
+   Miasto: Warszawa
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.25/100
+   Szacowany czas przejścia: 49min
+
+253. Wydra europejska
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+254. Lemur katta
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+255. Skwerek Złotówki
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+256. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 45min
+
+257. Park Jazdów
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+258. Stefan Wyszyński
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 48min
+
+259. Dżungla
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+260. Plaża Żoliborska
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+261. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 45min
+
+262. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 45min
+
+263. Rów Jeziorki
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 45min
+
+264. 414S
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 48min
+
+265. Fundamenty wartowni
+   Miasto: Warszawa
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 48min
+
+266. ET21-66
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+267. SM25-02
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 70.0/100
+   Szacowany czas przejścia: 42min
+
+268. Park Wielkopolski
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.75/100
+   Szacowany czas przejścia: 40min
+
+269. Jak
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.75/100
+   Szacowany czas przejścia: 40min
+
+270. Wilanówka
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.75/100
+   Szacowany czas przejścia: 43min
+
+271. Pałac Prezydencki
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.75/100
+   Szacowany czas przejścia: 46min
+
+272. Pałac Kultury i Nauki
+   Miasto: Warszawa
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.75/100
+   Szacowany czas przejścia: 46min
+
+273. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 42min
+
+274. Skwer Radiowej Rodziny Matysiaków
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 39min
+
+275. Pampasowiec grzywiasty
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 39min
+
+276. Kanał Gocławski
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 42min
+
+277. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 42min
+
+278. Pamięci o Marszałku Piłsudskim
+   Miasto: Warszawa
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.5/100
+   Szacowany czas przejścia: 45min
+
+279. Park Dreszera
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+280. Kanał Sobieskiego
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 40min
+
+281. Pałac w Wilanowie
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 43min
+
+282. Skwer Mieczysława Fogga
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+283. Ptaki wodne
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+284. Zebra Hartmanna
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+285. Foka szara
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+286. Park Chomicza
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+287. Cmentarz Żołnierzy Włoskich
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 43min
+
+288. Stawy Kellera
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+289. Syrenka Warszawska
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 43min
+
+290. Park Magiczna
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+291. Psi Park
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+292. Sika wietnamska
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+293. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 40min
+
+294. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 40min
+
+295. Państwomiasto
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+296. Park ze Stawem Koziorożca
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 37min
+
+297. 34D44
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 43min
+
+298. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 40min
+
+299. pl:Ruiny wieży nr 7 Transatlantyckiej Centrali Radiotelegraficznej Bemowo
+   Miasto: Warszawa
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.25/100
+   Szacowany czas przejścia: 43min
+
+300. Kea
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 36min
+
+301. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 39min
+
+302. Park Planeta Ursus
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 36min
+
+303. EU20 - 24
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 36min
+
+304. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 39min
+
+305. Alpaka
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 34min
+
+306. Latoszka
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 37min
+
+307. Skwer „Sierpnia 1944”
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 34min
+
+308. Wielbłąd dwugarbny
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 34min
+
+309. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 37min
+
+310. Tężnia solankowa
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.75/100
+   Szacowany czas przejścia: 34min
+
+311. Park Ujazdowski
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 33min
+
+312. Wisła
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 36min
+
+313. Park przy Bażantarni
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 33min
+
+314. Pałac Potockich
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 39min
+
+315. Skwer Kaliny
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 33min
+
+316. Potok Służewiecki
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 36min
+
+317. TKh
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 39min
+
+318. Dwuosiowy wagon kryty budowy pruskiej
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 39min
+
+319. Dwuosiowy wagon kryty specjalny budowy włoskiej
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 39min
+
+320. 202Lc
+   Miasto: Warszawa
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 39min
+
+321. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 36min
+
+322. Skwer Więźniów Politycznych Stalinizmu
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 33min
+
+323. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 36min
+
+324. Pigmejka karłowata
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 33min
+
+325. Kanał Kamionkowski
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.5/100
+   Szacowany czas przejścia: 36min
+
+326. Kapucynka czubata
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 31min
+
+327. Park Nad Balatonem
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 31min
+
+328. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 34min
+
+329. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 34min
+
+330. Ścieżka spacerowa
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 31min
+
+331. Park Traugutta
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.25/100
+   Szacowany czas przejścia: 31min
+
+332. Kamionkowskie Błonia Elekcyjne
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+333. Kanał Gocławski
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 33min
+
+334. Park im. Edwarda Szymańskiego
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+335. Wybieg dla małp
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+336. Park/Ogród przy Kościele
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+337. Fort Traugutta
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 36min
+
+338. Fort X Twierdzy Warszawa "Augustówka"
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 36min
+
+339. Opuszczona restauracja Baszta
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+340. Tr203
+   Miasto: Warszawa
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 36min
+
+341. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 33min
+
+342. OKi1-28
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+343. Tężnia solankowa
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 30min
+
+344. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 68.0/100
+   Szacowany czas przejścia: 33min
+
+345. Park im. Księcia Janusza
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+346. Park Żołnierzy "Żywiciela"
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+347. Kanał Zaciszański
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+348. Skwer Batalionu AK "Czata 49"
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+349. Park Fosa
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+350. Jeziorko Imielińskie - użytek 623
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+351. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+352. Rów Wolicki
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+353. Rudawka
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+354. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+355. SN52
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 34min
+
+356. Wagon salonowy Ashx
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 34min
+
+357. Dwuosiowy wagon kryty budowy niemieckiej
+   Miasto: Warszawa
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 34min
+
+358. Tkb3-129
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+359. Dawne kino W-Z
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+360. Krajobrazy biocenotyczne
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 28min
+
+361. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.75/100
+   Szacowany czas przejścia: 31min
+
+362. Skwer Alojzego Pawełka
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+363. Park na Książęcem
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 33min
+
+364. Plac Wielkiej Przygody
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+365. Pałac Błękitny
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 33min
+
+366. Skwer Herberta Clarka Hoovera
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+367. Niedźwiedź polarny
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+368. Kanał Żerański
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 30min
+
+369. Plac Miejski
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+370. VIII Ogród Jordanowski
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+371. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 30min
+
+372. Ogród Różana
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+373. Dom Samotnej Matki i Dziecka "Nazaret"
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+374. Pm2
+   Miasto: Warszawa
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 33min
+
+375. Serwal
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 27min
+
+376. Skwer Bohdana Wodiczko
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+377. Park Tadeusza Mazowieckiego
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+378. Synagoga Nożyków
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+379. Gibon Czubaty
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+380. Ptaki wodne
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+381. Plaża Jeziorko Czerniakowskie
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+382. Zieleniec przy ul. Królów Polskich
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+383. Punkt Zagospodarowania Turystycznego
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+384. Skwer Teherański
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+385. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 28min
+
+386. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 28min
+
+387. Pt47-104
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+388. PU29-3
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 25min
+
+389. Potok Bielański
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.25/100
+   Szacowany czas przejścia: 28min
+
+390. Kanał Żerański
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 27min
+
+391. Park Jana Pawła II
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 24min
+
+392. Ogrody Kosmosu
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 24min
+
+393. Sajmirki
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 24min
+
+394. Chwała Saperom
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 30min
+
+395. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 27min
+
+396. Fort V Twierdzy Warszawa "Włochy"
+   Miasto: Warszawa
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 30min
+
+397. Park linearny nad POW
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 67.0/100
+   Szacowany czas przejścia: 24min
+
+398. Skwer Stanisława Broniewskiego "Orszy"
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 22min
+
+399. Lasek Brzozowy
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 22min
+
+400. Kanał Bródnowski
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 25min
+
+401. Kanał Zaciszański
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 25min
+
+402. Dawne koszary fortu Śliwickiego
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+403. Poległym i Pomordowanym na Wschodzie
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+404. Ruiny w Lasku na Kole
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+405. Skwer Straży Obywatelskiej 1939 r.
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 22min
+
+406. Jak-40
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+407. Katastrofa lotu 007
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+408. Oryks szablorogi
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 22min
+
+409. Fort II Twierdzy Warszawa "Wawrzyszew"
+   Miasto: Warszawa
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 28min
+
+410. Wilanówka
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 25min
+
+411. Lipkowska Woda
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.75/100
+   Szacowany czas przejścia: 25min
+
+412. Skwer Kompanii AK "Żniwiarz"
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+413. Park Pułkownika Jana Szypowskiego "Leśnika"
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+414. Nowa Ulga
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+415. Pałac Myślewicki
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+416. Kangur czerwony
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+417. Reduta Bank Polski
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+418. Fundamenty mostku kolejki Jabłonowskiej
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+419. Kolumna Zygmunta
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+420. Skwer Barbary i Stanisława Brukalskich
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+421. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+422. Kanał Wawerski
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+423. Skwer Duśki Trafankowskiej
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+424. Pomnik Męczenników Terroru Komunistycznego 1944–1956
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+425. Altana Chińska
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+426. Pamięci Polaków poległych w II wojnie światowej
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+427. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+428. Fort IV Twierdzy Warszawa "Chrzanów"
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+429. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+430. Żuraw mandżurski
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+431. Akwedukt przy IV Bastionie
+   Miasto: Warszawa
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 27min
+
+432. Plaża Aluzyjna
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+433. Rów Jeziorki
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 24min
+
+434. Skwer Wiesława Michnikowskiego
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+435. Plaża naturystów - dolna plaża
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.5/100
+   Szacowany czas przejścia: 21min
+
+436. Skwer Tarasa Szewczenki
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+437. Ogród BUW (Dolny)
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+438. Małpie wyspy
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+439. Opuszczona budowa osiedla
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+440. Potok Bielański
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 22min
+
+441. Park Stanisława Dygata
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+442. Rezerwat Jeziorko Czerniakowskie
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+443. Kanał Bródnowski Dolny
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 22min
+
+444. Skwer rekreacyjno-wypoczynkowy "KOTWICA"
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+445. Mortui sunt, ut liberi vivamus
+   Miasto: Warszawa
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 25min
+
+446. Amfiteatr Służew
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 19min
+
+447. Kanał Zaciszański
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.25/100
+   Szacowany czas przejścia: 22min
+
+448. Ścieżka biegowa "Lucerny"
+   Miasto: Warszawa
+   Długość: 1.25 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.12/100
+   Szacowany czas przejścia: 18min
+
+449. Kępa Potocka
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+450. Park Marii Skłodowskiej-Curie
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+451. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 21min
+
+452. Kanał Drewnowski
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 21min
+
+453. Flaming chilijski
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+454. Nosorożec indyjski
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+455. Urson amerykański
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+456. Gepard
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+457. Zieleniec Zaczarowanej Dorożki
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+458. Rezerwat Las Natoliński
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+459. Rynek Nowego Miasta
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+460. Park Agrykola
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+461. Skwer Bolesława Dubickiego
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+462. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 21min
+
+463. Wagon cysterna
+   Miasto: Warszawa
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 24min
+
+464. Park Wolności
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 18min
+
+465. Morskie Oko
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+466. Pałac Królikarnia
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 22min
+
+467. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 19min
+
+468. Jak
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+469. Eco Skwerek
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+470. Pomnik Czynu Zbrojnego Polonii Amerykańskiej
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 22min
+
+471. Fort Szczęśliwice
+   Miasto: Warszawa
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 22min
+
+472. Wege Park
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+473. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 19min
+
+474. Tamaryna białoczuba
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+475. EP02 - 02
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+476. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 19min
+
+477. Kampinoski Park Narodowy
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.75/100
+   Szacowany czas przejścia: 16min
+
+478. Kanał Wystawowy
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+479. Nowa Ulga
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+480. Lemur Katta
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 15min
+
+481. Wybieg dla żyraf
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 15min
+
+482. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+483. 34D74-54
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 15min
+
+484. Kanał Czerniakowski
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+485. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+486. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 18min
+
+487. Kolumna Zygmunta
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 21min
+
+488. Rynek Starego Miasta
+   Miasto: Warszawa
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.5/100
+   Szacowany czas przejścia: 21min
+
+489. Ogród Saski
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 19min
+
+490. Kanał Kawęczyński
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+491. Kanał Siekierkowski
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+492. Kanał Gocławski
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+493. Długa
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+494. Pawiany
+   Miasto: Warszawa
+   Długość: 0.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 13min
+
+495. Fort VIIA Twierdzy Warszawa "Służewiec"
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 19min
+
+496. Rów Natoliński
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+497. Kanał Drewnowski
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 16min
+
+498. Panzertriebwagen 16
+   Miasto: Warszawa
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.25/100
+   Szacowany czas przejścia: 19min
+
+499. Wisła
+   Miasto: Warszawa
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.12/100
+   Szacowany czas przejścia: 15min
+
+500. Kanał Sielecki
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 15min
+
+501. Skwer "Starszych Panów"
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 12min
+
+502. Jeleń
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 12min
+
+503. Pomnik Bohaterów Getta
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 18min
+
+504. Park Górczewska
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 12min
+
+505. Kob nilowy
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 12min
+
+506. Ty42
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 18min
+
+507. IS-2
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 18min
+
+508. Centrum Lokalne Kamionek
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 12min
+
+509. Warszawski Południk Zerowy
+   Miasto: Warszawa
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 65.0/100
+   Szacowany czas przejścia: 18min
+
+510. Skwer Grupy AK "Granat"
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+511. Wybieg dla szympansów
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+512. Pałac w Natolinie
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 16min
+
+513. Kościół św. Elżbiety w Powsinie
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+514. Fort VI Twierdzy Warszawa "Okęcie"
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 16min
+
+515. Park Bartłomieja
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+516. Surykatki
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+517. Ogród Społecznościowy „Odnowa”
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 10min
+
+518. Ty51
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 16min
+
+519. Zabytkowy rozkład jazdy
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 16min
+
+520. pl:Ruiny wieży nr 10 Transatlantyckiej Centrali Radiotelegraficznej Bemowo
+   Miasto: Warszawa
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.75/100
+   Szacowany czas przejścia: 16min
+
+521. Park Wilanowski
+   Miasto: Warszawa
+   Długość: 0.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 9min
+
+522. Skwer Oleandrów
+   Miasto: Warszawa
+   Długość: 0.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 9min
+
+523. Skwer Ormiański
+   Miasto: Warszawa
+   Długość: 0.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 9min
+
+524. Park Achera
+   Miasto: Warszawa
+   Długość: 0.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 9min
+
+525. Fort VII Twierdzy Warszawa "Zbarż"
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 15min
+
+526. MiG-29G
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 15min
+
+527. Pomnik Lotników Polskich
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 15min
+
+528. Wagon bagażowo-pocztowy
+   Miasto: Warszawa
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 15min
+
+529. Kondor królewski
+   Miasto: Warszawa
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.25/100
+   Szacowany czas przejścia: 7min
+
+530. Lemur Wari
+   Miasto: Warszawa
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.25/100
+   Szacowany czas przejścia: 7min
+
+531. Ptaki
+   Miasto: Warszawa
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.25/100
+   Szacowany czas przejścia: 7min
+
+532. Park Natoliński
+   Miasto: Warszawa
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.25/100
+   Szacowany czas przejścia: 7min
+
+533. BCi-29
+   Miasto: Warszawa
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 64.0/100
+   Szacowany czas przejścia: 12min
+
+534. TKbb
+   Miasto: Warszawa
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 63.75/100
+   Szacowany czas przejścia: 10min
+
+535. 25D49
+   Miasto: Warszawa
+   Długość: 0.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 94.6/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 6min
+
+==================================================

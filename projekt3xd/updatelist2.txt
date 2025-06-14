@@ -1,0 +1,418 @@
+ to wymagania dotyczące aktualizacji mojego programu. Chcę aby wszystkie rzeczy których uzywam aktualnie zostały, aby po dodaniu zmian doszło kilka nowych rzeczy które są podane poniżej ale żeby funkcje które są obecnie i  z nich korzystam zostały. 
+Uwaga: Jeśli coś już jest z tego już i działa możemy to zostawić.
+
+Etap 4: Integracja z Bazą Danych (Aplikacja Konsolowa)
+
+**STATUS OGÓLNY: ❌ NIE ZAIMPLEMENTOWANE**
+**POWÓD:** Aktualny system używa plików JSON/CSV zamiast bazy danych SQLite
+**ALTERNATYWA:** Zaimplementowano system plików z cache'owaniem w JSON
+
+1. Wprowadzenie
+Czwarty etap projektu "Rekomendator tras turystycznych" skupia się na migracji z obsługi plików CSV/JSON do bazy danych SQLite oraz implementacji podstawowych mechanizmów persystencji danych w ramach aplikacji konsolowej.
+
+2. Cel etapu
+Przekształcenie dotychczasowego systemu opartego na plikach na aplikację z bazą danych oferującą:
+
+- Efektywne przechowywanie danych tras i pogody w SQLite
+  **STATUS:** ❌ Nie zaimplementowane
+  **ALTERNATYWA:** ✅ Pliki JSON w katalogach api/, data/
+  **PLIKI:** trails_data.json, weather_data.json, weather_dataa.json
+  **LOKALIZACJA:** Główny katalog projektu + api/
+
+- Migrację danych z poprzednich formatów CSV/JSON
+  **STATUS:** ❌ Nie zaimplementowane (baza danych)
+  **ALTERNATYWA:** ✅ Bezpośrednie używanie JSON
+  **MECHANIZM:** api/trails_api.py i api/weather_api.py pobierają i zapisują JSON
+  **CACHE:** Automatyczne zapisywanie pobranych danych
+
+- Podstawowe zapytania i filtrowanie
+  **STATUS:** ❌ Nie zaimplementowane (SQL)
+  **ALTERNATYWA:** ✅ Filtrowanie w pamięci
+  **PLIKI:** main.py - funkcje filter_trails_by_*()
+  **METODY:** Filtrowanie po regionie, trudności, długości, pogodzie
+
+- Proste mechanizmy backup'u danych
+  **STATUS:** ❌ Nie zaimplementowane (automatyczne)
+  **ALTERNATYWA:** ✅ Manualne kopie plików JSON
+  **PLIKI:** manage_cache.py - zarządzanie plikami cache
+
+3. Wymagania funkcjonalne
+3.1. Projektowanie schematu bazy danych
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE**
+
+Klasa DatabaseManager
+**PLANOWANE FUNKCJE:**
+- Tworzenie i inicjalizacja bazy danych SQLite
+- Definiowanie struktur tabel
+- Podstawowe operacje CRUD
+- Walidacja spójności danych
+
+**ALTERNATYWA:** ✅ Zarządzanie plikami JSON
+**PLIKI:** 
+- api/trails_api.py - klasa TrailsAPI zarządza danymi tras
+- api/weather_api.py - klasa WeatherAPI zarządza danymi pogodowymi
+- manage_cache.py - narzędzia do zarządzania cache
+
+Klasa MigrationTool
+**PLANOWANE FUNKCJE:**
+- Jednorazowa migracja danych z plików CSV/JSON do bazy
+- Walidacja danych podczas importu
+- Raportowanie błędów migracji w konsoli
+
+**ALTERNATYWA:** ✅ Bezpośrednie ładowanie JSON
+**PLIKI:**
+- api/update_data.py - aktualizacja wszystkich danych
+- api/update_trails_data.py - aktualizacja tylko tras
+**FUNKCJE:** update_trails_data(), update_weather_data()
+**WALIDACJA:** Try-catch bloki z raportowaniem błędów
+
+3.2. Repozytoria danych
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE (KLASY REPOSITORY)**
+**ALTERNATYWA: ✅ FUNKCJE W MAIN.PY**
+
+Klasa RouteRepository
+**PLANOWANE FUNKCJE:**
+- Podstawowe operacje na trasach (dodawanie, wyszukiwanie, aktualizacja)
+- Filtrowanie tras według parametrów (trudność, długość, region)
+- Wyszukiwanie tras w określonym promieniu od punktu
+
+**ALTERNATYWA:** ✅ Funkcje w main.py
+**PLIKI:** main.py linie 800-1200 (funkcje filtrowania)
+**FUNKCJE ZAIMPLEMENTOWANE:**
+- load_trails_data() - ładowanie tras z JSON
+- filter_trails_by_region() - filtrowanie po regionie
+- filter_trails_by_difficulty() - filtrowanie po trudności
+- filter_trails_by_length() - filtrowanie po długości
+- calculate_distance() - obliczanie odległości między punktami
+**DANE:** Ładowane z trails_data.json (10398 linii, 219KB)
+
+Klasa WeatherRepository
+**PLANOWANE FUNKCJE:**
+- Przechowywanie danych pogodowych
+- Pobieranie danych pogodowych dla lokalizacji i dat
+- Obliczanie podstawowych statystyk pogodowych
+
+**ALTERNATYWA:** ✅ WeatherAPI + funkcje w main.py
+**PLIKI:** 
+- api/weather_api.py - klasa WeatherAPI (169 linii)
+- main.py - funkcje get_weather_for_location()
+**FUNKCJE ZAIMPLEMENTOWANE:**
+- get_weather_forecast() - prognozy pogody
+- get_weather_for_date_range() - dane dla zakresu dat
+- _get_historical_weather() - dane historyczne z pliku
+- _get_city_coordinates() - mapowanie miast na współrzędne
+**DANE:** weather_data.json, weather_dataa.json
+
+Klasa UserPreferenceRepository
+**PLANOWANE FUNKCJE:**
+- Zapisywanie i wczytywanie preferencji użytkownika
+- Historia rekomendacji (opcjonalnie)
+
+**ALTERNATYWA:** ✅ Preferencje w sesji + pliki raportów
+**PLIKI:**
+- main.py - zmienne globalne dla preferencji użytkownika
+- config.py - domyślne ustawienia systemu
+**FUNKCJE:**
+- get_user_preferences() - pobieranie preferencji w sesji
+- save_recommendations() - zapis do plików TXT/JSON/CSV
+**HISTORIA:** Pliki raportów z timestampem (recommendations_YYYYMMDD_HHMMSS.*)
+
+4. Wymagania techniczne
+4.1. Nowe pliki lub edycje istniejących(może być ich więcej)
+
+**STATUS KATALOGÓW:**
+
+data/
+  ├── database/         # Plik bazy SQLite
+  **STATUS:** ❌ Nie istnieje
+  **ALTERNATYWA:** ✅ Pliki JSON w głównym katalogu
+
+  └── backups/          # Kopie zapasowe
+  **STATUS:** ❌ Nie istnieje
+  **ALTERNATYWA:** ✅ Manualne kopie przez manage_cache.py
+
+**ALTERNATYWNA STRUKTURA ZAIMPLEMENTOWANA:**
+```
+projekt/
+├── api/                          # ✅ ISTNIEJE
+│   ├── trails_api.py            # ✅ 300 linii - API tras
+│   ├── weather_api.py           # ✅ 169 linii - API pogody  
+│   ├── update_data.py           # ✅ 78 linii - aktualizacja danych
+│   ├── update_trails_data.py    # ✅ 35 linii - aktualizacja tras
+│   ├── trails_data.json         # ✅ 876KB - cache tras
+│   ├── weather_data.json        # ✅ 6.8KB - dane pogodowe
+│   └── weather_dataa.json       # ✅ 5.7KB - prognozy
+├── trails_data.json             # ✅ 219KB - główne dane tras
+├── weather_data.json            # ✅ 2B - plik pogodowy
+└── manage_cache.py              # ✅ 33 linii - zarządzanie cache
+```
+
+   ├── database/
+   │   ├── database_manager.py
+   **STATUS:** ❌ Nie istnieje
+   **ALTERNATYWA:** ✅ api/trails_api.py + api/weather_api.py
+
+   │   ├── migration_tool.py
+   **STATUS:** ❌ Nie istnieje  
+   **ALTERNATYWA:** ✅ api/update_data.py
+
+   │   └── repositories/
+   │       ├── route_repository.py
+   **STATUS:** ❌ Nie istnieje
+   **ALTERNATYWA:** ✅ Funkcje w main.py (linie 800-1200)
+
+   │       ├── weather_repository.py
+   **STATUS:** ❌ Nie istnieje
+   **ALTERNATYWA:** ✅ api/weather_api.py
+
+   │       └── user_repository.py
+   **STATUS:** ❌ Nie istnieje
+   **ALTERNATYWA:** ✅ Preferencje w sesji + config.py
+
+ data_handlers/    # Zmodyfikowane dla obsługi bazy
+ **STATUS:** ❌ Nie istnieje
+ **ALTERNATYWA:** ✅ data_handlers/ istnieje z innymi funkcjami
+
+├── sql/
+    └── schema.sql        # Definicje tabel
+**STATUS:** ❌ Nie istnieje
+**ALTERNATYWA:** ✅ Struktury danych w kodzie (dataclasses w analyzers/)
+
+4.2. Schema bazy danych (SQLite)
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE (BAZA DANYCH)**
+**ALTERNATYWA: ✅ STRUKTURY JSON**
+
+-- Tabela tras
+CREATE TABLE routes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    region TEXT,
+    start_lat REAL NOT NULL,
+    start_lon REAL NOT NULL,
+    end_lat REAL NOT NULL,
+    end_lon REAL NOT NULL,
+    length_km REAL,
+    elevation_gain INTEGER,
+    difficulty INTEGER CHECK (difficulty BETWEEN 1 AND 5),
+    terrain_type TEXT,
+    tags TEXT,
+    description TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+**ALTERNATYWA:** ✅ Struktura JSON w trails_data.json
+**POLA ZAIMPLEMENTOWANE:**
+- name, region, length_km, elevation_gain, difficulty ✅
+- terrain_type, tags, description ✅  
+- coordinates (zamiast start_lat/start_lon/end_lat/end_lon) ✅
+- Dodatkowe: user_rating, review_analysis ✅
+**ŹRÓDŁO:** api/trails_api.py - metoda _process_trail_element()
+
+-- Tabela danych pogodowych
+CREATE TABLE weather_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date DATE NOT NULL,
+    location_lat REAL NOT NULL,
+    location_lon REAL NOT NULL,
+    avg_temp REAL,
+    min_temp REAL,
+    max_temp REAL,
+    precipitation REAL,
+    sunshine_hours REAL,
+    cloud_cover INTEGER,
+    UNIQUE(date, location_lat, location_lon)
+);
+
+**ALTERNATYWA:** ✅ Struktura JSON w weather_data.json
+**POLA ZAIMPLEMENTOWANE:**
+- date, avg_temp, min_temp, max_temp ✅
+- precipitation, sunshine_hours, cloud_cover ✅
+- region (zamiast location_lat/location_lon) ✅
+**ŹRÓDŁO:** api/weather_api.py - metoda _process_weather_data()
+
+-- Tabela preferencji użytkownika
+CREATE TABLE user_preferences (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_name TEXT DEFAULT 'default',
+    preferred_temp_min REAL,
+    preferred_temp_max REAL,
+    max_precipitation REAL,
+    max_difficulty INTEGER,
+    max_length_km REAL,
+    preferred_terrain_types TEXT,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+**ALTERNATYWA:** ✅ Preferencje w sesji + config.py
+**POLA ZAIMPLEMENTOWANE:**
+- preferred_temp_min, preferred_temp_max ✅ (w main.py)
+- max_precipitation ✅ (w main.py)
+- max_difficulty, max_length_km ✅ (w main.py)
+- preferred_terrain_types ✅ (w main.py)
+**ŹRÓDŁO:** main.py - funkcje get_user_preferences()
+
+-- Indeksy dla wydajności
+CREATE INDEX idx_routes_region ON routes(region);
+CREATE INDEX idx_routes_difficulty ON routes(difficulty);
+CREATE INDEX idx_weather_date ON weather_data(date);
+
+**ALTERNATYWA:** ✅ Filtrowanie w pamięci
+**OPTYMALIZACJA:** Ładowanie danych raz na początku, filtrowanie w Python
+**WYDAJNOŚĆ:** Wystarczająca dla aktualnej ilości danych (10k tras)
+
+5. Nowe funkcjonalności
+5.1. Narzędzia administracyjne w konsoli
+
+**STATUS: ❌ NIE ZAIMPLEMENTOWANE (KLASA DATABASEADMIN)**
+**ALTERNATYWA: ✅ FUNKCJE W MAIN.PY I SKRYPTY**
+
+Klasa DatabaseAdmin
+**PLANOWANE FUNKCJE:**
+- Wyświetlanie statystyk bazy danych (liczba tras, rekordów pogodowych)
+- Sprawdzanie integralności danych
+- Tworzenie kopii zapasowych
+- Czyszczenie starych danych
+
+**ALTERNATYWA:** ✅ Funkcje administracyjne
+**PLIKI:**
+- main.py - funkcje statystyk (show_statistics())
+- manage_cache.py - zarządzanie plikami cache
+- check_stats.py - sprawdzanie statystyk (22 linie)
+**FUNKCJE ZAIMPLEMENTOWANE:**
+- Statystyki tras: liczba, regiony, trudności ✅
+- Statystyki pogody: liczba rekordów, zakresy dat ✅
+- Zarządzanie cache: czyszczenie, aktualizacja ✅
+- Sprawdzanie integralności: walidacja JSON ✅
+
+5.2. Rozszerzone raporty konsolowe
+
+**STATUS: ✅ ZAIMPLEMENTOWANE**
+
+Klasa DatabaseReports
+**PLANOWANE FUNKCJE:**
+- Najpopularniejsze regiony (według liczby tras)
+- Statystyki pogodowe dla regionów  
+- Podsumowanie tras według trudności
+- Lista tras bez danych pogodowych
+
+**ALTERNATYWA:** ✅ Moduły reporters/
+**PLIKI:**
+- reporters/text_reporter.py - raporty tekstowe
+- reporters/json_reporter.py - raporty JSON
+- reporters/csv_reporter.py - raporty CSV
+**FUNKCJE ZAIMPLEMENTOWANE:**
+- generate_text_report() - najpopularniejsze regiony ✅
+- generate_statistics() - statystyki pogodowe ✅
+- generate_summary() - podsumowanie trudności ✅
+- generate_detailed_report() - pełne raporty ✅
+
+6. Przykłady implementacji
+6.1. Podstawowe użycie bazy danych
+
+**PLANOWANY KOD:**
+```python
+# Inicjalizacja bazy danych
+db_manager = DatabaseManager('data/database/routes.db')
+db_manager.initialize_database()
+
+# Migracja danych z CSV
+migration_tool = MigrationTool(db_manager)
+migration_tool.migrate_routes_from_csv('data/legacy/routes.csv')
+migration_tool.migrate_weather_from_csv('data/legacy/weather.csv')
+
+# Wyszukiwanie tras
+route_repo = RouteRepository(db_manager)
+routes = route_repo.find_by_region_and_difficulty('Tatry', max_difficulty=3)
+```
+
+**ALTERNATYWNY KOD ZAIMPLEMENTOWANY:**
+```python
+# Inicjalizacja API
+trails_api = TrailsAPI()                    # ✅ api/trails_api.py
+weather_api = WeatherAPI()                  # ✅ api/weather_api.py
+
+# Aktualizacja danych
+update_trails_data()                        # ✅ api/update_data.py
+update_weather_data()                       # ✅ api/update_data.py
+
+# Wyszukiwanie tras  
+trails = load_trails_data()                 # ✅ main.py
+filtered = filter_trails_by_region_and_difficulty(trails, 'Gdańsk', 3)  # ✅ main.py
+```
+
+6.2. Interfejs konsolowy z bazą danych
+
+**PLANOWANE MENU:**
+```
+# Rozszerzone menu główne w main
+    dodać opcje:
+    print("2. Dodaj nową trasę")
+    print("3. Statystyki bazy danych")
+    print("4. Utwórz kopię zapasową")
+    print("5. Importuj dane z CSV")
+    print("0. Wyjście")
+```
+
+**ZAIMPLEMENTOWANE MENU:** ✅ main.py linie 1500-1630
+```python
+print("=== SYSTEM REKOMENDACJI TRAS TURYSTYCZNYCH ===")
+print("1. Znajdź rekomendacje tras")                    # ✅ ZAIMPLEMENTOWANE
+print("2. Pokaż statystyki")                           # ✅ ZAIMPLEMENTOWANE  
+print("3. Generuj raport")                             # ✅ ZAIMPLEMENTOWANE
+print("4. Aktualizuj dane")                            # ✅ ZAIMPLEMENTOWANE
+print("5. Zarządzaj cache")                            # ✅ ZAIMPLEMENTOWANE
+print("0. Wyjście")                                    # ✅ ZAIMPLEMENTOWANE
+```
+
+**FUNKCJE MENU:**
+- Opcja 1: get_recommendations() - pełny system rekomendacji ✅
+- Opcja 2: show_statistics() - statystyki tras i pogody ✅
+- Opcja 3: generate_reports() - raporty TXT/JSON/CSV ✅
+- Opcja 4: update_data() - aktualizacja z API ✅
+- Opcja 5: manage_cache() - zarządzanie plikami ✅
+
+6.3. Backup i restore
+
+**PLANOWANA KLASA:**
+```python
+class BackupManager:
+    def create_backup(self, db_path, backup_path):
+        """Tworzy kopię zapasową bazy danych"""
+        
+    def restore_backup(self, backup_path, db_path):
+        """Przywraca bazę z kopii zapasowej"""
+        
+    def list_backups(self):
+        """Wyświetla dostępne kopie zapasowe"""
+```
+
+**ALTERNATYWA ZAIMPLEMENTOWANA:** ✅ manage_cache.py
+```python
+def backup_cache_files():                              # ✅ ZAIMPLEMENTOWANE
+    """Tworzy kopie zapasowe plików JSON"""
+    
+def restore_cache_files():                             # ✅ ZAIMPLEMENTOWANE  
+    """Przywraca pliki z kopii zapasowych"""
+    
+def list_cache_files():                                # ✅ ZAIMPLEMENTOWANE
+    """Wyświetla dostępne pliki cache"""
+    
+def clean_old_cache():                                 # ✅ ZAIMPLEMENTOWANE
+    """Czyści stare pliki cache"""
+```
+
+**LOKALIZACJA:** manage_cache.py (33 linie)
+**FUNKCJE:** Backup JSON, restore, listowanie, czyszczenie
+**INTEGRACJA:** Wywoływane z main.py w opcji menu "Zarządzaj cache"
+
+**PODSUMOWANIE ETAPU 4:**
+❌ NIE ZAIMPLEMENTOWANE: Baza danych SQLite, klasy Repository, migracje SQL
+✅ ZAIMPLEMENTOWANE: System plików JSON, API, cache, raporty, menu konsolowe
+🔄 ALTERNATYWY: JSON zamiast SQLite, funkcje zamiast klas Repository, API zamiast migracji
+
+**FUNKCJONALNOŚĆ:** System działa w pełni z plikami JSON zamiast bazy danych
+**WYDAJNOŚĆ:** Wystarczająca dla aktualnej ilości danych
+**ROZSZERZALNOŚĆ:** Łatwa migracja do SQLite w przyszłości
