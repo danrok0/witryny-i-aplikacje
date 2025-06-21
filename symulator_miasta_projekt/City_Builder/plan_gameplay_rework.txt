@@ -1,0 +1,120 @@
+# PLAN ROZWOJU ROZGRYWKI I MECHANIK CITY BUILDERA
+
+## 1. Inspiracje i dobre praktyki z innych gier
+
+- **SimCity, Cities: Skylines** – klasyka gatunku, nacisk na budżet, rozwój, zależności między infrastrukturą, zadowoleniem mieszkańców, podatkami, usługami publicznymi.
+- **Rise of Agora** ([github.com/Agora-X/RiseOfAgora](https://github.com/Agora-X/RiseOfAgora)) – MMO city builder z elementami rozwoju umiejętności, progresji, obrony przed zagrożeniami.
+- **Great Wall Game Pitch** ([youxiyanyi.substack.com](https://youxiyanyi.substack.com/p/great-wall-game-pitch)) – nacisk na cele, progresję, wyzwania, systemy ekonomiczne i społeczne.
+
+## 2. Główne cele i logika rozgrywki
+
+- **Cel gracza:** Zbudować dobrze prosperujące, zbalansowane miasto, które przetrwa wyzwania ekonomiczne, społeczne i środowiskowe.
+- **Progresja:** Gracz zaczyna z ograniczonym budżetem i małym wyborem budynków. Nowe budynki, technologie i możliwości odblokowuje się wraz z rozwojem miasta.
+- **System wyzwań:** Wprowadzenie celów krótkoterminowych (np. osiągnij 100 mieszkańców, zapewnij wodę 80% domów) i długoterminowych (np. zbuduj uniwersytet, osiągnij 10 000 mieszkańców).
+- **Balans ekonomiczny:** Budynki kosztują, generują dochód lub wydatki, wymagają utrzymania. Gracz musi zarządzać budżetem, podatkami, inwestycjami.
+- **System zadowolenia i potrzeb:** Mieszkańcy mają potrzeby (mieszkania, praca, zdrowie, rozrywka, bezpieczeństwo). Niezaspokojone potrzeby prowadzą do spadku populacji, protestów, kryzysów.
+- **Ograniczenia i wyzwania:** Katastrofy, losowe wydarzenia, zmiany ekonomiczne, migracje, zanieczyszczenie, przestępczość.
+
+## 3. Propozycje nowych mechanik
+
+### Ekonomia i progresja
+- **Dochód miasta:** Podatki od mieszkańców i firm, opłaty za usługi, dotacje.
+- **Wydatki:** Utrzymanie budynków, pensje, inwestycje w infrastrukturę.
+- **Budżet startowy:** Ograniczony, nie da się postawić wszystkiego od razu.
+- **Odblokowywanie budynków:** Nowe typy budynków dostępne po spełnieniu warunków (np. liczba mieszkańców, poziom edukacji, zadowolenie).
+- **System poziomów miasta:** Każdy poziom daje nowe możliwości, wyzwania i nagrody.
+
+### Mieszkańcy i społeczeństwo
+- **Populacja:** Przyrost naturalny, migracje, śmiertelność.
+- **Zadowolenie:** Wpływ na migracje, podatki, produkcję.
+- **Bezrobocie:** Wpływa na zadowolenie, przestępczość.
+- **Potrzeby:** Mieszkania, praca, edukacja, zdrowie, rozrywka, bezpieczeństwo.
+
+### Wydarzenia i wyzwania
+- **Losowe wydarzenia:** Pożary, epidemie, kryzysy ekonomiczne, protesty.
+- **Cele i misje:** System zadań pobocznych i głównych.
+- **System osiągnięć:** Nagrody za spełnienie określonych warunków.
+
+### Balans i ograniczenia
+- **Koszty utrzymania:** Każdy budynek generuje stałe koszty.
+- **Zasoby:** Energia, woda, żywność – muszą być produkowane i dystrybuowane.
+- **Zanieczyszczenie:** Wpływa na zdrowie i zadowolenie.
+- **Przestępczość:** Wymaga budowy policji, sądów.
+
+## 4. Plan wdrożenia (etapy)
+
+1. **Ekonomia i budżet:**
+   - Dodanie systemu dochodów i wydatków.
+   - Wprowadzenie podatków i kosztów utrzymania.
+   - Ograniczenie budżetu startowego.
+2. **Progresja i odblokowywanie budynków:**
+   - System poziomów miasta.
+   - Warunki odblokowania budynków.
+3. **System potrzeb i zadowolenia mieszkańców:**
+   - Implementacja podstawowych potrzeb.
+   - Wpływ budynków na potrzeby.
+4. **Wydarzenia losowe i cele:**
+   - System zadań i losowych wydarzeń.
+   - Cele krótkoterminowe i długoterminowe.
+5. **Balans i ograniczenia:**
+   - Koszty utrzymania, zasoby, zanieczyszczenie, przestępczość.
+6. **Testy i iteracja:**
+   - Testowanie balansu, iteracyjne poprawki.
+
+## 5. Przykładowe cele i wyzwania
+
+- Osiągnij 500 mieszkańców.
+- Zapewnij 90% domów dostęp do wody.
+- Zbuduj szpital i szkołę.
+- Utrzymaj zadowolenie powyżej 70% przez 10 tur.
+- Przetrwaj kryzys ekonomiczny.
+
+## 6. Inspiracje do UI/UX i immersji
+- Jasne komunikaty o celach i stanie miasta.
+- Panel z zadaniami i postępem.
+- Alerty o problemach (np. brak prądu, epidemia).
+- System samouczka i podpowiedzi.
+
+## 7. Kolejne fazy rozwoju (wg idee.txt)
+
+### FAZA 3 (Priorytet)
+1. **System wydarzeń losowych (events.py):**
+   - Losowe zdarzenia wpływające na miasto (pożary, epidemie, kryzysy ekonomiczne, protesty, bonusy).
+   - Decyzje gracza mające wpływ na konsekwencje wydarzeń.
+   - Integracja z systemem celów i zadowolenia mieszkańców.
+2. **Panel raportów z wykresami (matplotlib):**
+   - Historia populacji, budżetu, zadowolenia, zasobów.
+   - Wykresy trendów, możliwość analizy postępu miasta.
+   - Eksport danych do CSV.
+3. **Rozwój technologii:**
+   - Drzewko technologiczne odblokowujące nowe budynki, ulepszenia, bonusy.
+   - Wymagania do rozwoju: populacja, edukacja, inwestycje.
+   - Wybory strategiczne (np. ekologia vs. przemysł).
+4. **Baza danych SQLite:**
+   - Trwałe zapisywanie stanu gry, historii, statystyk.
+   - Możliwość wczytywania i porównywania różnych zapisów.
+   - Potencjalnie ranking miast.
+
+### FAZA 4 (Dopracowanie)
+1. **Testy jednostkowe (pytest):**
+   - Pokrycie testami kluczowych systemów (ekonomia, populacja, wydarzenia, zapisywanie).
+   - Automatyczne testy regresji przy rozwoju projektu.
+2. **Handel międzymiastowy:**
+   - Możliwość wymiany zasobów z innymi miastami (AI lub graczami).
+   - Ceny rynkowe, negocjacje, wydarzenia wpływające na handel.
+   - Specjalizacje miast (np. przemysłowe, rolnicze).
+3. **System osiągnięć:**
+   - Osiągnięcia za spełnienie określonych warunków (np. "Miasto 1000+", "Zero bezrobocia").
+   - Nagrody kosmetyczne lub bonusy za osiągnięcia.
+   - Panel z listą osiągnięć i postępem.
+
+---
+
+**Po wdrożeniu FAZY 3 i 4 gra będzie kompletna, z rozbudowaną logiką, wyzwaniami, analizą postępu i regrywalnością.**
+
+---
+
+**Kolejne kroki:**
+- Wybierzmy jeden z etapów i zacznijmy wdrażać (np. ekonomia i budżet).
+- Zdefiniujmy dokładnie, jak mają działać podatki, koszty, odblokowywanie budynków.
+- Zaplanujmy UI do prezentacji celów i postępu. 

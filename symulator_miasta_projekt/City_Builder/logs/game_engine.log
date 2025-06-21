@@ -1,0 +1,7 @@
+2025-06-13 02:50:30 - ERROR - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:50:45 - ERROR - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:00 - ERROR - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:15 - ERROR - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:30 - ERROR - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:53:49 - ERROR - Error in update_game: 'list' object has no attribute 'items'
+2025-06-13 02:54:04 - ERROR - Error in update_game: 'list' object has no attribute 'items'

@@ -1,0 +1,79 @@
+2025-06-13 02:50:15 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 02:50:30 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:50:30 - city_builder.errors - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked' | Info: turn=1
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in update_game
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in <listcomp>
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                                                                                         ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'unlocked'
+2025-06-13 02:50:45 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:50:45 - city_builder.errors - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked' | Info: turn=2
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in update_game
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in <listcomp>
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                                                                                         ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:00 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:00 - city_builder.errors - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked' | Info: turn=3
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in update_game
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in <listcomp>
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                                                                                         ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:15 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:15 - city_builder.errors - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked' | Info: turn=4
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in update_game
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in <listcomp>
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                                                                                         ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:30 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked'
+2025-06-13 02:51:30 - city_builder.errors - [31mERROR[0m - Error in update_game: 'str' object has no attribute 'unlocked' | Info: turn=5
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in update_game
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 412, in <listcomp>
+    'unlocked_technologies': [tech.name for tech in self.technology_tree.technologies if tech.unlocked]
+                                                                                         ^^^^^^^^^^^^^
+AttributeError: 'str' object has no attribute 'unlocked'
+2025-06-13 02:53:19 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 02:53:35 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 0.6026s | population=326, buildings=1
+2025-06-13 02:53:49 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'list' object has no attribute 'items'
+2025-06-13 02:53:49 - city_builder.errors - [31mERROR[0m - Error in update_game: 'list' object has no attribute 'items' | Info: turn=2
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 414, in update_game
+    self.objectives_panel.update_objectives(game_state)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\gui\objectives_panel.py", line 251, in update_objectives
+    self.objective_manager.update_objectives(game_state)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\objectives.py", line 454, in update_objectives
+    for building_name, building_data in buildings.items():
+                                        ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+2025-06-13 02:54:04 - city_builder.game_engine - [31mERROR[0m - Error in update_game: 'list' object has no attribute 'items'
+2025-06-13 02:54:04 - city_builder.errors - [31mERROR[0m - Error in update_game: 'list' object has no attribute 'items' | Info: turn=3
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 414, in update_game
+    self.objectives_panel.update_objectives(game_state)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\gui\objectives_panel.py", line 251, in update_objectives
+    self.objective_manager.update_objectives(game_state)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\objectives.py", line 454, in update_objectives
+    for building_name, building_data in buildings.items():
+                                        ^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'items'
+2025-06-13 03:11:42 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 03:12:45 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 03:13:01 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 0.5831s | population=291, buildings=0
+2025-06-13 03:13:21 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 5.5145s | population=292, buildings=0

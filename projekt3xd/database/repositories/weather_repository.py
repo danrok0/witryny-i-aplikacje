@@ -7,6 +7,12 @@ import logging
 from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime, date
 import json
+import sys
+import os
+
+# Dodaj ścieżkę do utils
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+from utils.validators import WeatherValidators, BasicValidators, ValidationError, safe_validate
 
 from ..database_manager import DatabaseManager, rows_to_dicts, row_to_dict
 
@@ -30,7 +36,7 @@ class WeatherRepository:
     
     def add_weather_data(self, weather_data: Dict[str, Any]) -> Optional[int]:
         """
-        Dodaje dane pogodowe do bazy danych.
+        Dodaje dane pogodowe do bazy danych z walidacją.
         
         Args:
             weather_data: Słownik z danymi pogodowymi
@@ -39,6 +45,12 @@ class WeatherRepository:
             ID nowego rekordu lub None w przypadku błędu
         """
         try:
+            # WALIDACJA DANYCH POGODOWYCH
+            validated_data = self._validate_weather_data(weather_data)
+            if not validated_data:
+                logger.error(f"❌ Walidacja danych pogodowych nie powiodła się")
+                return None
+            
             query = """
                 INSERT OR REPLACE INTO weather_data (
                     date, location_lat, location_lon, avg_temp, min_temp, max_temp,
@@ -46,24 +58,25 @@ class WeatherRepository:
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """
             
+            # Użyj zwalidowanych danych
             params = (
-                weather_data.get('date'),
-                weather_data.get('location_lat', 0.0),
-                weather_data.get('location_lon', 0.0),
-                weather_data.get('avg_temp'),
-                weather_data.get('min_temp'),
-                weather_data.get('max_temp'),
-                weather_data.get('precipitation', 0.0),
-                weather_data.get('sunshine_hours'),
-                weather_data.get('cloud_cover'),
-                weather_data.get('wind_speed'),
-                weather_data.get('humidity')
+                validated_data.get('date'),
+                validated_data.get('location_lat', 0.0),
+                validated_data.get('location_lon', 0.0),
+                validated_data.get('temperature'),  # avg_temp w WeatherValidators to 'temperature'
+                validated_data.get('min_temp'),
+                validated_data.get('max_temp'),
+                validated_data.get('precipitation', 0.0),
+                validated_data.get('sunshine_hours'),
+                validated_data.get('cloud_cover'),
+                validated_data.get('wind_speed'),
+                validated_data.get('humidity')
             )
             
             weather_id = self.db_manager.execute_insert(query, params)
             
             if weather_id:
-                logger.info(f"✅ Dodano dane pogodowe: {weather_data.get('date')} (ID: {weather_id})")
+                logger.info(f"✅ Dodano zwalidowane dane pogodowe: {validated_data.get('date')} (ID: {weather_id})")
             
             return weather_id
             
@@ -462,4 +475,89 @@ class WeatherRepository:
             
         except Exception as e:
             logger.error(f"Błąd usuwania starych danych pogodowych: {e}")
-            return 0 
+            return 0
+    
+    def _validate_weather_data(self, weather_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """
+        Waliduje dane pogodowe przed zapisem do bazy danych.
+        
+        Args:
+            weather_data: Słownik z danymi pogodowymi
+            
+        Returns:
+            Zwalidowane dane lub None jeśli walidacja się nie powiodła
+        """
+        try:
+            # Użyj WeatherValidators do walidacji
+            validated = safe_validate(WeatherValidators.validate_weather_data, weather_data)
+            if validated:
+                logger.info(f"✅ Pełna walidacja danych pogodowych przeszła pomyślnie")
+                return validated
+            
+            # Jeśli pełna walidacja się nie powiodła, spróbuj podstawowej walidacji
+            logger.warning(f"⚠️ Pełna walidacja nie powiodła się, próbuję podstawową walidację")
+            
+            validated_basic = {}
+            
+            # Data jest wymagana
+            if weather_data.get('date'):
+                date_validated = safe_validate(BasicValidators.validate_date, weather_data['date'])
+                if date_validated:
+                    validated_basic['date'] = weather_data['date']
+                else:
+                    logger.error("❌ Nieprawidłowy format daty")
+                    return None
+            else:
+                logger.error("❌ Data jest wymagana")
+                return None
+            
+            # Walidacja współrzędnych (opcjonalne ale jeśli są to muszą być prawidłowe)
+            if weather_data.get('location_lat') is not None and weather_data.get('location_lon') is not None:
+                coords = safe_validate(BasicValidators.validate_coordinates, 
+                                     weather_data['location_lat'], weather_data['location_lon'])
+                if coords:
+                    validated_basic['location_lat'], validated_basic['location_lon'] = coords
+                else:
+                    logger.warning("⚠️ Nieprawidłowe współrzędne - używam domyślnych")
+                    validated_basic['location_lat'], validated_basic['location_lon'] = 0.0, 0.0
+            
+            # Walidacja temperatury
+            if weather_data.get('temperature') is not None or weather_data.get('avg_temp') is not None:
+                temp = weather_data.get('temperature') or weather_data.get('avg_temp')
+                temp_validated = safe_validate(BasicValidators.validate_number, 
+                                             temp, 'temperatura', min_val=-50, max_val=50)
+                if temp_validated is not None:
+                    validated_basic['temperature'] = temp_validated
+            
+            # Walidacja opadów
+            if weather_data.get('precipitation') is not None:
+                precip = safe_validate(BasicValidators.validate_number, 
+                                     weather_data['precipitation'], 'opady', min_val=0, max_val=500)
+                if precip is not None:
+                    validated_basic['precipitation'] = precip
+            
+            # Skopiuj pozostałe pola z podstawową walidacją liczbową
+            for field in ['min_temp', 'max_temp', 'wind_speed', 'sunshine_hours', 'cloud_cover', 'humidity']:
+                if field in weather_data and weather_data[field] is not None:
+                    if field in ['min_temp', 'max_temp']:
+                        min_val, max_val = -50, 50
+                    elif field == 'wind_speed':
+                        min_val, max_val = 0, 200
+                    elif field == 'sunshine_hours':
+                        min_val, max_val = 0, 24
+                    elif field in ['cloud_cover', 'humidity']:
+                        min_val, max_val = 0, 100
+                    else:
+                        min_val, max_val = 0, 1000
+                    
+                    val = safe_validate(BasicValidators.validate_number, 
+                                      weather_data[field], field, min_val=min_val, max_val=max_val)
+                    if val is not None:
+                        validated_basic[field] = val
+            
+            logger.info(f"✅ Podstawowa walidacja danych pogodowych przeszła pomyślnie")
+            return validated_basic
+            
+        except Exception as e:
+            logger.error(f"❌ Błąd walidacji danych pogodowych: {e}")
+            return None 

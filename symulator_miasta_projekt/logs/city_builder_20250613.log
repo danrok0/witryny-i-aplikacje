@@ -1,0 +1,32 @@
+2025-06-13 02:44:32 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 03:02:23 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 03:02:40 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2671s | population=291, buildings=0
+2025-06-13 03:02:59 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 5.3345s | population=292, buildings=0
+2025-06-13 03:03:10 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2343s | population=293, buildings=0
+2025-06-13 03:03:25 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2826s | population=295, buildings=0
+2025-06-13 03:03:40 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2204s | population=296, buildings=0
+2025-06-13 03:03:55 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2970s | population=297, buildings=0
+2025-06-13 03:56:52 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 03:57:09 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2821s | population=291, buildings=0
+2025-06-13 03:57:26 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 3.3785s | population=578, buildings=8
+2025-06-13 03:57:39 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2811s | population=655, buildings=13
+2025-06-13 03:57:54 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3241s | population=661, buildings=17
+2025-06-13 03:58:09 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2625s | population=671, buildings=18
+2025-06-13 03:58:24 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3342s | population=680, buildings=18
+2025-06-13 03:58:41 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 3.2117s | population=978, buildings=26
+2025-06-13 03:58:55 - city_builder.events - [32mINFO[0m - [EVENT] Wydarzenie: Dotacja Rządowa
+2025-06-13 03:59:00 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 7.7971s | population=1207, buildings=32
+2025-06-13 03:59:09 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3088s | population=1239, buildings=32
+2025-06-13 03:59:24 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3028s | population=1261, buildings=36
+2025-06-13 03:59:39 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3294s | population=1287, buildings=40
+2025-06-13 03:59:54 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3011s | population=1312, buildings=40
+2025-06-13 04:00:09 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2851s | population=1444, buildings=43
+2025-06-13 04:00:24 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3153s | population=1477, buildings=45
+2025-06-13 04:00:39 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2854s | population=1497, buildings=47
+2025-06-13 04:00:54 - city_builder.events - [32mINFO[0m - [EVENT] Wydarzenie: Festiwal Miejski
+2025-06-13 04:00:57 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 4.6611s | population=1519, buildings=47
+2025-06-13 04:04:25 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-13 04:04:42 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3630s | population=291, buildings=0
+2025-06-13 04:04:58 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 2.9300s | population=292, buildings=0
+2025-06-13 04:05:11 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2372s | population=293, buildings=0
+2025-06-13 04:05:26 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2275s | population=294, buildings=0

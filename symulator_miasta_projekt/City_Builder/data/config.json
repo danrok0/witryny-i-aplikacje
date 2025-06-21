@@ -1,0 +1,56 @@
+{
+    "game_settings": {
+        "default_map_size": {
+            "width": 60,
+            "height": 60
+        },
+        "auto_save_interval": 300,
+        "difficulty": "Normal",
+        "language": "pl",
+        "enable_sound": true,
+        "enable_animations": true,
+        "show_tooltips": true
+    },
+    "ui_settings": {
+        "window_width": 1600,
+        "window_height": 1000,
+        "tile_size": 32,
+        "zoom_levels": [
+            0.5,
+            0.75,
+            1.0,
+            1.25,
+            1.5,
+            2.0
+        ],
+        "default_zoom": 1.0,
+        "show_grid": true,
+        "show_building_effects": true
+    },
+    "performance_settings": {
+        "max_fps": 60,
+        "update_interval": 15000,
+        "enable_multithreading": false,
+        "cache_size": 100,
+        "log_level": "INFO"
+    },
+    "database_settings": {
+        "db_path": "city_builder.db",
+        "backup_interval": 3600,
+        "max_backups": 5
+    },
+    "export_settings": {
+        "default_export_format": "CSV",
+        "export_path": "exports/",
+        "include_charts": true,
+        "chart_format": "PNG"
+    },
+    "advanced_settings": {
+        "debug_mode": false,
+        "show_performance_stats": false,
+        "enable_cheats": false,
+        "custom_building_path": "assets/custom_buildings/",
+        "mod_support": false
+    }
+}
+

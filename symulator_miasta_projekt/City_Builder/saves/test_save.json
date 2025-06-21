@@ -1,0 +1,3125 @@
+{
+  "version": "1.0",
+  "turn": 1,
+  "difficulty": "Normal",
+  "statistics": {
+    "buildings_built": 2,
+    "total_money_spent": 800.0,
+    "max_population": 312,
+    "turns_played": 1
+  },
+  "alerts": [
+    {
+      "message": "Built Dom for $500",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2318265
+    },
+    {
+      "message": "Built Sklep for $300",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2318265
+    },
+    {
+      "message": "🏥 Shortage of housing",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of jobs",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of healthcare",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of education",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of safety",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of entertainment",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    },
+    {
+      "message": "🏥 Shortage of transport",
+      "priority": "info",
+      "turn": 0,
+      "timestamp": 1749767822.2328274
+    }
+  ],
+  "city_level": 1,
+  "map": {
+    "width": 20,
+    "height": 20,
+    "tiles": [
+      {
+        "x": 0,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 10,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 11,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 13,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 0,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 10,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 11,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 13,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 1,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 10,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 11,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 13,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 2,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 10,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 11,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 3,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 10,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 11,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 4,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": true,
+        "building": {
+          "name": "Dom",
+          "building_type": "residential",
+          "cost": 500,
+          "effects": {
+            "population": 20
+          },
+          "rotation": 0
+        }
+      },
+      {
+        "x": 5,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 10,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 5,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": true,
+        "building": {
+          "name": "Sklep",
+          "building_type": "commercial",
+          "cost": 300,
+          "effects": {
+            "jobs": 5
+          },
+          "rotation": 0
+        }
+      },
+      {
+        "x": 6,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 6,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 7,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 0,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 8,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 0,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 10,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 9,
+        "y": 19,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 0,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 7,
+        "terrain_type": "mountain",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 10,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 11,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 0,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 7,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 11,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 12,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 0,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 13,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 18,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 14,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 1,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 2,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 15,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 17,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 15,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 3,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 4,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 16,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 16,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 5,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 9,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 13,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 17,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 6,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 8,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 10,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 11,
+        "terrain_type": "sand",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 12,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 13,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 14,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 18,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 0,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 1,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 2,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 3,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 4,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 5,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 6,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 7,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 8,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 9,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 10,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 11,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 12,
+        "terrain_type": "water",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 13,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 14,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 15,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 16,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 17,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 18,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      },
+      {
+        "x": 19,
+        "y": 19,
+        "terrain_type": "grass",
+        "is_occupied": false,
+        "building": null
+      }
+    ]
+  },
+  "economy": {
+    "resources": {
+      "money": {
+        "name": "Money",
+        "amount": 49106.25,
+        "max_capacity": Infinity,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 1.0
+      },
+      "energy": {
+        "name": "Energy",
+        "amount": 100,
+        "max_capacity": 1000,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 2.0
+      },
+      "water": {
+        "name": "Water",
+        "amount": 100,
+        "max_capacity": 1000,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 1.5
+      },
+      "materials": {
+        "name": "Materials",
+        "amount": 50,
+        "max_capacity": 500,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 3.0
+      },
+      "food": {
+        "name": "Food",
+        "amount": 80,
+        "max_capacity": 800,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 2.5
+      },
+      "luxury_goods": {
+        "name": "Luxury Goods",
+        "amount": 20,
+        "max_capacity": 200,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 5.0
+      },
+      "population": {
+        "name": "Population",
+        "amount": 20,
+        "max_capacity": Infinity,
+        "production_rate": 20,
+        "consumption_rate": 0,
+        "price": 0
+      },
+      "happiness": {
+        "name": "Happiness",
+        "amount": 50,
+        "max_capacity": 100,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 0
+      },
+      "education": {
+        "name": "Education",
+        "amount": 0,
+        "max_capacity": 100,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 0
+      },
+      "health": {
+        "name": "Health",
+        "amount": 50,
+        "max_capacity": 100,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 0
+      },
+      "safety": {
+        "name": "Safety",
+        "amount": 50,
+        "max_capacity": 100,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 0
+      },
+      "environment": {
+        "name": "Environment",
+        "amount": 50,
+        "max_capacity": 100,
+        "production_rate": 0,
+        "consumption_rate": 0,
+        "price": 0
+      }
+    },
+    "tax_rates": {
+      "residential": 0.05,
+      "commercial": 0.08,
+      "industrial": 0.1
+    },
+    "expenses": {
+      "maintenance": 0,
+      "salaries": 0,
+      "utilities": 0
+    },
+    "history": [
+      {
+        "turn": 1,
+        "resources": {
+          "money": 49106.25,
+          "energy": 100,
+          "water": 100,
+          "materials": 50,
+          "food": 80,
+          "luxury_goods": 20,
+          "population": 20,
+          "happiness": 50,
+          "education": 0,
+          "health": 50,
+          "safety": 50,
+          "environment": 50
+        },
+        "tax_income": 0.0,
+        "expenses": 0
+      }
+    ]
+  },
+  "population": {
+    "groups": {
+      "worker": {
+        "social_class": "worker",
+        "count": 172,
+        "employment_rate": 0.01773049645390071,
+        "satisfaction": 32.78341013824885,
+        "income": 2000,
+        "age_distribution": {
+          "young": 30,
+          "adult": 50,
+          "elderly": 20
+        }
+      },
+      "middle_class": {
+        "social_class": "middle_class",
+        "count": 75,
+        "employment_rate": 0.01773049645390071,
+        "satisfaction": 48.31029185867896,
+        "income": 4000,
+        "age_distribution": {
+          "young": 30,
+          "adult": 50,
+          "elderly": 20
+        }
+      },
+      "upper_class": {
+        "social_class": "upper_class",
+        "count": 15,
+        "employment_rate": 0.01773049645390071,
+        "satisfaction": 56.07834101382488,
+        "income": 8000,
+        "age_distribution": {
+          "young": 30,
+          "adult": 50,
+          "elderly": 20
+        }
+      },
+      "student": {
+        "social_class": "student",
+        "count": 30,
+        "employment_rate": 0.3,
+        "satisfaction": 44.26113671274962,
+        "income": 500,
+        "age_distribution": {
+          "young": 30,
+          "adult": 50,
+          "elderly": 20
+        }
+      },
+      "unemployed": {
+        "social_class": "unemployed",
+        "count": 20,
+        "employment_rate": 0.0,
+        "satisfaction": 20,
+        "income": 800,
+        "age_distribution": {
+          "young": 30,
+          "adult": 50,
+          "elderly": 20
+        }
+      }
+    },
+    "needs": {
+      "housing": {
+        "current": 20,
+        "demand": 310,
+        "satisfaction": 6.451612903225806
+      },
+      "jobs": {
+        "current": 5,
+        "demand": 186,
+        "satisfaction": 2.6881720430107525
+      },
+      "healthcare": {
+        "current": 0,
+        "demand": 93,
+        "satisfaction": 0.0
+      },
+      "education": {
+        "current": 0,
+        "demand": 124,
+        "satisfaction": 0.0
+      },
+      "safety": {
+        "current": 0,
+        "demand": 155,
+        "satisfaction": 0.0
+      },
+      "entertainment": {
+        "current": 0,
+        "demand": 62,
+        "satisfaction": 0.0
+      },
+      "transport": {
+        "current": 0,
+        "demand": 217,
+        "satisfaction": 0.0
+      }
+    },
+    "birth_rate": 0.025,
+    "death_rate": 0.002,
+    "migration_factor": 0.01
+  }
+}

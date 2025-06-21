@@ -1,0 +1,37 @@
+Wymagania, ale z tą różnicą że my robimy nie w konsoli a z interfejsem graficznym, więc część wymogów można ominąć albo podejść inaczej. Jak masz pomysły możesz coś od siebie dać aby ulepszyć projekt.
+I uzywamy grafik które mam ewentuanie dodam jeszcze nowe jak będą potrzebne, to wtedy chwilowo mozna uzyc kolorowych kafelków.
+O to wymagania:
+
+Wymagania
+Funkcjonalny (10 wymagań):
+
+-System mapy miasta	Implementacja dwuwymiarowej siatki reprezentującej miasto (minimum 40x40). Renderowanie mapy za pomocą znaków ASCII z różnymi symbolami dla różnych typów terenu i budynków. Możliwość przewijania i powiększania/pomniejszania widoku mapy. Kolorowe oznaczenia dla różnych typów budynków i terenów. Zapisywanie i wczytywanie stanu mapy z pliku.	
+-System budowy i rozwoju	Implementacja co najmniej 20 różnych typów budynków w 5 kategoriach (mieszkalne, przemysłowe, komercyjne, użyteczności publicznej, rozrywkowe). Każdy budynek ma unikalne parametry: koszt budowy, koszt utrzymania, wpływ na zadowolenie, zatrudnienie, środowisko. System zależności między budynkami (np. domy potrzebują dostępu do wody, elektryczności, dróg). Możliwość rozbudowy i ulepszania istniejących struktur. Limity budowy zależne od dostępnych zasobów i infrastruktury.	
+-Zarządzanie zasobami	Symulacja minimum 6 typów zasobów (pieniądze, energia, woda, materiały budowlane, żywność, towary luksusowe). Złożony system ekonomiczny z podażą, popytem i zmiennymi cenami zasobów. Handel z sąsiednimi miastami z negocjacją cen. Automatyczne kalkulowanie przepływów zasobów między dzielnicami miasta. Przechowywanie historii zmian w zasobach z możliwością analizy trendów.	
+-Symulacja populacji	Implementacja symulacji populacji z różnymi grupami społecznymi (minimum 5 grup o różnych potrzebach). Symulacja demografii: urodziny, zgony, migracje zależne od warunków w mieście. System zatrudnienia z różnymi typami miejsc pracy i wymaganiami kwalifikacji. Symulacja edukacji i rozwoju umiejętności mieszkańców. System potrzeb mieszkańców (bezpieczeństwo, zdrowie, rozrywka, edukacja) wpływający na ogólne zadowolenie.	
+-System finansowy	Kompleksowy system budżetu miejskiego z różnymi źródłami przychodów (podatki od mieszkańców, firm, opłaty za usługi). Różne kategorie wydatków (utrzymanie infrastruktury, pensje pracowników, inwestycje). Możliwość zaciągania i spłacania pożyczek z różnymi stopami procentowymi. System podatkowy z możliwością dostosowania stawek dla różnych sektorów. Generowanie raportów finansowych z analizą trendów.	
+-System wydarzeń i katastrof	System co najmniej 30 różnych wydarzeń losowych (klęski żywiołowe, odkrycia technologiczne, zmiany polityczne). Każde wydarzenie ma różne konsekwencje dla miasta i wymaga odpowiedniej reakcji. Implementacja drzewa decyzyjnego z różnymi opcjami reakcji na wydarzenia. Długoterminowe skutki wydarzeń wpływające na rozwój miasta. System prawdopodobieństwa wystąpienia wydarzeń zależny od stanu miasta i wcześniejszych decyzji.	
+-Rozwój technologii	Symulacja rozwoju technologicznego z drzewem technologii (minimum 25 technologii). Inwestowanie w badania i rozwój z różnymi ścieżkami specjalizacji. Implementacja efektów odblokowanych technologii (nowe budynki, ulepszenia zasobów, zwiększona efektywność). System zależności między technologiami wymagający strategicznego planowania. Różne tempo rozwoju technologii zależne od inwestycji i edukacji populacji.	
+-Interakcje z otoczeniem	Symulacja minimum 5 sąsiednich miast/państw z różnymi relacjami dyplomatycznymi. System handlu międzynarodowego z negocjacjami i umowami. Możliwość tworzenia sojuszy, wypowiadania wojen, negocjowania pokoju. Wpływ wydarzeń światowych na lokalną ekonomię i politykę. Misje dyplomatyczne z różnymi celami i nagrodami.	
+-System raportowania i statystyk	Generowanie szczegółowych wykresów i raportów na temat rozwoju miasta (minimum 10 różnych raportów). Statystyki historyczne pokazujące trendy w różnych obszarach. Prognozowanie przyszłych trendów na podstawie aktualnych danych. Eksport raportów do plików tekstowych. System alertów o krytycznych sytuacjach wymagających uwagi.	
+-Tryby gry i osiągnięcia	System osiągnięć za realizację określonych celów rozwojowych. Scenariusze z unikalnymi wyzwaniami i celami (minimum 5 scenariuszy). Różne poziomy trudności wpływające na warunki początkowe i częstotliwość negatywnych wydarzeń. Tryby gry: piaskownica (bez ograniczeń), kampania (sekwencja scenariuszy), wyzwanie (ograniczony czas/zasoby).	
+Języki skryptowe (ZAO) wymagania dodatkowe (8 wymagań):
+
+-Interfejs użytkownika konsoli	Implementacja czytelnego menu tekstowego, formatowanie wyniku w kolumny, kolorowanie tekstu w konsoli (np. przy użyciu biblioteki colorama), obsługa interakcji z użytkownikiem.	
+-Podstawowa obsługa błędów	Stosowanie bloków try-except dla obsługi typowych wyjątków, wyświetlanie przyjaznych komunikatów dla użytkownika, zabezpieczanie krytycznych funkcji przed awarią.	
+-Dokumentacja projektu	Dokumentacja w formie docstringów dla głównych funkcji i klas, plik README z opisem projektu i instrukcją instalacji, komentarze w kodzie wyjaśniające kluczowe elementy logiki.	
+-Zarządzanie konfiguracją	Przechowywanie ustawień aplikacji w prostym pliku konfiguracyjnym (JSON/YAML/INI), odczytywanie konfiguracji przy starcie, obsługa podstawowych parametrów środowiskowych.	
+-Prosta wizualizacja danych	Generowanie prostych wykresów (np. słupkowych, liniowych) przy użyciu biblioteki matplotlib, eksport danych do formatu CSV/Excel, formatowanie tabelaryczne wyniku w konsoli.	
+-Wykorzystanie zewnętrznych bibliotek	Instalacja i integracja co najmniej dwóch zewnętrznych bibliotek za pomocą pip, zarządzanie zależnościami projektu (requirements.txt), właściwe importowanie i wykorzystanie bibliotek.		
+-Obsługa argumentów wiersza poleceń	Wykorzystanie biblioteki argparse do definiowania i obsługi argumentów wiersza poleceń, walidacja parametrów wejściowych, implementacja pomocy (--help).		
+-Środowiska wirtualne	Tworzenie i konfiguracja wirtualnego środowiska (venv/virtualenv), izolacja zależności projektu, dokumentacja procesu instalacji w środowisku wirtualnym.	
+
+Języki skryptowe (UG ZAO) - Wymagania techniczne (7 wymagań):
+
+-Implementacja programowania funkcyjnego	Wykorzystanie funkcji wyższego rzędu (map, filter, reduce), funkcji lambda, list/dictionary comprehensions oraz generatorów w co najmniej trzech modułach aplikacji.	
+-Zastosowanie programowania obiektowego	Zaprojektowanie co najmniej 4 klas z wykorzystaniem dziedziczenia, enkapsulacji, polimorfizmu. Zastosowanie metod statycznych, klasowych i abstrakcyjnych.	
+-Organizacja kodu w moduły i pakiety	Struktura projektu z wydzielonymi pakietami (minimum 3) i modułami (minimum 5). Prawidłowe wykorzystanie importów i przestrzeni nazw.	
+-Przetwarzanie danych z wykorzystaniem wyrażeń regularnych	Walidacja danych wejściowych, parsowanie i ekstrakcja informacji z plików za pomocą wyrażeń regularnych.	
+-Zaawansowane przetwarzanie plików i katalogów	Operacje na plikach tekstowych i binarnych, zarządzanie katalogami, obsługa różnych formatów danych (CSV, JSON, XML), implementacja systemu logowania zdarzeń.	
+-Integracja z relacyjną bazą danych	Połączenie z bazą SQL, implementacja operacji CRUD, wykorzystanie ORM (np. SQLAlchemy), obsługa transakcji, zapytań parametrycznych i migracji schematu.	
+-Kompleksowe testowanie aplikacji	Testy jednostkowe (pytest/unittest), testy integracyjne, mockowanie obiektów, pomiar pokrycia kodu testami, automatyzacja testów.	

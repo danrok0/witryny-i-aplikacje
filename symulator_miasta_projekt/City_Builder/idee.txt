@@ -1,0 +1,18 @@
+wybrać zeby szukal po necie i znalazł pomysł jak ulepszyć, co dodać itd.
+
+Do zrobienia
+Poprawki logiczne gry
+NASTĘPNE KROKI (Powiedz czy mam kontynuować):
+FAZA 3 (Priorytet):
+System wydarzeń losowych (events.py)
+Panel raportów z wykresami matplotlib
+Rozwój technologii
+Baza danych SQLite
+FAZA 4 (Dopracowanie):
+Testy jednostkowe (pytest)
+Handel międzymiastowy
+System osiągnięć
+
++ własne pomysły
+np. burmistrz ikona jego i coś gada
+grafiki ogarnąć

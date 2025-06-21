@@ -1,0 +1,4 @@
+poprawić logikę aby gra była grywalna
+moze cos dodac
+przetestowac i zobaczyc co i jak, poprawki jakieś
+przetestować nowe funkcje bo nie wiadomo czy działają

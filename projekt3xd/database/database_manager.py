@@ -32,6 +32,11 @@ from typing import Optional, List, Dict, Any     # Podpowiedzi typów
 from contextlib import contextmanager            # Context manager dla połączeń
 import json                                       # Obsługa JSON
 from datetime import datetime                     # Operacje na datach
+import sys
+
+# Dodaj ścieżkę do utils
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
+from utils.validators import BasicValidators, ValidationError, safe_validate
 
 # ============================================================================
 # KONFIGURACJA LOGOWANIA
@@ -137,7 +142,7 @@ class DatabaseManager:
     
     def execute_query(self, query: str, params: tuple = ()) -> List[sqlite3.Row]:
         """
-        Wykonuje zapytanie SELECT i zwraca wyniki.
+        Wykonuje zapytanie SELECT i zwraca wyniki z walidacją parametrów.
         
         Args:
             query: Zapytanie SQL
@@ -147,6 +152,11 @@ class DatabaseManager:
             Lista wyników jako sqlite3.Row
         """
         try:
+            # WALIDACJA PARAMETRÓW
+            if not self._validate_query_params(query, params):
+                logger.error("❌ Walidacja parametrów zapytania nie powiodła się")
+                return []
+                
             with self.get_connection() as conn:
                 cursor = conn.execute(query, params)
                 return cursor.fetchall()
@@ -156,7 +166,7 @@ class DatabaseManager:
     
     def execute_update(self, query: str, params: tuple = ()) -> int:
         """
-        Wykonuje zapytanie INSERT/UPDATE/DELETE.
+        Wykonuje zapytanie INSERT/UPDATE/DELETE z walidacją.
         
         Args:
             query: Zapytanie SQL
@@ -166,6 +176,11 @@ class DatabaseManager:
             Liczba zmienionych wierszy
         """
         try:
+            # WALIDACJA PARAMETRÓW
+            if not self._validate_query_params(query, params):
+                logger.error("❌ Walidacja parametrów zapytania nie powiodła się")
+                return 0
+                
             with self.get_connection() as conn:
                 cursor = conn.execute(query, params)
                 conn.commit()
@@ -176,7 +191,7 @@ class DatabaseManager:
     
     def execute_insert(self, query: str, params: tuple = ()) -> Optional[int]:
         """
-        Wykonuje zapytanie INSERT i zwraca ID nowego rekordu.
+        Wykonuje zapytanie INSERT i zwraca ID nowego rekordu z walidacją.
         
         Args:
             query: Zapytanie SQL INSERT
@@ -186,6 +201,11 @@ class DatabaseManager:
             ID nowego rekordu lub None w przypadku błędu
         """
         try:
+            # WALIDACJA PARAMETRÓW
+            if not self._validate_query_params(query, params):
+                logger.error("❌ Walidacja parametrów zapytania nie powiodła się")
+                return None
+                
             with self.get_connection() as conn:
                 cursor = conn.execute(query, params)
                 conn.commit()
@@ -363,6 +383,94 @@ class DatabaseManager:
             logger.error(f"Błąd przywracania bazy danych: {e}")
             return False
     
+    def _validate_query_params(self, query: str, params: tuple) -> bool:
+        """
+        Waliduje parametry zapytania SQL.
+        
+        Args:
+            query: Zapytanie SQL
+            params: Parametry zapytania
+            
+        Returns:
+            True jeśli parametry są prawidłowe
+        """
+        try:
+            # Walidacja zapytania SQL (podstawowa)
+            if not query or not isinstance(query, str):
+                logger.error("❌ Zapytanie SQL jest wymagane i musi być ciągiem znaków")
+                return False
+            
+            # Sprawdź czy zapytanie nie jest niebezpieczne (podstawowa ochrona)
+            dangerous_keywords = ['DROP', 'DELETE FROM', 'TRUNCATE', 'ALTER', 'CREATE INDEX', 'DROP INDEX']
+            query_upper = query.upper()
+            
+            # Dozwolone operacje DELETE tylko z WHERE
+            if 'DELETE FROM' in query_upper and 'WHERE' not in query_upper:
+                logger.warning("⚠️ DELETE bez WHERE - potencjalnie niebezpieczne")
+            
+            # Sprawdź liczbę parametrów vs placeholders
+            placeholder_count = query.count('?')
+            if len(params) != placeholder_count:
+                logger.error(f"❌ Niezgodność liczby parametrów: oczekiwano {placeholder_count}, otrzymano {len(params)}")
+                return False
+            
+            # Walidacja typów parametrów (muszą być serializowalne przez SQLite)
+            for i, param in enumerate(params):
+                if param is not None:
+                    # SQLite obsługuje: None, int, float, str, bytes
+                    if not isinstance(param, (int, float, str, bytes, type(None))):
+                        # Próbuj konwersji
+                        if hasattr(param, '__str__'):
+                            continue  # str() można wywołać
+                        else:
+                            logger.error(f"❌ Parametr {i} ma nieobsługiwany typ: {type(param)}")
+                            return False
+                
+                # Sprawdź długość stringów (ochrona przed zbyt dużymi danymi)
+                if isinstance(param, str) and len(param) > 10000:
+                    logger.warning(f"⚠️ Parametr {i} jest bardzo długi ({len(param)} znaków)")
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Błąd walidacji parametrów zapytania: {e}")
+            return False
+    
+    def validate_database_path(self, db_path: str) -> bool:
+        """
+        Waliduje ścieżkę do bazy danych.
+        
+        Args:
+            db_path: Ścieżka do pliku bazy danych
+            
+        Returns:
+            True jeśli ścieżka jest prawidłowa
+        """
+        try:
+            path_validated = safe_validate(BasicValidators.validate_string, 
+                                         db_path, 'ścieżka bazy danych', min_length=1, max_length=500)
+            if not path_validated:
+                return False
+                
+            # Sprawdź czy katalog nadrzędny istnieje lub można go utworzyć
+            parent_dir = os.path.dirname(db_path)
+            if parent_dir and not os.path.exists(parent_dir):
+                try:
+                    os.makedirs(parent_dir, exist_ok=True)
+                except Exception as e:
+                    logger.error(f"❌ Nie można utworzyć katalogu {parent_dir}: {e}")
+                    return False
+            
+            # Sprawdź czy ścieżka nie jest niebezpieczna
+            if '..' in db_path or db_path.startswith('/'):
+                logger.warning("⚠️ Potencjalnie niebezpieczna ścieżka do bazy danych")
+            
+            return True
+            
+        except Exception as e:
+            logger.error(f"❌ Błąd walidacji ścieżki bazy danych: {e}")
+            return False
+
     def close(self):
         """
         Zamyka połączenie z bazą danych.

@@ -42,6 +42,7 @@ from utils.storage import save_results_to_file             # Zapisywanie wynikó
 from config import CITY_COORDINATES                        # Konfiguracja miast
 from recommendation.trail_recommender import TrailRecommender  # Główny silnik rekomendacji
 from utils.weather_utils import WeatherUtils               # Narzędzia pogodowe
+from utils.validators import BasicValidators, ValidationError, safe_validate  # Walidacja
 
 # ============================================================================
 # FUNKCJE INTERFEJSU UŻYTKOWNIKA
@@ -171,15 +172,58 @@ def get_search_criteria():
     # ========================================================================
     # KONWERSJA I WALIDACJA DANYCH WEJŚCIOWYCH
     # ========================================================================
-    # Konwertuj teksty na odpowiednie typy danych (int, float) lub zostaw None
-    difficulty = int(difficulty) if difficulty else None
-    terrain_type = terrain_type.lower() if terrain_type else None  # Normalizuj do małych liter
-    min_length = float(min_length) if min_length else None
-    max_length = float(max_length) if max_length else None
-    min_sunshine = float(min_sunshine) if min_sunshine else None
-    max_precipitation = float(max_precipitation) if max_precipitation else None
-    min_temperature = float(min_temperature) if min_temperature else None
-    max_temperature = float(max_temperature) if max_temperature else None
+    # Walidacja trudności (1-5)
+    validated_difficulty = None
+    if difficulty:
+        validated_difficulty = safe_validate(
+            BasicValidators.validate_integer,
+            difficulty, 'trudność', min_val=1, max_val=5
+        )
+        if not validated_difficulty:
+            print("⚠️ Nieprawidłowa trudność - użyto domyślnej wartości")
+    
+    # Walidacja typu terenu
+    validated_terrain = None
+    if terrain_type:
+        terrain_choices = ['górski', 'leśny', 'nizinny', 'miejski']
+        validated_terrain = safe_validate(
+            BasicValidators.validate_choice,
+            terrain_type.lower(), terrain_choices, 'typ terenu'
+        )
+        if not validated_terrain:
+            print("⚠️ Nieprawidłowy typ terenu - pomięto kryterium")
+    
+    # Walidacja długości tras
+    validated_min_length = safe_validate(
+        BasicValidators.validate_number,
+        min_length, 'minimalna długość', min_val=0, max_val=1000
+    ) if min_length else None
+    
+    validated_max_length = safe_validate(
+        BasicValidators.validate_number,
+        max_length, 'maksymalna długość', min_val=0, max_val=1000
+    ) if max_length else None
+    
+    # Walidacja parametrów pogodowych
+    validated_min_sunshine = safe_validate(
+        BasicValidators.validate_number,
+        min_sunshine, 'godziny słoneczne', min_val=0, max_val=24
+    ) if min_sunshine else None
+    
+    validated_max_precipitation = safe_validate(
+        BasicValidators.validate_number,
+        max_precipitation, 'opady', min_val=0, max_val=500
+    ) if max_precipitation else None
+    
+    validated_min_temperature = safe_validate(
+        BasicValidators.validate_number,
+        min_temperature, 'minimalna temperatura', min_val=-50, max_val=50
+    ) if min_temperature else None
+    
+    validated_max_temperature = safe_validate(
+        BasicValidators.validate_number,
+        max_temperature, 'maksymalna temperatura', min_val=-50, max_val=50
+    ) if max_temperature else None
     
     # Mapowanie numerów kategorii na nazwy tekstowe
     category_map = {
@@ -190,17 +234,17 @@ def get_search_criteria():
     }
     chosen_category = category_map.get(category_choice) if category_choice else None
     
-    # Zwróć słownik z wszystkimi kryteriami
+    # Zwróć słownik z wszystkimi zwalidowanymi kryteriami
     return {
-        'difficulty': difficulty,              # Poziom trudności (1-3)
-        'terrain_type': terrain_type,          # Typ terenu
-        'min_length': min_length,              # Minimalna długość w km
-        'max_length': max_length,              # Maksymalna długość w km
-        'min_sunshine': min_sunshine,          # Minimalne godziny słoneczne
-        'max_precipitation': max_precipitation, # Maksymalne opady w mm
-        'min_temperature': min_temperature,    # Minimalna temperatura w °C
-        'max_temperature': max_temperature,    # Maksymalna temperatura w °C
-        'category': chosen_category            # Kategoria trasy
+        'difficulty': validated_difficulty,              # Poziom trudności (1-5)
+        'terrain_type': validated_terrain,               # Typ terenu
+        'min_length': validated_min_length,              # Minimalna długość w km
+        'max_length': validated_max_length,              # Maksymalna długość w km
+        'min_sunshine': validated_min_sunshine,          # Minimalne godziny słoneczne
+        'max_precipitation': validated_max_precipitation, # Maksymalne opady w mm
+        'min_temperature': validated_min_temperature,    # Minimalna temperatura w °C
+        'max_temperature': validated_max_temperature,    # Maksymalna temperatura w °C
+        'category': chosen_category                      # Kategoria trasy
     }
 
 def get_city_and_date():
@@ -235,20 +279,23 @@ def get_city_and_date():
         if not date:
             date = datetime.now().strftime("%Y-%m-%d")
             break
-        try:
-            input_date = datetime.strptime(date, "%Y-%m-%d")
-            today = datetime.now()
-            
-            if data_type == "1" and input_date.date() > today.date():
-                print("❌ Dla danych historycznych wybierz datę z przeszłości.")
-                continue
-            elif data_type == "2" and input_date.date() < today.date():
-                print("❌ Dla prognozy pogody wybierz datę dzisiejszą lub przyszłą.")
-                continue
-                
-            break
-        except ValueError:
+        # Walidacja formatu daty
+        validated_date = safe_validate(BasicValidators.validate_date, date, 'data')
+        if not validated_date:
             print("❌ Nieprawidłowy format daty. Użyj formatu RRRR-MM-DD (np. 2024-03-20)")
+            continue
+        
+        input_date = validated_date
+        today = datetime.now()
+        
+        if data_type == "1" and input_date.date() > today.date():
+            print("❌ Dla danych historycznych wybierz datę z przeszłości.")
+            continue
+        elif data_type == "2" and input_date.date() < today.date():
+            print("❌ Dla prognozy pogody wybierz datę dzisiejszą lub przyszłą.")
+            continue
+            
+        break
     
     return cities, date
 
@@ -1307,15 +1354,30 @@ def add_new_route(db_manager):
         
         region = input("🗺️ Region/Miasto: ").strip()
         
-        # Współrzędne
-        try:
-            start_lat = float(input("📍 Szerokość geograficzna startu (np. 50.0): ").strip() or "50.0")
-            start_lon = float(input("📍 Długość geograficzna startu (np. 20.0): ").strip() or "20.0")
-            end_lat = float(input("📍 Szerokość geograficzna końca (np. 50.1): ").strip() or str(start_lat))
-            end_lon = float(input("📍 Długość geograficzna końca (np. 20.1): ").strip() or str(start_lon))
-        except ValueError:
-            print("❌ Nieprawidłowe współrzędne. Używam domyślnych.")
-            start_lat, start_lon, end_lat, end_lon = 50.0, 20.0, 50.0, 20.0
+        # Współrzędne z walidacją
+        start_lat_input = input("📍 Szerokość geograficzna startu (np. 50.0): ").strip() or "50.0"
+        start_lon_input = input("📍 Długość geograficzna startu (np. 20.0): ").strip() or "20.0"
+        
+        # Walidacja współrzędnych startu
+        start_coords = safe_validate(BasicValidators.validate_coordinates, start_lat_input, start_lon_input)
+        if start_coords:
+            start_lat, start_lon = start_coords
+            print(f"✅ Współrzędne startu OK: {start_lat}, {start_lon}")
+        else:
+            print("❌ Nieprawidłowe współrzędne startu. Używam domyślnych.")
+            start_lat, start_lon = 50.0, 20.0
+        
+        end_lat_input = input("📍 Szerokość geograficzna końca (np. 50.1): ").strip() or str(start_lat)
+        end_lon_input = input("📍 Długość geograficzna końca (np. 20.1): ").strip() or str(start_lon)
+        
+        # Walidacja współrzędnych końca
+        end_coords = safe_validate(BasicValidators.validate_coordinates, end_lat_input, end_lon_input)
+        if end_coords:
+            end_lat, end_lon = end_coords
+            print(f"✅ Współrzędne końca OK: {end_lat}, {end_lon}")
+        else:
+            print("❌ Nieprawidłowe współrzędne końca. Używam współrzędnych startu.")
+            end_lat, end_lon = start_lat, start_lon
         
         # Pozostałe dane
         try:

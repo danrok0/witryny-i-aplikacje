@@ -1,0 +1,237 @@
+Mam do zrobienia projekt, którego treść będzie tutaj. Część projektu jest zrobiona ale trzeba sprawdzić czy nic nie brakuje, czy działa poprawnie i go uzupełnić. Na pewno trzeba poprawić obracanie obiektami w grze. Dodać ikonki przy zakupie budynku zeby uzytkownik wiedział co dodaje. 
+o to co trzeba zrobić: 
+
+🧩 ETAP 1 – Inicjalizacja projektu + podstawowe GUI
+🔧 Cel: stworzenie fundamentu projektu i działającego okna GUI
+
+✅ Zadania:
+
+Utwórz repozytorium i strukturę folderów (gui/, core/, data/, tests/)
+
+Skonfiguruj main.py jako punkt startowy
+
+Dodaj GUI: jedno główne okno (np. z PyQt6)
+
+Ustaw layout z:
+
+centralnym miejscem na mapę (widget lub canvas)
+
+panelem bocznym z przyciskami/menu
+
+Stwórz system nawigacji: pasek menu (Nowa gra, Wczytaj, Zapisz, Wyjście)
+
+Dodaj pętlę gry (timer odświeżający GUI)
+
+Przygotuj miejsce na komunikaty systemowe (np. dolny pasek)
+
+🧠 Efekt: działa aplikacja z GUI, mapa może być "pusta", są menu i pętla aktualizacji.
+
+🧩 ETAP 2 – Mapa miasta i siatka kafelków
+🔧 Cel: wyświetlenie interaktywnej mapy miasta jako siatki
+
+✅ Zadania:
+
+Zdefiniuj klasę CityMap z dwuwymiarową tablicą Tile[x][y]
+
+Zrób podstawowy Tile (typ terenu, czy zajęty)
+
+W GUI:
+
+stwórz komponent MapCanvas, który renderuje siatkę
+
+dodaj rysowanie siatki (np. kwadraty 32x32 px z różnym kolorem)
+
+obsłuż kliknięcie na kafelek (zaznaczenie)
+
+dodaj scroll i zoom (jeśli PyQt6, to QGraphicsView)
+
+Dodaj narzędzie debugowania – pokazuj typ kafelka po kliknięciu
+
+🧠 Efekt: interaktywna mapa, klikając kafelki można je zaznaczyć
+
+🧩 ETAP 3 – Budynki: system i dodawanie
+🔧 Cel: gracz może budować obiekty na mapie
+
+✅ Zadania:
+
+Stwórz klasę Building z:
+
+nazwą, kosztem, typem (mieszkalny, przemysłowy itp.), efektami
+
+Dodaj panel budowania w GUI z ikonami budynków
+
+Obsłuż:
+
+kliknięcie ikony budynku → tryb budowy
+
+kliknięcie na mapie → postaw budynek
+
+sprawdzenie, czy można budować (czy kafelek wolny, czy zasoby są)
+
+Po postawieniu:
+
+rysuj kafelek z innym kolorem lub ikonką
+
+odejmij koszt budowy z zasobów gracza
+
+🧠 Efekt: budowanie na mapie, system budynków, zasoby się zmniejszają
+
+🧩 ETAP 4 – Ekonomia i zasoby
+🔧 Cel: zarządzanie zasobami i ekonomią miasta
+
+✅ Zadania:
+
+Stwórz klasę Economy z:
+
+aktualnym stanem zasobów (pieniądze, woda, energia, jedzenie itd.)
+
+przyrostem i zużyciem zasobów w czasie
+
+Dodaj GUI:
+
+panel z aktualnym stanem zasobów
+
+tooltipy pokazujące wpływ budynków na zasoby
+
+Zrób tick ekonomiczny co turę:
+
+dochody z budynków
+
+zużycie zasobów przez mieszkańców
+
+Dodaj alarmy, jeśli coś się kończy (np. “Brakuje wody!”)
+
+🧠 Efekt: działają zasoby, można obserwować ich przyrost/spadek
+
+🧩 ETAP 5 – Populacja i społeczeństwo
+🔧 Cel: dynamiczne zarządzanie mieszkańcami i ich potrzebami
+
+✅ Zadania:
+
+Stwórz klasę Population z atrybutami:
+
+liczba mieszkańców, bezrobotnych, pracujących, zadowolonych itd.
+
+klasy społeczne (np. robotnicy, klasa średnia, elita)
+
+Powiąż populację z budynkami mieszkalnymi i przemysłowymi
+
+Co turę:
+
+symuluj migrację, przyrost, śmiertelność
+
+oblicz zadowolenie w zależności od usług (np. szkoły, szpitale)
+
+GUI:
+
+panel społeczeństwa (słupki, liczby)
+
+alerty przy spadku zadowolenia
+
+🧠 Efekt: społeczeństwo reaguje na Twoje decyzje, widzisz statystyki
+
+🧩 ETAP 6 – Wydarzenia losowe i zdarzenia globalne
+🔧 Cel: losowość, sytuacje kryzysowe i decyzyjne
+
+✅ Zadania:
+
+Stwórz system EventManager z bazą wydarzeń
+
+Każde wydarzenie ma:
+
+typ (katastrofa, bonus, wybór)
+
+treść, wpływ, ewentualne decyzje do podjęcia
+
+Przykłady:
+
+Epidemia → spadek populacji
+
+Zatrucie wody → -zadowolenie
+
+Nowe prawo → wybór: zaakceptuj / odrzuć
+
+GUI:
+
+wyskakujące okno z treścią wydarzenia i przyciskami decyzji
+
+🧠 Efekt: gra zyskuje dynamikę, gracz musi reagować na nieprzewidziane sytuacje
+
+🧩 ETAP 7 – Finanse i budżet miasta
+🔧 Cel: realne zarządzanie budżetem i polityką podatkową
+
+✅ Zadania:
+
+Stwórz moduł FinanceManager:
+
+podatki (osobne stawki dla klas społecznych)
+
+wydatki (utrzymanie budynków, programy społeczne)
+
+budżet i bilans
+
+GUI:
+
+panel finansowy
+
+wykresy przychodu/wydatków
+
+kontrolery do ustawiania podatków
+
+Dodaj system długów i pożyczek
+
+🧠 Efekt: gracz musi balansować budżet, oszczędzać lub inwestować
+
+🧩 ETAP 8 – Raporty i analizy
+🔧 Cel: dostarczenie graczowi analizy danych i trendów
+
+✅ Zadania:
+
+Zbieraj dane historyczne (zapisuj co turę np. populację, pieniądze, zadowolenie)
+
+Stwórz panel raportów z wykresami (matplotlib, plotly)
+
+W GUI:
+
+przycisk „Raporty”
+
+wybór zakresu czasu (np. 10 tur, 50 tur)
+
+Eksport CSV
+
+🧠 Efekt: gracz może analizować dane i podejmować decyzje strategiczne
+
+🧩 ETAP 9 – Zapis/Wczytanie gry + baza danych
+🔧 Cel: trwałość rozgrywki, możliwość przerwania i kontynuacji
+
+✅ Zadania:
+
+Wybór formatu: JSON (prosto) lub SQLite (bardziej profesjonalnie)
+
+Serializacja stanu gry: mapa, budynki, populacja, ekonomia
+
+System plików save/load
+
+GUI: menu zapisu i wczytania
+
+🧠 Efekt: można zapisać i wczytać grę bez utraty danych
+
+🧩 ETAP 10 – Testy, optymalizacja, scenariusze
+🔧 Cel: dopracowanie projektu
+
+✅ Zadania:
+
+Dodaj pytest lub unittest
+
+testy budynków, ekonomii, mapy, zapisu, itd.
+
+Optymalizuj wydajność renderowania
+
+Dodaj kilka gotowych scenariuszy (np. "Miasto nad wodą", "Kryzys energetyczny")
+
+Dodaj system osiągnięć i zakończeń
+
+Zrób README + instrukcję
+
+🧠 Efekt: projekt jest gotowy, stabilny i można go zaprezentować
+

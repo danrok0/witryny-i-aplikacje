@@ -17,6 +17,7 @@ sys.path.insert(0, currentdir)
 from api.trails_api import TrailsAPI
 from api.weather_api import WeatherAPI
 from config import CITY_COORDINATES
+from utils.validators import TrailValidators, safe_validate
 
 try:
     from analyzers.text_processor import TextProcessor
@@ -88,34 +89,45 @@ class TrailDataHandler:
             print(f"Błąd podczas zapisywania danych o szlakach: {e}")
 
     def _validate_trail(self, trail: Any) -> Dict[str, Any]:
-        """Waliduje i formatuje dane szlaku."""
+        """Waliduje i formatuje dane szlaku używając nowego modułu walidacji."""
         if not isinstance(trail, dict):
             return None
-            
-        # Required fields with default values
+        
+        # Najpierw wypróbuj pełną walidację
+        validated = safe_validate(TrailValidators.validate_trail_data, trail)
+        if validated:
+            return validated
+        
+        # Jeśli pełna walidacja się nie powiodła, użyj bezpiecznych domyślnych wartości
         default_trail = {
-            "id": "unknown",
-            "name": "Unknown Trail",
-            "region": "unknown",
+            "id": trail.get("id", "unknown"),
+            "name": trail.get("name", "Unknown Trail") if trail.get("name") else "Unknown Trail",
+            "region": trail.get("region", "unknown"),
             "length_km": 0.0,
             "difficulty": 1,
             "terrain_type": "mixed",
-            "tags": []
+            "tags": trail.get("tags", [])
         }
         
-        # Update default values with actual data if valid
-        if isinstance(trail, dict):
-            for key in default_trail:
-                if key in trail and trail[key] is not None:
-                    default_trail[key] = trail[key]
-                    
-            # Ensure numeric fields are correct type
-            try:
-                default_trail["length_km"] = float(default_trail["length_km"])
-                default_trail["difficulty"] = int(default_trail["difficulty"])
-            except (ValueError, TypeError):
-                default_trail["length_km"] = 0.0
-                default_trail["difficulty"] = 1
+        # Bezpieczne konwertowanie wartości numerycznych
+        try:
+            if trail.get("length_km") is not None:
+                default_trail["length_km"] = max(0, float(trail["length_km"]))
+        except (ValueError, TypeError):
+            pass
+            
+        try:
+            if trail.get("difficulty") is not None:
+                difficulty = int(trail["difficulty"])
+                default_trail["difficulty"] = max(1, min(5, difficulty))
+        except (ValueError, TypeError):
+            pass
+            
+        # Bezpieczne ustawianie typu terenu
+        if trail.get("terrain_type"):
+            terrain = str(trail["terrain_type"]).lower()
+            if terrain in ['górski', 'leśny', 'nizinny', 'miejski', 'mieszany']:
+                default_trail["terrain_type"] = terrain
                 
         return default_trail
 

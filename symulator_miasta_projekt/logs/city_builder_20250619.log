@@ -1,0 +1,27 @@
+2025-06-19 02:08:00 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-19 02:08:17 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3020s | population=291, buildings=0
+2025-06-19 02:08:33 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 2.3987s | population=756, buildings=13
+2025-06-19 02:08:47 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3225s | population=799, buildings=19
+2025-06-19 02:09:02 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3155s | population=806, buildings=30
+2025-06-19 02:09:24 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.5715s | population=817, buildings=45
+2025-06-19 02:09:32 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3269s | population=830, buildings=45
+2025-06-19 02:09:50 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 3.9991s | population=1058, buildings=51
+2025-06-19 02:10:02 - city_builder.events - [32mINFO[0m - [EVENT] Wydarzenie: Nowa Firma w Mieście
+2025-06-19 02:10:11 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 10.1011s | population=1397, buildings=60
+2025-06-19 02:10:17 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.1978s | population=1416, buildings=60
+2025-06-19 02:10:32 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2882s | population=1692, buildings=67
+2025-06-19 02:10:47 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2679s | population=1717, buildings=74
+2025-06-19 02:11:02 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3352s | population=1744, buildings=78
+2025-06-19 02:11:17 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3596s | population=1773, buildings=78
+2025-06-19 02:11:32 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2251s | population=1815, buildings=78
+2025-06-19 02:11:52 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 6.7194s | population=1842, buildings=78
+2025-06-19 02:12:02 - city_builder.events - [32mINFO[0m - [EVENT] Wydarzenie: Strajk Pracowników
+2025-06-19 02:12:07 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 5.8219s | population=1881, buildings=78
+2025-06-19 02:12:17 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3091s | population=1921, buildings=79
+2025-06-19 02:12:32 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3362s | population=1962, buildings=80
+2025-06-19 02:12:47 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2950s | population=1996, buildings=80
+2025-06-19 02:13:02 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2736s | population=2033, buildings=80
+2025-06-19 02:13:17 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.3021s | population=2060, buildings=80
+2025-06-19 02:13:32 - city_builder.performance - [36mDEBUG[0m - Operation 'game_update' took 1.2922s | population=2103, buildings=80
+2025-06-19 02:23:28 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60
+2025-06-19 02:26:58 - city_builder.events - [32mINFO[0m - [INIT] Uruchomienie aplikacji | Data: window_size=1600x1000, map_size=60x60

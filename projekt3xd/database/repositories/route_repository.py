@@ -8,6 +8,12 @@ from typing import List, Dict, Any, Optional, Tuple
 from datetime import datetime
 import json
 import math
+import sys
+import os
+
+# Dodaj ścieżkę do utils
+sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+from utils.validators import TrailValidators, BasicValidators, ValidationError, safe_validate
 
 from ..database_manager import DatabaseManager, rows_to_dicts, row_to_dict
 
@@ -31,7 +37,7 @@ class RouteRepository:
     
     def add_route(self, route_data: Dict[str, Any]) -> Optional[int]:
         """
-        Dodaje nową trasę do bazy danych.
+        Dodaje nową trasę do bazy danych z walidacją danych.
         
         Args:
             route_data: Słownik z danymi trasy
@@ -40,7 +46,18 @@ class RouteRepository:
             ID nowej trasy lub None w przypadku błędu
         """
         try:
-            # Przygotuj zapytanie INSERT
+            # WALIDACJA DANYCH PRZED ZAPISEM DO BAZY
+            validated_data = self._validate_route_data(route_data)
+            if not validated_data:
+                logger.error(f"❌ Walidacja danych trasy nie powiodła się: {route_data.get('name', 'UNKNOWN')}")
+                return None
+            
+            # Sprawdź czy trasa już istnieje (duplikat)
+            if self._route_exists(validated_data['name'], validated_data.get('region')):
+                logger.warning(f"⚠️ Trasa już istnieje: {validated_data['name']} w {validated_data.get('region')}")
+                return None
+            
+            # Przygotuj zapytanie INSERT z zwalidowanymi danymi
             query = """
                 INSERT INTO routes (
                     name, region, start_lat, start_lon, end_lat, end_lon,
@@ -49,32 +66,33 @@ class RouteRepository:
                 ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """
             
+            # Użyj zwalidowanych danych
             params = (
-                route_data.get('name', ''),
-                route_data.get('region'),
-                route_data.get('start_lat', 0.0),
-                route_data.get('start_lon', 0.0),
-                route_data.get('end_lat', 0.0),
-                route_data.get('end_lon', 0.0),
-                route_data.get('length_km'),
-                route_data.get('elevation_gain'),
-                route_data.get('difficulty'),
-                route_data.get('terrain_type'),
-                route_data.get('tags'),
-                route_data.get('description'),
-                route_data.get('category', 'sportowa'),
-                route_data.get('estimated_time'),
-                route_data.get('user_rating')
+                validated_data['name'],
+                validated_data.get('region'),
+                validated_data['start_lat'],
+                validated_data['start_lon'],
+                validated_data.get('end_lat', validated_data['start_lat']),
+                validated_data.get('end_lon', validated_data['start_lon']),
+                validated_data.get('length_km'),
+                validated_data.get('elevation_gain'),
+                validated_data.get('difficulty'),
+                validated_data.get('terrain_type'),
+                json.dumps(validated_data.get('tags', [])) if validated_data.get('tags') else None,
+                validated_data.get('description'),
+                validated_data.get('category', 'sportowa'),
+                validated_data.get('estimated_time'),
+                validated_data.get('user_rating')
             )
             
             route_id = self.db_manager.execute_insert(query, params)
             
             if route_id:
-                logger.info(f"✅ Dodano trasę: {route_data.get('name')} (ID: {route_id})")
+                logger.info(f"✅ Dodano zwalidowaną trasę: {validated_data['name']} (ID: {route_id})")
                 
                 # Dodaj recenzje jeśli są dostępne
-                if 'reviews' in route_data and route_data['reviews']:
-                    self._add_route_reviews(route_id, route_data['reviews'])
+                if 'reviews' in validated_data and validated_data['reviews']:
+                    self._add_route_reviews(route_id, validated_data['reviews'])
             
             return route_id
             
@@ -284,7 +302,7 @@ class RouteRepository:
     
     def search_routes(self, criteria: Dict[str, Any]) -> List[Dict[str, Any]]:
         """
-        Zaawansowane wyszukiwanie tras według wielu kryteriów.
+        Zaawansowane wyszukiwanie tras według wielu kryteriów z walidacją.
         
         Args:
             criteria: Słownik z kryteriami wyszukiwania
@@ -293,41 +311,47 @@ class RouteRepository:
             Lista tras spełniających kryteria
         """
         try:
-            # Buduj zapytanie dynamicznie
+            # Waliduj kryteria wyszukiwania
+            validated_criteria = self.validate_search_criteria(criteria)
+            if not validated_criteria:
+                logger.warning("❌ Brak prawidłowych kryteriów wyszukiwania")
+                return []
+            
+            # Buduj zapytanie dynamicznie z zwalidowanych kryteriów
             where_conditions = []
             params = []
             
-            if criteria.get('name'):
+            if validated_criteria.get('name'):
                 where_conditions.append("name LIKE ?")
-                params.append(f"%{criteria['name']}%")
+                params.append(f"%{validated_criteria['name']}%")
             
-            if criteria.get('region'):
+            if validated_criteria.get('region'):
                 where_conditions.append("region LIKE ?")
-                params.append(f"%{criteria['region']}%")
+                params.append(f"%{validated_criteria['region']}%")
             
-            if criteria.get('max_difficulty'):
+            if validated_criteria.get('max_difficulty'):
                 where_conditions.append("difficulty <= ?")
-                params.append(criteria['max_difficulty'])
+                params.append(validated_criteria['max_difficulty'])
             
-            if criteria.get('min_length'):
+            if validated_criteria.get('min_length'):
                 where_conditions.append("length_km >= ?")
-                params.append(criteria['min_length'])
+                params.append(validated_criteria['min_length'])
             
-            if criteria.get('max_length'):
+            if validated_criteria.get('max_length'):
                 where_conditions.append("length_km <= ?")
-                params.append(criteria['max_length'])
+                params.append(validated_criteria['max_length'])
             
-            if criteria.get('terrain_type'):
+            if validated_criteria.get('terrain_type'):
                 where_conditions.append("terrain_type LIKE ?")
-                params.append(f"%{criteria['terrain_type']}%")
+                params.append(f"%{validated_criteria['terrain_type']}%")
             
-            if criteria.get('category'):
+            if validated_criteria.get('category'):
                 where_conditions.append("category = ?")
-                params.append(criteria['category'])
+                params.append(validated_criteria['category'])
             
-            if criteria.get('min_rating'):
+            if validated_criteria.get('min_rating'):
                 where_conditions.append("user_rating >= ?")
-                params.append(criteria['min_rating'])
+                params.append(validated_criteria['min_rating'])
             
             # Buduj zapytanie
             query = "SELECT * FROM routes"
@@ -336,8 +360,8 @@ class RouteRepository:
             
             query += " ORDER BY user_rating DESC, name"
             
-            # Dodaj limit
-            limit = criteria.get('limit', 50)
+            # Dodaj zwalidowany limit
+            limit = validated_criteria.get('limit', 50)
             query += f" LIMIT {limit}"
             
             results = self.db_manager.execute_query(query, tuple(params))
@@ -599,4 +623,192 @@ class RouteRepository:
         a = math.sin(dlat/2)**2 + math.cos(lat1_rad) * math.cos(lat2_rad) * math.sin(dlon/2)**2
         c = 2 * math.atan2(math.sqrt(a), math.sqrt(1-a))
         
-        return R * c 
+        return R * c
+    
+    def _validate_route_data(self, route_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
+        """
+        Waliduje dane trasy przed zapisem do bazy danych.
+        
+        Args:
+            route_data: Słownik z danymi trasy
+            
+        Returns:
+            Zwalidowane dane lub None jeśli walidacja się nie powiodła
+        """
+        try:
+            # Użyj TrailValidators do podstawowej walidacji
+            validated = safe_validate(TrailValidators.validate_trail_data, route_data)
+            if validated:
+                logger.info(f"✅ Pełna walidacja trasy '{validated['name']}' przeszła pomyślnie")
+                return validated
+            
+            # Jeśli pełna walidacja się nie powiodła, spróbuj walidacji podstawowej
+            logger.warning(f"⚠️ Pełna walidacja nie powiodła się, próbuję podstawową walidację")
+            
+            # Podstawowe wymagania dla bazy danych
+            validated_basic = {}
+            
+            # Nazwa jest wymagana
+            name = safe_validate(BasicValidators.validate_string, 
+                               route_data.get('name'), 'nazwa trasy', min_length=2, max_length=200)
+            if not name:
+                logger.error("❌ Nazwa trasy jest wymagana")
+                return None
+            validated_basic['name'] = name
+            
+            # Współrzędne startu są wymagane
+            start_lat = route_data.get('start_lat')
+            start_lon = route_data.get('start_lon')
+            if start_lat is None or start_lon is None:
+                logger.error("❌ Współrzędne startu są wymagane")
+                return None
+                
+            coords = safe_validate(BasicValidators.validate_coordinates, start_lat, start_lon)
+            if not coords:
+                logger.error("❌ Nieprawidłowe współrzędne startu")
+                return None
+            validated_basic['start_lat'], validated_basic['start_lon'] = coords
+            
+            # Opcjonalne pola z walidacją
+            if route_data.get('region'):
+                region = safe_validate(BasicValidators.validate_string, 
+                                     route_data['region'], 'region', max_length=100)
+                if region:
+                    validated_basic['region'] = region
+            
+            if route_data.get('length_km') is not None:
+                length = safe_validate(BasicValidators.validate_number, 
+                                     route_data['length_km'], 'długość', min_val=0, max_val=1000)
+                if length is not None:
+                    validated_basic['length_km'] = length
+            
+            if route_data.get('difficulty') is not None:
+                difficulty = safe_validate(BasicValidators.validate_integer, 
+                                         route_data['difficulty'], 'trudność', min_val=1, max_val=5)
+                if difficulty is not None:
+                    validated_basic['difficulty'] = difficulty
+            
+            if route_data.get('terrain_type'):
+                terrain_choices = ['górski', 'leśny', 'nizinny', 'miejski', 'mieszany']
+                terrain = safe_validate(BasicValidators.validate_choice, 
+                                      route_data['terrain_type'].lower(), terrain_choices, 'typ terenu')
+                if terrain:
+                    validated_basic['terrain_type'] = terrain
+            
+            if route_data.get('category'):
+                category_choices = ['rodzinna', 'widokowa', 'sportowa', 'ekstremalna']
+                category = safe_validate(BasicValidators.validate_choice, 
+                                       route_data['category'].lower(), category_choices, 'kategoria')
+                if category:
+                    validated_basic['category'] = category
+            
+            if route_data.get('user_rating') is not None:
+                rating = safe_validate(BasicValidators.validate_number, 
+                                     route_data['user_rating'], 'ocena', min_val=1.0, max_val=5.0)
+                if rating is not None:
+                    validated_basic['user_rating'] = rating
+            
+            # Skopiuj pozostałe pola bez dodatkowej walidacji
+            for field in ['end_lat', 'end_lon', 'elevation_gain', 'description', 'estimated_time', 'tags', 'reviews']:
+                if field in route_data:
+                    validated_basic[field] = route_data[field]
+            
+            logger.info(f"✅ Podstawowa walidacja trasy '{validated_basic['name']}' przeszła pomyślnie")
+            return validated_basic
+            
+        except Exception as e:
+            logger.error(f"❌ Błąd walidacji danych trasy: {e}")
+            return None
+    
+    def _route_exists(self, name: str, region: str = None) -> bool:
+        """
+        Sprawdza czy trasa o podanej nazwie już istnieje w bazie.
+        
+        Args:
+            name: Nazwa trasy
+            region: Region (opcjonalnie)
+            
+        Returns:
+            True jeśli trasa istnieje
+        """
+        try:
+            if region:
+                existing = self.find_routes_by_region_and_name(region, name)
+            else:
+                query = "SELECT COUNT(*) as count FROM routes WHERE name = ?"
+                result = self.db_manager.execute_query(query, (name,))
+                count = result[0]['count'] if result else 0
+                return count > 0
+            
+            return len(existing) > 0
+            
+        except Exception as e:
+            logger.error(f"Błąd sprawdzania duplikatu trasy: {e}")
+            return False
+    
+    def validate_search_criteria(self, criteria: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Waliduje kryteria wyszukiwania tras.
+        
+        Args:
+            criteria: Słownik z kryteriami wyszukiwania
+            
+        Returns:
+            Zwalidowane kryteria
+        """
+        validated = {}
+        
+        try:
+            # Walidacja regionu
+            if criteria.get('region'):
+                region = safe_validate(BasicValidators.validate_string, 
+                                     criteria['region'], 'region', max_length=100)
+                if region:
+                    validated['region'] = region
+            
+            # Walidacja trudności
+            if criteria.get('max_difficulty') is not None:
+                difficulty = safe_validate(BasicValidators.validate_integer, 
+                                         criteria['max_difficulty'], 'trudność', min_val=1, max_val=5)
+                if difficulty is not None:
+                    validated['max_difficulty'] = difficulty
+            
+            # Walidacja długości
+            if criteria.get('min_length') is not None:
+                min_len = safe_validate(BasicValidators.validate_number, 
+                                      criteria['min_length'], 'minimalna długość', min_val=0, max_val=1000)
+                if min_len is not None:
+                    validated['min_length'] = min_len
+            
+            if criteria.get('max_length') is not None:
+                max_len = safe_validate(BasicValidators.validate_number, 
+                                      criteria['max_length'], 'maksymalna długość', min_val=0, max_val=1000)
+                if max_len is not None:
+                    validated['max_length'] = max_len
+            
+            # Walidacja współrzędnych dla wyszukiwania w promieniu
+            if criteria.get('lat') is not None and criteria.get('lon') is not None:
+                coords = safe_validate(BasicValidators.validate_coordinates, 
+                                     criteria['lat'], criteria['lon'])
+                if coords:
+                    validated['lat'], validated['lon'] = coords
+            
+            if criteria.get('radius_km') is not None:
+                radius = safe_validate(BasicValidators.validate_number, 
+                                     criteria['radius_km'], 'promień', min_val=0.1, max_val=1000)
+                if radius is not None:
+                    validated['radius_km'] = radius
+            
+            # Walidacja limitu wyników
+            if criteria.get('limit') is not None:
+                limit = safe_validate(BasicValidators.validate_integer, 
+                                    criteria['limit'], 'limit', min_val=1, max_val=1000)
+                if limit is not None:
+                    validated['limit'] = limit
+            
+            logger.info(f"✅ Zwalidowano kryteria wyszukiwania: {len(validated)} kryteriów")
+            return validated
+            
+        except Exception as e:
+            logger.error(f"Błąd walidacji kryteriów wyszukiwania: {e}")
+            return {} 

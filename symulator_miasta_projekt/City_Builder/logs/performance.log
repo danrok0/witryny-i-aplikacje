@@ -1,0 +1,5 @@
+2025-06-13 02:53:35 - DEBUG - Operation 'game_update' took 0.6026s | population=326, buildings=1
+2025-06-13 03:13:01 - DEBUG - Operation 'game_update' took 0.5831s | population=291, buildings=0
+2025-06-13 03:13:21 - DEBUG - Operation 'game_update' took 5.5145s | population=292, buildings=0
+2025-06-19 02:30:42 - DEBUG - Operation 'game_update' took 0.5637s | population=327, buildings=1
+2025-06-19 02:30:59 - DEBUG - Operation 'game_update' took 1.9414s | population=328, buildings=13
