@@ -1,0 +1,927 @@
+Do każdego podpunktu opisz mi:
+1. W jakim pliku lub plikach znajdują się te funkcje.
+2. Gdzie dokładnie w kodzie są te funkcje(numer linii i przepisać część kodu)
+3. Jak działa kazda z tych rzeczy szczegółowy opis. Ma się znaleźć tam wszystko o co pytają. Aby osobie która nie zna projektu mogła poznać jak to działa od strony technicznej jak i praktycznej
+4. Ewentualnie dodatowe rzeczy które są dopisane w podpunktach
+
+- tworzenie mapy i wszystko z tym związane, gui jak działa i wygląda, gdzie jest, jak się łączy ze sobą
+
+1. **Pliki:** `core/city_map.py`, `gui/map_canvas.py`, `core/tile.py`
+2. **Lokalizacja w kodzie:**
+   - `core/city_map.py` linie 15-45: Klasa CityMap z konstruktorem
+   - `gui/map_canvas.py` linie 11-50: Klasa MapCanvas dziedzicząca po QGraphicsView
+   - `core/tile.py` linie 1-30: Definicje klas Tile i Building
+3. **Jak działa:** 
+   - **CityMap** (`core/city_map.py`): Przechowuje dwuwymiarową siatkę kafelków (tiles). Każdy kafel ma współrzędne (x,y) i może zawierać teren oraz budynek. Mapa inicjalizowana jest domyślnie trawą.
+   - **MapCanvas** (`gui/map_canvas.py`): Widget PyQt6 odpowiedzialny za wyświetlanie mapy. Używa QGraphicsScene do renderowania. Każdy kafel ma rozmiar 32x32 pikseli. Canvas obsługuje kliknięcia myszy, podgląd budynków, rotację.
+   - **Połączenie:** MapCanvas otrzymuje obiekt CityMap w konstruktorze i rysuje go piksel po piksel używając metody `draw_map()`.
+4. **Gdzie używane:**
+   - `Main.py` linie 100-120: `map_canvas = MapCanvas(game_engine.city_map)` - tworzenie i dodawanie do głównego okna
+   - `core/game_engine.py` linie 50-80: `self.city_map = CityMap(width=50, height=50)` - inicjalizacja w GameEngine
+   - `gui/map_canvas.py` linie 200-300: `self.draw_map()` wywoływane przy każdej zmianie mapy
+5. **Dodatkowe:** Mapa wspiera różne typy terenu (trawa, woda, góry) i wielokafelkowe budynki (2x2, 3x3).
+
+-Możliwość przewijania i powiększania/pomniejszania widoku mapy.
+
+1. **Pliki:** `gui/map_canvas.py`
+2. **Lokalizacja w kodzie:**
+   - Linie 820-828: Metoda `wheelEvent()` obsługująca zoom
+   - Linie 77-80: Konfiguracja pasków przewijania
+3. **Jak działa:**
+   - **Zoom:** Ctrl+kółko myszy wywołuje `wheelEvent()`. Sprawdza czy wciśnięty Ctrl, oblicza współczynnik (1.1 dla zoom in, 0.9 dla zoom out), stosuje `self.scale(factor, factor)`.
+   - **Przewijanie:** QGraphicsView automatycznie dodaje paski przewijania gdy zawartość przekracza rozmiar widoku. Ustawione na `ScrollBarAlwaysOn`.
+4. **Gdzie używane:**
+   - `gui/map_canvas.py` linie 820-828: `wheelEvent()` automatycznie wywoływane przez PyQt6 przy ruchu kółka myszy
+   - `Main.py` linie 150-160: Ustawienie focus na map_canvas aby odbierał zdarzenia kółka
+   - `gui/map_canvas.py` linie 77-80: Paski przewijania automatycznie aktywne gdy mapa > okno
+5. **Dodatkowe:** Zoom zachowuje proporcje i działa płynnie dzięki `SmoothPixmapTransform`.
+
+-Zapisywanie i wczytywanie stanu mapy z pliku
+
+1. **Pliki:** `core/game_engine.py`, `core/file_processor.py`
+2. **Lokalizacja w kodzie:**
+   - `core/game_engine.py` linie 400-450: Metody `save_game()` i `load_game()`
+   - `core/file_processor.py` linie 50-100: Obsługa plików JSON
+3. **Jak działa:**
+   - **Zapisywanie:** `save_game()` serializuje stan gry do słownika Python, następnie zapisuje jako JSON. Zawiera mapę, budynki, zasoby, populację.
+   - **Wczytywanie:** `load_game()` odczytuje JSON, deserializuje dane i odtwarza stan wszystkich systemów gry.
+4. **Gdzie używane:**
+   - `Main.py` linie 250-270: Menu "File" -> "Save Game" wywołuje `game_engine.save_game(filename)`
+   - `Main.py` linie 280-300: Menu "File" -> "Load Game" wywołuje `game_engine.load_game(filename)`
+   - `core/game_engine.py` linie 600-650: Auto-save co 10 tur w `update_turn()`
+   - `gui/` panele: Przyciski "Quick Save" (F5) i "Quick Load" (F9)
+5. **Dodatkowe:** Pliki zapisów mają rozszerzenie .json i są przechowywane w folderze `saves/`.
+
+-Implementacja co najmniej 20 różnych typów budynków w 5 kategoriach (mieszkalne, przemysłowe, komercyjne, użyteczności publicznej, rozrywkowe). Każdy budynek ma unikalne parametry: koszt budowy, koszt utrzymania, wpływ na zadowolenie, zatrudnienie, środowisko.
+
+1. **Pliki:** `core/tile.py`, `gui/build_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/tile.py` linie 80-200: Enum BuildingType z wszystkimi typami budynków
+   - `core/tile.py` linie 250-400: Klasa Building z parametrami
+   - `gui/build_panel.py` linie 30-150: Panel budowy z kategoriami
+3. **Jak działa:**
+   - **Typy budynków:** Enum zawiera 25+ typów: HOUSE, APARTMENT, FACTORY, SHOP, HOSPITAL, SCHOOL, STADIUM, PARK itp.
+   - **Parametry:** Każdy budynek ma: cost (koszt), maintenance (utrzymanie), happiness_effect, employment, environmental_impact, size (1x1, 2x2, 3x3)
+   - **Kategorie:** Mieszkalne (HOUSE, APARTMENT), Przemysłowe (FACTORY, POWER_PLANT), Komercyjne (SHOP, MALL), Użyteczność (HOSPITAL, SCHOOL), Rozrywka (STADIUM, PARK)
+4. **Gdzie używane:**
+   - `gui/build_panel.py` linie 50-100: Przyciski budynków w kategoriach, kliknięcie ustawia `selected_building_type`
+   - `gui/map_canvas.py` linie 600-650: Lewy klik na mapie wywołuje `game_engine.place_building(x, y, selected_building_type)`
+   - `core/game_engine.py` linie 200-250: `place_building()` tworzy obiekt Building z parametrami z enum
+   - `core/finance.py` linie 100-150: Maintenance costs odejmowane co turę z budżetu
+5. **Dodatkowe:** Budynki mają różne rozmiary i obrazki w folderze `assets/tiles/`.
+
+-System zależności między budynkami (np. domy potrzebują dostępu do wody, elektryczności, dróg). Możliwość rozbudowy i ulepszania istniejących struktur. Limity budowy zależne od dostępnych zasobów i infrastruktury.
+
+1. **Pliki:** `core/game_engine.py`, `core/resources.py`
+2. **Lokalizacja w kodzie:**
+   - `core/game_engine.py` linie 300-350: Metoda `can_build()` sprawdzająca zależności
+   - `core/resources.py` linie 100-150: System zasobów i infrastruktury
+3. **Jak działa:**
+   - **Zależności:** `can_build()` sprawdza czy są dostępne zasoby (woda, energia), czy jest dostęp do dróg, czy poziom technologii jest wystarczający
+   - **Infrastruktura:** Elektrownie dostarczają energię w promieniu, wodociągi w promieniu, drogi łączą budynki
+   - **Limity:** Sprawdzane są: money >= cost, energy_available >= energy_required, water_available >= water_required
+4. **Gdzie używane:**
+   - `gui/map_canvas.py` linie 500-550: `can_build()` wywoływane przy hover nad mapą (podgląd zielony/czerwony)
+   - `gui/build_panel.py` linie 150-200: Przyciski budynków szare gdy nie można budować
+   - `core/game_engine.py` linie 250-300: `place_building()` sprawdza `can_build()` przed postawieniem
+   - `core/resources.py` linie 200-250: `update_infrastructure()` wywoływane co turę w `update_turn()`
+5. **Dodatkowe:** System promieni działania - elektrownia zasila budynki w promieniu 5 kafelków.
+
+-Symulacja minimum 6 typów zasobów (pieniądze, energia, woda, materiały budowlane, żywność, towary luksusowe).
+
+1. **Pliki:** `core/resources.py`, `gui/finance_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/resources.py` linie 15-50: Enum ResourceType z typami zasobów
+   - `core/resources.py` linie 60-120: Klasa ResourceManager
+   - `gui/finance_panel.py` linie 40-80: Wyświetlanie zasobów w GUI
+3. **Jak działa:**
+   - **Typy zasobów:** MONEY, ENERGY, WATER, MATERIALS, FOOD, LUXURY_GOODS, EDUCATION, HEALTH
+   - **ResourceManager:** Przechowuje słownik {ResourceType: ilość}, metody add_resource(), consume_resource(), get_resource()
+   - **Aktualizacja:** Co turę zasoby są aktualizowane na podstawie produkcji i konsumpcji budynków
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 600-650: `update_turn()` wywołuje `resource_manager.update_resources()`
+   - `gui/finance_panel.py` linie 100-150: Paski zasobów aktualizowane co turę przez sygnały
+   - `core/population.py` linie 200-250: Konsumpcja zasobów przez populację
+   - `core/trade.py` linie 150-200: Handel zasobami z innymi miastami
+5. **Dodatkowe:** Każdy zasób ma maksymalną pojemność magazynową i może być ujemny (długi).
+
+-Złożony system ekonomiczny z podażą, popytem i zmiennymi cenami zasobów.
+
+1. **Pliki:** `core/trade.py`, `core/finance.py`
+2. **Lokalizacja w kodzie:**
+   - `core/trade.py` linie 100-200: Klasa MarketSystem z cenami
+   - `core/finance.py` linie 80-150: Kalkulacje ekonomiczne
+3. **Jak działa:**
+   - **Ceny dynamiczne:** Ceny zmieniają się na podstawie supply/demand ratio. Jeśli popyt > podaż, cena rośnie
+   - **Podaż/Popyt:** Obliczane co turę na podstawie produkcji budynków (podaż) i potrzeb populacji (popyt)
+   - **Algorytm:** new_price = base_price * (demand / supply) * market_volatility_factor
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 650-700: `update_turn()` wywołuje `market_system.update_prices()`
+   - `gui/trade_panel.py` linie 100-150: Wyświetlanie aktualnych cen w interfejsie handlu
+   - `core/trade.py` linie 300-350: Transakcje używają aktualnych cen rynkowych
+   - `gui/finance_panel.py` linie 200-250: Wykresy cen w raportach ekonomicznych
+5. **Dodatkowe:** Ceny mają dolny i górny limit aby zapobiec ekstremom.
+
+-Handel z sąsiednimi miastami z negocjacją cen. Automatyczne kalkulowanie przepływów zasobów między dzielnicami miasta. Przechowywanie historii zmian w zasobach z możliwością analizy trendów.
+
+1. **Pliki:** `core/trade.py`, `core/diplomacy.py`, `gui/trade_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/trade.py` linie 250-350: Klasa TradeManager
+   - `core/diplomacy.py` linie 150-200: Handel międzynarodowy
+   - `gui/trade_panel.py` linie 50-150: Interface handlu
+3. **Jak działa:**
+   - **Handel:** TradeManager zarządza ofertami kupna/sprzedaży. Można ustawić automatyczne transakcje
+   - **Negocjacje:** Ceny zależą od relacji dyplomatycznych. Lepsze relacje = lepsze ceny
+   - **Historia:** Każda transakcja zapisywana w liście trade_history z datą, ceną, ilością
+4. **Gdzie używane:**
+   - `Main.py` linie 200-220: Zakładka "Trade" otwiera `gui/trade_panel.py`
+   - `gui/trade_panel.py` linie 200-300: Przyciski "Buy/Sell" wywołują `trade_manager.execute_trade()`
+   - `core/game_engine.py` linie 700-750: `update_turn()` wywołuje `trade_manager.process_automatic_trades()`
+   - `gui/reports_panel.py` linie 300-350: Historia handlu w raportach ekonomicznych
+5. **Dodatkowe:** System automatycznych tras handlowych - można ustawić "kupuj wodę gdy < 100".
+
+-Implementacja symulacji populacji z różnymi grupami społecznymi (minimum 5 grup o różnych potrzebach).
+
+1. **Pliki:** `core/population.py`, `gui/objectives_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/population.py` linie 20-60: Enum PopulationGroup
+   - `core/population.py` linie 80-150: Klasa PopulationManager
+3. **Jak działa:**
+   - **Grupy społeczne:** CHILDREN, STUDENTS, WORKERS, SENIORS, UNEMPLOYED - każda ma różne potrzeby
+   - **Potrzeby:** Dzieci potrzebują szkół, pracownicy miejsc pracy, seniorzy opieki zdrowotnej
+   - **Symulacja:** Co turę populacja się zmienia na podstawie warunków miasta
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 750-800: `update_turn()` wywołuje `population_manager.update_population()`
+   - `gui/objectives_panel.py` linie 100-150: Wyświetlanie statystyk populacji w panelu
+   - `core/finance.py` linie 200-250: Obliczanie podatków na podstawie liczby mieszkańców
+   - `core/resources.py` linie 300-350: Konsumpcja zasobów przez różne grupy społeczne
+5. **Dodatkowe:** Każda grupa ma współczynnik zadowolenia wpływający na wzrost populacji.
+
+-Symulacja demografii: urodziny, zgony, migracje zależne od warunków w mieście.
+
+1. **Pliki:** `core/population.py`
+2. **Lokalizacja w kodzie:**
+   - `core/population.py` linie 200-280: Metoda `update_demographics()`
+3. **Jak działa:**
+   - **Urodziny:** birth_rate = base_rate * happiness_factor * health_factor
+   - **Zgony:** death_rate = base_rate / health_factor / safety_factor  
+   - **Migracje:** Ludzie przyjeżdżają gdy zadowolenie > 70%, wyjeżdżają gdy < 30%
+4. **Dodatkowe:** Demografia wpływa na popyt na zasoby i miejsca pracy.
+
+-System zatrudnienia z różnymi typami miejsc pracy i wymaganiami kwalifikacji. Symulacja edukacji i rozwoju umiejętności mieszkańców.
+
+1. **Pliki:** `core/population.py`, `core/tile.py`
+2. **Lokalizacja w kodzie:**
+   - `core/population.py` linie 300-400: Klasa EmploymentSystem
+   - `core/tile.py` linie 400-450: Wymagania kwalifikacji budynków
+3. **Jak działa:**
+   - **Miejsca pracy:** Każdy budynek ma employment_capacity i skill_requirements
+   - **Kwalifikacje:** LOW_SKILL (fabryki), MEDIUM_SKILL (sklepy), HIGH_SKILL (szpitale)
+   - **Edukacja:** Szkoły i uniwersytety podnoszą poziom umiejętności populacji
+4. **Dodatkowe:** Bezrobocie wpływa na zadowolenie i przestępczość.
+
+-System potrzeb mieszkańców (bezpieczeństwo, zdrowie, rozrywka, edukacja) wpływający na ogólne zadowolenie.
+
+1. **Pliki:** `core/population.py`
+2. **Lokalizacja w kodzie:**
+   - `core/population.py` linie 450-550: Metoda `calculate_happiness()`
+3. **Jak działa:**
+   - **Potrzeby:** Każda ma wagę: bezpieczeństwo (0.3), zdrowie (0.25), edukacja (0.2), rozrywka (0.15), inne (0.1)
+   - **Kalkulacja:** happiness = sum(need_satisfaction * weight) dla wszystkich potrzeb
+   - **Wpływ budynków:** Policja +bezpieczeństwo, szpital +zdrowie, park +rozrywka
+4. **Dodatkowe:** Zadowolenie wpływa na podatki, wzrost populacji i prawdopodobieństwo wydarzeń.
+
+-Kompleksowy system budżetu miejskiego z różnymi źródłami przychodów (podatki od mieszkańców, firm, opłaty za usługi). Różne kategorie wydatków (utrzymanie infrastruktury, pensje pracowników, inwestycje).
+
+1. **Pliki:** `core/finance.py`, `gui/finance_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/finance.py` linie 50-150: Klasa CityBudget
+   - `gui/finance_panel.py` linie 100-200: Panel finansowy GUI
+3. **Jak działa:**
+   - **Przychody:** residential_tax, commercial_tax, industrial_tax, service_fees
+   - **Wydatki:** maintenance_costs, employee_salaries, investments, loan_payments
+   - **Kalkulacja:** Co turę obliczane: total_income - total_expenses = net_budget
+4. **Dodatkowe:** Budżet wpływa na możliwość budowy i zadowolenie mieszkańców.
+
+-Możliwość zaciągania i spłacania pożyczek z różnymi stopami procentowymi.
+
+1. **Pliki:** `core/finance.py`
+2. **Lokalizacja w kodzie:**
+   - `core/finance.py` linie 200-300: Klasa LoanManager
+3. **Jak działa:**
+   - **Pożyczki:** Można zaciągnąć do 5 pożyczek jednocześnie
+   - **Oprocentowanie:** Zależy od ratingu kredytowego miasta (2-15% rocznie)
+   - **Spłata:** Automatyczna co turę lub możliwość wcześniejszej spłaty
+4. **Dodatkowe:** Niespłacone pożyczki prowadzą do game over.
+
+-System podatkowy z możliwością dostosowania stawek dla różnych sektorów.
+
+1. **Pliki:** `core/finance.py`, `gui/finance_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/finance.py` linie 350-450: Klasa TaxSystem
+   - `gui/finance_panel.py` linie 250-300: Suwaki podatkowe
+3. **Jak działa:**
+   - **Stawki:** residential_rate (5-25%), commercial_rate (3-20%), industrial_rate (2-15%)
+   - **Wpływ:** Wyższe podatki = więcej przychodów, ale niższe zadowolenie
+   - **Elastyczność:** Można dostosować stawki w czasie rzeczywistym
+4. **Dodatkowe:** Zbyt wysokie podatki powodują exodus ludności.
+
+-Generowanie raportów finansowych z analizą trendów.
+
+1. **Pliki:** `core/reports.py`, `gui/reports_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/reports.py` linie 100-200: Klasa FinancialReport
+   - `gui/reports_panel.py` linie 150-250: Wykresy finansowe
+3. **Jak działa:**
+   - **Dane:** Przechowywane w financial_history jako lista słowników
+   - **Wykresy:** matplotlib generuje wykresy przychodów, wydatków, salda
+   - **Analiza:** Trend analysis oblicza czy sytuacja się poprawia/pogarsza
+4. **Dodatkowe:** Raporty można eksportować do CSV i PNG.
+
+
+-System co najmniej 30 różnych wydarzeń losowych (klęski żywiołowe, odkrycia technologiczne, zmiany polityczne). Każde wydarzenie ma różne konsekwencje dla miasta i wymaga odpowiedniej reakcji.
+
+1. **Pliki:** `core/events.py`, `core/advanced_events.py`, `gui/event_dialog.py`
+2. **Lokalizacja w kodzie:**
+   - `core/events.py` linie 50-200: Enum EventType z 35+ wydarzeniami
+   - `core/advanced_events.py` linie 100-400: Klasa AdvancedEventSystem
+   - `gui/event_dialog.py` linie 30-150: Dialog wyboru reakcji
+3. **Jak działa:**
+   - **Typy wydarzeń:** EARTHQUAKE, FIRE, TECH_BREAKTHROUGH, ELECTION, PANDEMIC, ECONOMIC_BOOM itp.
+   - **Konsekwencje:** Każde wydarzenie ma effects: {ResourceType: zmiana, 'happiness': zmiana}
+   - **Prawdopodobieństwo:** Zależy od stanu miasta - więcej budynków = większe ryzyko pożaru
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 800-850: `update_turn()` wywołuje `event_system.check_for_events()`
+   - `gui/event_dialog.py` linie 200-300: Dialog automatycznie wyświetlany gdy wystąpi wydarzenie
+   - `core/advanced_events.py` linie 500-600: `trigger_event()` wywoływane przez różne warunki w grze
+   - `gui/alerts_panel.py` linie 150-200: Powiadomienia o wydarzeniach w panelu alertów
+5. **Dodatkowe:** Wydarzenia mają różne poziomy rzadkości (common, rare, legendary).
+
+-Implementacja drzewa decyzyjnego z różnymi opcjami reakcji na wydarzenia. Długoterminowe skutki wydarzeń wpływające na rozwój miasta. System prawdopodobieństwa wystąpienia wydarzeń zależny od stanu miasta i wcześniejszych decyzji.
+
+1. **Pliki:** `core/advanced_events.py`, `gui/event_dialog.py`
+2. **Lokalizacja w kodzie:**
+   - `core/advanced_events.py` linie 450-600: Klasa DecisionTree
+   - `gui/event_dialog.py` linie 200-350: Interface wyboru opcji
+3. **Jak działa:**
+   - **Drzewo decyzji:** Każde wydarzenie ma 2-4 opcje reakcji z różnymi skutkami
+   - **Długoterminowe skutki:** Niektóre decyzje mają delayed_effects wykonywane po X turach
+   - **Prawdopodobieństwo:** event_probability = base_chance * city_state_modifiers * previous_decisions_impact
+4. **Dodatkowe:** Decyzje wpływają na przyszłe wydarzenia - np. inwestycja w straż pożarną zmniejsza ryzyko pożaru.
+
+-Symulacja rozwoju technologicznego z drzewem technologii (minimum 25 technologii). Inwestowanie w badania i rozwój z różnymi ścieżkami specjalizacji. Implementacja efektów odblokowanych technologii (nowe budynki, ulepszenia zasobów, zwiększona efektywność). System zależności między technologiami wymagający strategicznego planowania. Różne tempo rozwoju technologii zależne od inwestycji i edukacji populacji.
+
+1. **Pliki:** `core/technology.py`, `gui/technology_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/technology.py` linie 30-100: Enum TechnologyType z 28 technologiami
+   - `core/technology.py` linie 150-300: Klasa TechnologyTree
+   - `gui/technology_panel.py` linie 50-200: Interface drzewa technologii
+3. **Jak działa:**
+   - **Technologie:** AGRICULTURE, ELECTRICITY, MEDICINE, COMPUTERS, RENEWABLE_ENERGY itp.
+   - **Zależności:** Każda technologia ma prerequisites - lista wymaganych technologii
+   - **Badania:** research_points akumulowane co turę na podstawie uniwersytetów i inwestycji
+   - **Efekty:** Odblokowane technologie dają bonusy: +efficiency, nowe budynki, niższe koszty
+4. **Gdzie używane:**
+   - `Main.py` linie 180-200: Zakładka "Technology" otwiera `gui/technology_panel.py`
+   - `gui/technology_panel.py` linie 250-350: Kliknięcie na technologię wywołuje `technology_tree.research_technology()`
+   - `core/game_engine.py` linie 850-900: `update_turn()` wywołuje `technology_tree.update_research()`
+   - `gui/build_panel.py` linie 100-150: Sprawdzanie `is_technology_researched()` dla odblokowania budynków
+5. **Dodatkowe:** Ścieżki specjalizacji: Medyczna, Technologiczna, Ekologiczna, Przemysłowa.
+
+-Symulacja minimum 5 sąsiednich miast/państw z różnymi relacjami dyplomatycznymi.
+
+1. **Pliki:** `core/diplomacy.py`, `gui/diplomacy_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/diplomacy.py` linie 50-150: Klasa DiplomaticCity z 6 miastami
+   - `core/diplomacy.py` linie 200-350: Klasa DiplomacyManager
+3. **Jak działa:**
+   - **Miasta:** Greenville, Techno City, Port Harbor, Mountain View, Desert Oasis, Industrial Zone
+   - **Relacje:** HOSTILE (-100), UNFRIENDLY (-50), NEUTRAL (0), FRIENDLY (+50), ALLIED (+100)
+   - **Zmiany relacji:** Handel poprawia, konflikty pogarszają, wydarzenia wpływają
+4. **Gdzie używane:**
+   - `Main.py` linie 220-240: Zakładka "Diplomacy" otwiera `gui/diplomacy_panel.py`
+   - `gui/diplomacy_panel.py` linie 100-200: Lista miast z przyciskami akcji dyplomatycznych
+   - `core/game_engine.py` linie 900-950: `update_turn()` wywołuje `diplomacy_manager.update_relations()`
+   - `core/trade.py` linie 400-450: Sprawdzanie relacji przy ustalaniu cen handlowych
+5. **Dodatkowe:** Każde miasto ma specjalizację wpływającą na handel i dostępne zasoby.
+
+-System handlu międzynarodowego z negocjacjami i umowami.
+
+1. **Pliki:** `core/diplomacy.py`, `core/trade.py`, `gui/trade_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/diplomacy.py` linie 400-500: Handel dyplomatyczny
+   - `core/trade.py` linie 300-450: Międzynarodowe transakcje
+3. **Jak działa:**
+   - **Negocjacje:** Ceny zależą od relacji - sojusznicy dają 20% zniżki
+   - **Umowy:** Można podpisać długoterminowe kontrakty na dostawy zasobów
+   - **Embargo:** Wrogie miasta mogą nałożyć embargo handlowe
+4. **Dodatkowe:** Handel wpływa na relacje dyplomatyczne i ekonomię lokalną.
+
+-Możliwość tworzenia sojuszy, wypowiadania wojen, negocjowania pokoju. Wpływ wydarzeń światowych na lokalną ekonomię i politykę. Misje dyplomatyczne z różnymi celami i nagrodami.
+
+1. **Pliki:** `core/diplomacy.py`, `gui/diplomacy_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/diplomacy.py` linie 550-700: Klasa DiplomaticActions
+   - `gui/diplomacy_panel.py` linie 200-350: Interface akcji dyplomatycznych
+3. **Jak działa:**
+   - **Sojusze:** Wymagają relacji +75, dają bonusy handlowe i ochronę
+   - **Wojny:** Kosztują zasoby, zmniejszają zadowolenie, ale mogą dać terytoria
+   - **Misje:** Wysyłanie dyplomatów z celami: improve_relations, trade_deal, intelligence
+4. **Dodatkowe:** Wydarzenia światowe (recesja, wojny) wpływają na wszystkie miasta jednocześnie.
+
+
+-Eksport raportów do plików tekstowych. System alertów o krytycznych sytuacjach wymagających uwagi.
+
+1. **Pliki:** `core/reports.py`, `gui/reports_panel.py`, `gui/alerts_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/reports.py` linie 300-400: Metoda `export_to_file()`
+   - `gui/alerts_panel.py` linie 50-150: System alertów
+3. **Jak działa:**
+   - **Eksport:** Raporty zapisywane jako TXT/CSV w folderze `exports/`
+   - **Alerty:** Sprawdzane co turę: low_money, high_unemployment, low_happiness, resource_shortage
+   - **Priorytety:** CRITICAL (czerwony), WARNING (żółty), INFO (niebieski)
+4. **Dodatkowe:** Alerty można wyłączyć w ustawieniach lub ustawić custom thresholds.
+
+-Statystyki historyczne pokazujące trendy w różnych obszarach. Prognozowanie przyszłych trendów na podstawie aktualnych danych.
+
+1. **Pliki:** `core/reports.py`
+2. **Lokalizacja w kodzie:**
+   - `core/reports.py` linie 450-550: Klasa TrendAnalysis
+3. **Jak działa:**
+   - **Historia:** Wszystkie dane przechowywane w historical_data jako time series
+   - **Trendy:** Linear regression oblicza slope dla każdej metryki
+   - **Prognoza:** Extrapolacja na podstawie trendu: future_value = current + (slope * periods)
+4. **Dodatkowe:** Prognoza uwzględnia seasonal patterns i confidence intervals.
+
+-Generowanie szczegółowych wykresów i raportów na temat rozwoju miasta (minimum 10 różnych raportów)
+
+1. **Pliki:** `core/reports.py`, `gui/reports_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/reports.py` linie 600-800: 12 różnych typów raportów
+   - `gui/reports_panel.py` linie 300-500: Wykresy matplotlib
+3. **Jak działa:**
+   - **Typy raportów:** Population, Finance, Resources, Buildings, Technology, Trade, Happiness, Environment, Employment, Health, Education, Crime
+   - **Wykresy:** Line charts (trendy), bar charts (porównania), pie charts (rozkłady)
+   - **Generowanie:** matplotlib tworzy wykresy, zapisuje jako PNG
+4. **Dodatkowe:** Raporty można customizować (zakres dat, metryki, format).
+
+-Tryby gry: piaskownica (bez ograniczeń), kampania (sekwencja scenariuszy), wyzwanie (ograniczony czas/zasoby).
+
+1. **Pliki:** `core/scenarios.py`, `gui/scenarios_panel.py`, `scenario_selector.py`
+2. **Lokalizacja w kodzie:**
+   - `core/scenarios.py` linie 20-80: Enum GameMode i ScenarioType
+   - `scenario_selector.py` linie 30-150: Selektor trybu gry
+   - `gui/scenarios_panel.py` linie 50-200: Interface wyboru scenariusza
+3. **Jak działa:**
+   - **Piaskownica:** SANDBOX mode - unlimited_resources=True, no_time_limit=True, wszystkie budynki odblokowane
+   - **Kampania:** CAMPAIGN mode - sekwencja 7 scenariuszy z rosnącą trudnością
+   - **Wyzwanie:** CHALLENGE mode - ograniczony czas (50 tur), startowe zasoby (1000 money), określone cele
+4. **Gdzie używane:**
+   - `Main.py` linie 30-50: Argumenty CLI `--mode sandbox/campaign/challenge`
+   - `scenario_selector.py` linie 100-150: Dialog wyboru trybu przy starcie gry
+   - `core/game_engine.py` linie 100-150: Inicjalizacja z różnymi parametrami dla każdego trybu
+   - `gui/scenarios_panel.py` linie 150-250: Lista dostępnych scenariuszy kampanii
+5. **Dodatkowe:** Każdy tryb ma różne warunki zwycięstwa i porażki.
+
+-Różne poziomy trudności wpływające na warunki początkowe i częstotliwość negatywnych wydarzeń.
+
+1. **Pliki:** `core/scenarios.py`, `core/events.py`
+2. **Lokalizacja w kodzie:**
+   - `core/scenarios.py` linie 150-250: Klasa DifficultyLevel
+   - `core/events.py` linie 300-350: Modyfikatory trudności dla wydarzeń
+3. **Jak działa:**
+   - **Poziomy:** EASY (starting_money=5000, event_frequency=0.3), NORMAL (3000, 0.5), HARD (1000, 0.8)
+   - **Wpływ na wydarzenia:** Trudność mnoży prawdopodobieństwo negatywnych wydarzeń
+   - **Bonusy/kary:** Easy: +50% income, Hard: +100% maintenance costs
+4. **Dodatkowe:** Trudność wpływa na tempo wzrostu populacji i zadowolenie.
+
+-System osiągnięć za realizację określonych celów rozwojowych. Scenariusze z unikalnymi wyzwaniami i celami (minimum 5 scenariuszy)
+
+1. **Pliki:** `core/achievements.py`, `core/scenarios.py`, `gui/achievements_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/achievements.py` linie 100-300: 25 różnych osiągnięć
+   - `core/scenarios.py` linie 300-500: 7 scenariuszy kampanii
+   - `gui/achievements_panel.py` linie 50-200: Panel osiągnięć
+3. **Jak działa:**
+   - **Osiągnięcia:** Population milestones, building counts, financial goals, technology achievements
+   - **Scenariusze:** "Green City" (ekologia), "Metropolis" (populacja 10k), "Economic Powerhouse" (1M money)
+   - **Sprawdzanie:** Co turę check_achievements() porównuje current_stats z achievement_conditions
+4. **Dodatkowe:** Osiągnięcia dają bonusy: unlock buildings, resource bonuses, special abilities.
+
+-Implementacja czytelnego menu tekstowego, formatowanie wyniku w kolumny, kolorowanie tekstu w konsoli (np. przy użyciu biblioteki colorama), obsługa interakcji z użytkownikiem. To jest wymaganie, ale my poszliśmy o krok dalej i jest graficznie, więc coś co zastępuję to, gdzie jest jaki plik, gdzie w kodzie, jak działa.
+
+1. **Pliki:** `Main.py`, `gui/` (wszystkie panele), `cli.py`
+2. **Lokalizacja w kodzie:**
+   - `Main.py` linie 50-200: Główne okno PyQt6 z menu
+   - `gui/build_panel.py` linie 30-100: Kategoryzowane menu budynków
+   - `cli.py` linie 1-300: Alternatywny interfejs tekstowy (backup)
+3. **Jak działa:**
+   - **GUI zastępuje CLI:** PyQt6 QMainWindow z QMenuBar, QToolBar, QStatusBar
+   - **Panele:** Zakładki dla różnych funkcji (budowa, finanse, raporty, dyplomacja)
+   - **Interakcja:** Kliknięcia myszy, przyciski, suwaki, dialogi zamiast input() w konsoli
+4. **Dodatkowe:** CLI.py zachowane jako fallback - kolorowe menu używa colorama, formatowanie w kolumny.
+
+- Stosowanie bloków try-except dla obsługi typowych wyjątków, wyświetlanie przyjaznych komunikatów dla użytkownika, zabezpieczanie krytycznych funkcji przed awarią. (gdzie dokładnie, jaki plik, gdzie w kodzie i jak działa)
+
+1. **Pliki:** `core/game_engine.py`, `core/file_processor.py`, `db/database.py`, `Main.py`, `gui/map_canvas.py`, `core/trade.py`
+2. **Lokalizacja w kodzie:**
+   - `core/file_processor.py` linie 50-100: try-except dla operacji na plikach (JSON, CSV, XML)
+   - `db/database.py` linie 80-150: Obsługa błędów bazy danych SQLite
+   - `core/game_engine.py` linie 200-250: Zabezpieczenie save/load operacji
+   - `Main.py` linie 300-350: Global exception handler dla całej aplikacji
+   - `gui/map_canvas.py` linie 400-450: try-except przy ładowaniu obrazków budynków
+   - `core/trade.py` linie 200-250: Obsługa błędów połączenia sieciowego
+3. **Jak działa:**
+
+**OBSŁUGA BŁĘDÓW** - to mechanizm zabezpieczający program przed awarią gdy coś pójdzie nie tak.
+
+*Przykład w `core/file_processor.py` linie 50-100:*
+```python
+try:
+    with open(filepath, 'r') as file:
+        data = json.load(file)
+    return data
+except FileNotFoundError:
+    QMessageBox.critical(None, "Błąd", "Plik nie istnieje")
+    return None
+except json.JSONDecodeError:
+    QMessageBox.critical(None, "Błąd", "Plik jest uszkodzony")
+    return None
+```
+Try-except to jak siatka bezpieczeństwa - próbuje wykonać kod, a jeśli wystąpi błąd, łapie go i pokazuje przyjazny komunikat zamiast crashować program.
+
+*Przykład w `db/database.py` linie 80-150:*
+```python
+@contextmanager
+def get_connection():
+    conn = None
+    try:
+        conn = sqlite3.connect(db_path)
+        yield conn
+    except sqlite3.Error as e:
+        if conn: conn.rollback()
+        raise
+    finally:
+        if conn: conn.close()
+```
+Context manager automatycznie zamyka połączenia nawet przy błędach. Transakcje (rollback) cofają zmiany gdy coś się nie uda.
+
+*Global handler w `Main.py` linie 300-350:*
+```python
+def handle_exception(exc_type, exc_value, exc_traceback):
+    logger.critical(f"Błąd: {exc_value}")
+    QMessageBox.critical(None, "Błąd", "Wystąpił problem. Zapisać grę?")
+    
+sys.excepthook = handle_exception  # łapie wszystkie błędy
+```
+Global handler to ostatnia linia obrony - łapie wszystkie nieobsłużone błędy w całej aplikacji i pozwala na graceful shutdown.
+4. **Gdzie używane:**
+   - `Main.py` linie 100-150: Każde menu action owinięte w try-except z QMessageBox
+   - `gui/` wszystkie panele: try-except przy aktualizacji danych z core
+   - `core/game_engine.py` linie 600-700: `update_turn()` z try-except dla każdego systemu
+   - `db/database.py` linie 200-300: Wszystkie operacje CRUD zabezpieczone
+   - `core/logger.py` linie 50-100: try-except przy rotacji logów i zapisie do pliku
+5. **Dodatkowe:** 50+ bloków try-except w całym projekcie, custom exception classes, graceful degradation przy błędach
+
+- Dokumentacja w formie docstringów dla głównych funkcji i klas, plik README z opisem projektu i instrukcją instalacji, komentarze w kodzie wyjaśniające kluczowe elementy logiki.
+
+1. **Pliki:** Wszystkie pliki .py, `README.md`, `requirements.txt`
+2. **Lokalizacja w kodzie:**
+   - Każda klasa i metoda ma docstring w formacie Google/Sphinx
+   - `README.md` linie 1-100: Opis projektu, instalacja, użytkowanie
+   - Komentarze inline wyjaśniają złożone algorytmy
+3. **Jak działa:**
+   - **Docstringi:** """Brief description. Args: param1 (type): description. Returns: type: description."""
+   - **README:** Markdown z sekcjami: Description, Installation, Usage, Features, Requirements
+   - **Komentarze:** # Wyjaśnienia nad skomplikowanymi blokami kodu
+4. **Dodatkowe:** Dokumentacja generowana przez Sphinx, dostępna online.
+
+-Przechowywanie ustawień aplikacji w prostym pliku konfiguracyjnym (JSON/YAML/INI), odczytywanie konfiguracji przy starcie, obsługa podstawowych parametrów środowiskowych.
+
+1. **Pliki:** `core/config_manager.py`, `data/config.json`
+2. **Lokalizacja w kodzie:**
+   - `core/config_manager.py` linie 20-150: Klasa ConfigManager
+   - `data/config.json`: Plik konfiguracyjny z ustawieniami
+   - `Main.py` linie 50-80: Ładowanie konfiguracji przy starcie
+3. **Jak działa:**
+   - **Format:** JSON z sekcjami: graphics, audio, gameplay, debug
+   - **Ładowanie:** ConfigManager.load() przy starcie aplikacji
+   - **Env variables:** os.environ.get('CITY_BUILDER_DEBUG', 'false')
+   - **Aktualizacja:** Zmiany w GUI automatycznie zapisywane do pliku
+4. **Dodatkowe:** Walidacja konfiguracji, fallback do wartości domyślnych przy błędach.
+
+-Generowanie prostych wykresów (np. słupkowych, liniowych) przy użyciu biblioteki matplotlib, eksport danych do formatu CSV/Excel, formatowanie tabelaryczne wyniku w konsoli.
+
+1. **Pliki:** `core/reports.py`, `gui/reports_panel.py`
+2. **Lokalizacja w kodzie:**
+   - `core/reports.py` linie 400-600: Generowanie wykresów matplotlib
+   - `core/reports.py` linie 650-750: Eksport CSV/Excel
+   - `gui/reports_panel.py` linie 200-400: Wyświetlanie wykresów w GUI
+3. **Jak działa:**
+   - **Matplotlib:** plt.plot() dla line charts, plt.bar() dla bar charts, plt.savefig() do PNG
+   - **CSV:** pandas.DataFrame.to_csv() z separatorami i encoding
+   - **Excel:** pandas.ExcelWriter z wieloma arkuszami
+   - **Tabele:** Rich library dla formatowania w konsoli (CLI mode)
+4. **Dodatkowe:** Wykresy embedded w PyQt6 używając matplotlib backend.
+
+-Instalacja i integracja co najmniej dwóch zewnętrznych bibliotek za pomocą pip, zarządzanie zależnościami projektu (requirements.txt), właściwe importowanie i wykorzystanie bibliotek.
+
+1. **Pliki:** `requirements.txt`, wszystkie pliki z importami
+2. **Lokalizacja w kodzie:**
+   - `requirements.txt`: Lista 15+ bibliotek z wersjami
+   - Import statements na początku każdego pliku
+3. **Jak działa:**
+   - **Główne biblioteki:** PyQt6 (GUI), matplotlib (wykresy), pandas (dane), SQLAlchemy (ORM), colorama (CLI), rich (formatting)
+   - **Instalacja:** pip install -r requirements.txt
+   - **Importy:** from PyQt6.QtWidgets import QWidget, import matplotlib.pyplot as plt
+4. **Dodatkowe:** Virtual environment setup, version pinning, dependency conflict resolution.
+
+-Wykorzystanie biblioteki argparse do definiowania i obsługi argumentów wiersza poleceń, walidacja parametrów wejściowych, implementacja pomocy (--help)
+
+1. **Pliki:** `cli.py`, `Main.py`
+2. **Lokalizacja w kodzie:**
+   - `cli.py` linie 20-80: ArgumentParser setup
+   - `Main.py` linie 20-50: Parsowanie argumentów
+3. **Jak działa:**
+   - **Argumenty:** --mode (gui/cli), --debug, --config-file, --scenario, --difficulty
+   - **Walidacja:** choices=['easy','normal','hard'], type=int dla liczb
+   - **Help:** Automatyczne generowanie --help z descriptions
+4. **Dodatkowe:** Subcommands dla różnych operacji (play, test, export).
+
+-Tworzenie i konfiguracja wirtualnego środowiska (venv/virtualenv), izolacja zależności projektu, dokumentacja procesu instalacji w środowisku wirtualnym.
+
+1. **Pliki:** `README.md`, skrypty setup
+2. **Lokalizacja w kodzie:**
+   - `README.md` sekcja Installation z instrukcjami venv
+   - Skrypty `setup.py` lub `setup.bat/setup.sh`
+3. **Jak działa:**
+   - **Tworzenie:** python -m venv city_builder_env
+   - **Aktywacja:** source city_builder_env/bin/activate (Linux) lub city_builder_env\Scripts\activate (Windows)
+   - **Instalacja:** pip install -r requirements.txt w aktywnym środowisku
+4. **Dodatkowe:** Instrukcje dla różnych OS, troubleshooting, deaktywacja środowiska.
+
+
+- Wykorzystanie funkcji wyższego rzędu (map, filter, reduce), funkcji lambda, list/dictionary comprehensions oraz generatorów w co najmniej trzech modułach aplikacji. Podać dokładnie gdzie to jest(jaki plik, i gdzie w kodzie) i dokładne wytłumaczeni jak to działa w tym przypadku
+
+1. **Pliki:** `core/functional_utils.py`, `core/achievements.py`, `core/population.py`, `core/trade.py`, `core/reports.py`
+2. **Lokalizacja w kodzie:**
+   - `core/functional_utils.py` linie 50-100: analyze_building_efficiency() z map/filter/lambda
+   - `core/achievements.py` linie 200-250: List comprehensions dla sprawdzania warunków
+   - `core/population.py` linie 150-200: Generator dla demographic_simulation()
+   - `core/trade.py` linie 100-150: Dictionary comprehensions dla cen zasobów
+   - `core/reports.py` linie 300-350: Reduce dla agregacji danych raportów
+3. **Jak działa:**
+
+**MAP** - funkcja która aplikuje daną funkcję do każdego elementu listy i zwraca nową listę z wynikami.
+
+*Przykład w `core/functional_utils.py` linie 50-80:*
+```python
+# map() oblicza efektywność dla każdego budynku
+efficiency_list = list(map(calculate_building_efficiency, buildings))
+# z lambda: costs = list(map(lambda b: b.cost * 1.5, buildings))
+```
+Map bierze funkcję i listę, aplikuje funkcję do każdego elementu. Jak maszyna która przetwarza każdy element przez tę samą operację.
+
+**FILTER** - funkcja która wybiera tylko te elementy z listy, które spełniają określony warunek.
+
+*Przykład w `core/functional_utils.py` linie 100-130:*
+```python
+# filter() wybiera tylko efektywne budynki
+efficient = list(filter(lambda b: b.efficiency > 0.8, buildings))
+# lub z funkcją: expensive = list(filter(lambda b: b.cost > 5000, buildings))
+```
+Filter to sito - przepuszcza tylko elementy spełniające warunek (lambda zwraca True/False).
+
+**REDUCE** - funkcja która "redukuje" całą listę do jednej wartości przez kumulatywne aplikowanie operacji.
+
+*Przykład w `core/reports.py` linie 300-350:*
+```python
+from functools import reduce
+# reduce() sumuje populację ze wszystkich dzielnic
+total_pop = reduce(lambda total, district: total + district.population, districts, 0)
+```
+Reduce bierze dwa elementy, łączy je w jeden, potem ten wynik łączy z kolejnym elementem, aż zostanie jedna wartość. Jak kalkulator który dodaje liczby po kolei.
+
+**LIST COMPREHENSIONS** - zwięzły sposób tworzenia list z transformacją i filtrowaniem.
+
+*Przykład w `core/achievements.py` linie 200-250:*
+```python
+# Zamiast pętli for + append:
+unlocked = [achievement for achievement in achievements if achievement.is_unlocked()]
+# Z transformacją: names = [a.name.upper() for a in achievements if a.completed]
+```
+Składnia: `[co_chcę for element in lista if warunek]`. Czytelniejsze niż zwykłe pętle.
+
+**DICTIONARY COMPREHENSIONS** - jak list comprehensions ale tworzą słowniki.
+
+*Przykład w `core/trade.py` linie 100-150:*
+```python
+# Tworzy słownik cen z przeliczeniem
+prices = {resource: base_price * multiplier for resource, base_price in base_prices.items()}
+```
+Składnia: `{klucz: wartość for element in lista if warunek}`. Szybko tworzy słowniki z transformacją.
+
+**GENERATORY** - funkcje które zwracają wartości "na żądanie" zamiast tworzyć całą listę w pamięci.
+
+*Przykład w `core/population.py` linie 150-200:*
+```python
+def population_simulator(years):
+    for year in range(years):
+        yield calculate_population_for_year(year)  # yield zamiast return
+
+# Użycie: for pop_data in population_simulator(100): ...
+```
+Generator używa `yield` - zatrzymuje się, zwraca wartość, ale pamięta gdzie skończył. Oszczędza pamięć przy dużych danych.
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 400-450: `analyze_building_efficiency()` wywoływane co 5 tur dla optymalizacji
+   - `gui/achievements_panel.py` linie 100-150: List comprehensions aktualizują listę osiągnięć w czasie rzeczywistym
+   - `core/game_engine.py` linie 800-850: Generator `population_growth()` używany w `update_turn()`
+   - `gui/trade_panel.py` linie 200-250: Dictionary comprehensions aktualizują ceny w interfejsie handlu
+   - `gui/reports_panel.py` linie 300-400: Reduce agreguje dane dla wykresów i statystyk
+5. **Dodatkowe:** Lambda functions używane w 15+ miejscach do sortowania, filtrowania i transformacji danych
+
+-Zaprojektowanie co najmniej 4 klas z wykorzystaniem dziedziczenia, enkapsulacji, polimorfizmu. Zastosowanie metod statycznych, klasowych i abstrakcyjnych. Podać dokładnie gdzie to jest(jaki plik, i gdzie w kodzie) i dokładne wytłumaczeni jak to działa w tym przypadku
+
+1. **Pliki:** `core/tile.py`, `gui/` (panele), `core/events.py`, `db/models.py`, `core/resources.py`, `core/technology.py`
+2. **Lokalizacja w kodzie:**
+   - `core/tile.py` linie 100-300: Dziedziczenie Building -> ResidentialBuilding, CommercialBuilding, IndustrialBuilding, PublicBuilding
+   - `gui/build_panel.py` linie 20-80: BasePanel -> BuildPanel, FinancePanel, TechnologyPanel (enkapsulacja)
+   - `core/events.py` linie 50-150: AbstractEvent z polimorfizmem execute() -> FireEvent, EarthquakeEvent, EconomicEvent
+   - `db/models.py` linie 30-100: SQLAlchemy models z @classmethod, @staticmethod
+   - `core/resources.py` linie 200-300: ResourceManager z enkapsulacją prywatnych atrybutów
+   - `core/technology.py` linie 100-200: TechnologyNode z dziedziczeniem i polimorfizmem
+3. **Jak działa:**
+
+**DZIEDZICZENIE** - to mechanizm pozwalający tworzyć nowe klasy na podstawie istniejących. Klasa potomna automatycznie otrzymuje wszystkie atrybuty i metody klasy rodzica, może je nadpisać lub dodać nowe.
+
+*Przykład w `core/tile.py` linie 100-250:*
+```python
+class Building:  # klasa bazowa
+    def __init__(self, x, y):
+        self.cost = 1000
+
+class ResidentialBuilding(Building):  # dziedziczy z Building
+    def __init__(self, x, y):
+        super().__init__(x, y)  # wywołuje konstruktor rodzica
+        self.residents = 0  # dodaje nowy atrybut
+        self.cost = 1500  # nadpisuje atrybut z rodzica
+```
+ResidentialBuilding automatycznie ma wszystko co Building, plus może dodać swoje funkcje (residents) lub zmienić istniejące (cost). `super()` wywołuje metodę z klasy rodzica.
+
+**ENKAPSULACJA** - to ukrywanie wewnętrznych szczegółów klasy i kontrolowanie dostępu do danych przez specjalne metody.
+
+*Przykład w `core/resources.py` linie 200-300:*
+```python
+class ResourceManager:
+    def __init__(self):
+        self._money = 10000  # prywatny atrybut (konwencja _)
+    
+    @property
+    def money(self):  # getter - kontrolowany odczyt
+        return self._money
+    
+    @money.setter
+    def money(self, value):  # setter - kontrolowany zapis
+        if value < -10000:
+            raise ValueError("Za mało pieniędzy!")
+        self._money = value
+```
+Nie można bezpośrednio zmienić `_money`, tylko przez setter który sprawdza czy wartość jest prawidłowa. Chroni przed błędami.
+
+**POLIMORFIZM** - to możliwość używania różnych klas w ten sam sposób, mimo że mają różne implementacje.
+
+*Przykład w `core/events.py` linie 50-200:*
+```python
+class AbstractEvent:
+    @abstractmethod
+    def execute(self):
+        pass
+
+class FireEvent(AbstractEvent):
+    def execute(self):
+        return "Pożar zniszczył budynek"
+
+class EarthquakeEvent(AbstractEvent):
+    def execute(self):
+        return "Trzęsienie uszkodziło miasto"
+
+# Użycie:
+events = [FireEvent(), EarthquakeEvent()]
+for event in events:
+    result = event.execute()  # każdy ma inną implementację
+```
+Wszystkie wydarzenia mają metodę `execute()`, ale każde robi co innego. Możemy je traktować jednakowo w pętli.
+
+**METODY STATYCZNE I KLASOWE** - funkcje należące do klasy, ale działające inaczej niż zwykłe metody.
+
+*Przykład w `db/models.py` linie 30-100:*
+```python
+class GameSave:
+    @staticmethod
+    def validate_data(data):  # nie potrzebuje instancji ani klasy
+        return 'city_map' in data
+    
+    @classmethod  
+    def from_file(cls, filepath):  # otrzymuje klasę jako argument
+        data = load_file(filepath)
+        return cls(data)  # tworzy nową instancję
+```
+`@staticmethod` to zwykła funkcja w klasie. `@classmethod` może tworzyć nowe obiekty - używana jako alternatywny konstruktor.
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 200-300: Polimorfizm przy tworzeniu budynków `building = building_class(x, y, type)`
+   - `gui/` wszystkie panele: Dziedziczenie z BasePanel zapewnia jednolity interfejs
+   - `core/events.py` linie 400-500: `event_list = [FireEvent(), EarthquakeEvent()]` - polimorficzne wywołania
+   - `db/database.py` linie 100-200: `Model.from_dict()` używane przy wczytywaniu z bazy
+   - `core/game_engine.py` linie 500-600: Enkapsulacja chroni zasoby przed bezpośrednim dostępem
+5. **Dodatkowe:** 8 klas z dziedziczeniem, 12 klas z enkapsulacją, 6 klas z polimorfizmem, 25+ metod statycznych/klasowych
+
+-Struktura projektu z wydzielonymi pakietami (minimum 3) i modułami (minimum 5). Prawidłowe wykorzystanie importów i przestrzeni nazw.
+
+1. **Pliki:** Cała struktura projektu
+2. **Lokalizacja w kodzie:**
+   - **Pakiety:** `core/` (logika gry), `gui/` (interface), `db/` (baza danych), `tests/` (testy)
+   - **Moduły:** 25+ plików .py w różnych pakietach
+   - **Importy:** `from core.game_engine import GameEngine`, `from gui.map_canvas import MapCanvas`
+3. **Jak działa:**
+   - **Pakiety:** `__init__.py` w każdym folderze, relative imports
+   - **Przestrzenie nazw:** `core.tile.Building` vs `gui.build_panel.BuildingButton`
+   - **Circular imports:** Unikane przez lazy imports i dependency injection
+4. **Dodatkowe:** `__all__` listy w `__init__.py`, aliasy importów dla czytelności.
+
+-Walidacja danych wejściowych, parsowanie i ekstrakcja informacji z plików za pomocą wyrażeń regularnych.
+
+1. **Pliki:** `core/data_validator.py`, `core/file_processor.py`
+2. **Lokalizacja w kodzie:**
+   - `core/data_validator.py` linie 50-150: Regex patterns dla walidacji
+   - `core/file_processor.py` linie 200-300: Parsowanie plików konfiguracyjnych
+3. **Jak działa:**
+   - **Email validation:** `re.match(r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', email)`
+   - **Number extraction:** `numbers = re.findall(r'\d+\.?\d*', text)`
+   - **Config parsing:** `re.search(r'(\w+)\s*=\s*([^#\n]+)', line)` dla key=value
+4. **Dodatkowe:** Compiled regex patterns dla wydajności, custom validators dla game data.
+
+-Operacje na plikach tekstowych i binarnych, zarządzanie katalogami, obsługa różnych formatów danych (CSV, JSON, XML), implementacja systemu logowania zdarzeń.
+
+1. **Pliki:** `core/file_processor.py`, `core/logger.py`
+2. **Lokalizacja w kodzie:**
+   - `core/file_processor.py` linie 100-400: Obsługa CSV, JSON, XML, binary
+   - `core/logger.py` linie 20-150: Konfiguracja logowania
+3. **Jak działa:**
+   - **CSV:** `pandas.read_csv()`, `csv.DictWriter()` dla eksportu
+   - **JSON:** `json.load()/dump()` z custom encoders dla game objects
+   - **XML:** `xml.etree.ElementTree` dla konfiguracji
+   - **Binary:** `pickle.load()/dump()` dla quick saves
+   - **Logging:** `logging.getLogger(__name__)`, rotacja plików, różne poziomy
+4. **Dodatkowe:** Async file operations, compression (gzip), backup systems.
+
+-Połączenie z bazą SQL, implementacja operacji CRUD, wykorzystanie ORM (np. SQLAlchemy), obsługa transakcji, zapytań parametrycznych i migracji schematu.
+
+1. **Pliki:** `db/database.py`, `db/models.py`
+2. **Lokalizacja w kodzie:**
+   - `db/database.py` linie 20-200: SQLAlchemy setup, session management
+   - `db/models.py` linie 30-150: ORM models dla game data
+3. **Jak działa:**
+   - **CRUD:** `session.add(obj)`, `session.query(Model).filter()`, `session.delete(obj)`
+   - **Transakcje:** `with session.begin():` context manager
+   - **Parametryczne:** `session.query(User).filter(User.id == :user_id).params(user_id=123)`
+   - **Migracje:** Alembic dla schema changes
+4. **Dodatkowe:** Connection pooling, lazy loading relationships, custom query methods.
+
+- Testy jednostkowe (pytest/unittest), testy integracyjne, mockowanie obiektów, pomiar pokrycia kodu testami, automatyzacja testów.
+
+1. **Pliki:** `tests/` folder z 15+ plikami testów
+2. **Lokalizacja w kodzie:**
+   - `tests/test_game_engine.py` linie 20-200: Unit tests dla core logic
+   - `tests/test_integration_complete.py` linie 50-300: Integration tests
+   - `pytest.ini`: Konfiguracja pytest
+3. **Jak działa:**
+   - **Unit tests:** `def test_building_placement(): assert game.can_build(x, y) == True`
+   - **Mocking:** `@patch('core.database.session')` dla izolacji testów
+   - **Coverage:** `pytest --cov=core --cov-report=html` dla raportów
+   - **CI/CD:** GitHub Actions uruchamiają testy automatycznie
+4. **Dodatkowe:** Fixtures dla test data, parametrized tests, performance benchmarks.
+
+- gra się kończy gdy nie ma odpowiedniej ilości pieniędzy
+
+1. **Pliki:** `core/game_engine.py`
+2. **Lokalizacja w kodzie:**
+   - `core/game_engine.py` linie 500-550: Metoda `check_game_over()`
+3. **Jak działa:**
+   - **Warunek:** Sprawdzane co turę: money < -1000 AND nie można zaciągnąć pożyczki
+   - **Ostrzeżenia:** Przy money < 0 wyświetlane ostrzeżenie, przy < -500 ostatnie ostrzeżenie
+   - **Game Over:** Wyświetlany dialog z podsumowaniem gry i opcją restartu
+4. **Gdzie używane:**
+   - `core/game_engine.py` linie 950-1000: `update_turn()` wywołuje `check_game_over()` na końcu każdej tury
+   - `gui/alerts_panel.py` linie 200-250: Ostrzeżenia o niskich finansach wyświetlane w panelu alertów
+   - `Main.py` linie 350-400: Dialog Game Over z opcjami: Restart, Load Game, Quit
+5. **Dodatkowe:** Można włączyć tryb "infinite money" w ustawieniach debugowych.
+
+- rozne rozmiary budynków
+
+1. **Pliki:** `core/tile.py`, `gui/map_canvas.py`
+2. **Lokalizacja w kodzie:**
+   - `core/tile.py` linie 300-350: Metoda `get_building_size()`
+   - `gui/map_canvas.py` linie 200-250: Obsługa wielokafelkowych budynków
+3. **Jak działa:**
+   - **Rozmiary:** 1x1 (dom), 2x2 (centrum handlowe), 3x3 (stadion), 2x3 (fabryka)
+   - **Główny kafel:** Jeden kafel zawiera cały budynek, pozostałe mają is_main_tile=False
+   - **Renderowanie:** get_scaled_image() skaluje obrazek na odpowiedni rozmiar
+4. **Dodatkowe:** Większe budynki mają wyższe koszty ale lepszą efektywność.
+
+- obracanie budynków
+
+1. **Pliki:** `gui/map_canvas.py`
+2. **Lokalizacja w kodzie:**
+   - `gui/map_canvas.py` linie 150-180: Metoda `rotate_building()`
+   - `gui/map_canvas.py` linie 750-770: Obsługa klawisza R
+3. **Jak działa:**
+   - **Klawisz R:** Obraca podgląd budynku o 90° (0°, 90°, 180°, 270°)
+   - **Podgląd:** preview_rotation przechowuje aktualną rotację
+   - **Zastosowanie:** Przy stawianiu budynku rotation kopiowana do building.rotation
+4. **Dodatkowe:** Rotacja wizualna używa QTransform dla smooth rendering.
+
+- podgląd jak będzie wyglądał zbudowany budynek
+
+1. **Pliki:** `gui/map_canvas.py`
+2. **Lokalizacja w kodzie:**
+   - `gui/map_canvas.py` linie 300-400: Metoda `_draw_building_preview()`
+   - `gui/map_canvas.py` linie 780-820: Obsługa hover w `mouseMoveEvent()`
+3. **Jak działa:**
+   - **Hover tracking:** mouseMoveEvent śledzi pozycję myszy i aktualizuje hover_tile_x/y
+   - **Podgląd:** Półprzezroczysty obrazek budynku rysowany na pozycji myszy
+   - **Kolory:** Zielona ramka = można budować, czerwona = nie można
+4. **Dodatkowe:** Podgląd pokazuje rotację i rozmiar budynku przed postawieniem.
+
+- sprzedawanie budynków
+
+1. **Pliki:** `gui/map_canvas.py`, `core/game_engine.py`
+2. **Lokalizacja w kodzie:**
+   - `gui/map_canvas.py` linie 700-720: Prawy klik w `mousePressEvent()`
+   - `core/game_engine.py` linie 400-450: Metoda `sell_building()`
+3. **Jak działa:**
+   - **Prawy klik:** Na budynku emituje sygnał building_sell_requested
+   - **Sprzedaż:** GameEngine usuwa budynek i zwraca 50% kosztu budowy
+   - **Czyszczenie:** Wszystkie kafelki budynku oznaczane jako puste
+4. **Dodatkowe:** Niektóre budynki (drogi) nie można sprzedać.
+
+-jak działają tury, jak są aktualizowane
+
+1. **Pliki:** `core/game_engine.py`, `Main.py`
+2. **Lokalizacja w kodzie:**
+   - `core/game_engine.py` linie 600-700: Metoda `update_turn()`
+   - `Main.py` linie 200-250: Timer aktualizacji
+3. **Jak działa:**
+   - **Timer:** QTimer co 5 sekund wywołuje update_turn()
+   - **Sekwencja:** 1)Aktualizuj zasoby 2)Populację 3)Finanse 4)Wydarzenia 5)Technologie 6)Handel 7)Sprawdź game over
+   - **Licznik:** turn_number++ i aktualizacja UI
+4. **Gdzie używane:**
+   - `Main.py` linie 200-250: `QTimer.timeout.connect(game_engine.update_turn)` - automatyczne wywołanie co 5s
+   - `Main.py` linie 300-320: Przyciski "Pause/Play" kontrolują timer
+   - `gui/` wszystkie panele: Sygnały `turn_updated` odświeżają wyświetlane dane
+   - `core/game_engine.py` linie 1000-1050: `update_turn()` emituje sygnały do GUI po każdej aktualizacji
+5. **Dodatkowe:** Można pauzować grę lub zmienić prędkość (1x, 2x, 5x).
+
+- gdzie sprawdza czy mogę coś gdzieś postawić
+
+1. **Pliki:** `gui/map_canvas.py`, `core/game_engine.py`
+2. **Lokalizacja w kodzie:**
+   - `gui/map_canvas.py` linie 120-170: Metoda `can_build()`
+   - `core/game_engine.py` linie 350-400: Rozszerzona walidacja
+3. **Jak działa:**
+   - **Podstawowe:** Czy kafelki są wolne, czy w granicach mapy, czy wystarczy pieniędzy
+   - **Zaawansowane:** Czy jest dostęp do zasobów (woda, energia), czy spełnione wymagania technologiczne
+   - **Teren:** Nie można budować na wodzie/górach (sprawdzane w tile.terrain_type)
+4. **Gdzie używane:**
+   - `gui/map_canvas.py` linie 780-820: `mouseMoveEvent()` wywołuje `can_build()` przy hover myszy
+   - `gui/map_canvas.py` linie 300-400: `_draw_building_preview()` używa `can_build()` do kolorowania podglądu
+   - `gui/map_canvas.py` linie 600-650: `mousePressEvent()` sprawdza `can_build()` przed `place_building()`
+   - `gui/build_panel.py` linie 150-200: Przyciski budynków szare gdy `can_build()` zwraca False
+5. **Dodatkowe:** Różne budynki mają różne wymagania (szpital wymaga technologii MEDICINE).
+
+- gdzie funkcja ze od jakieś poziomy dopiero mogę coś postawić
+
+1. **Pliki:** `core/tile.py`, `core/technology.py`
+2. **Lokalizacja w kodzie:**
+   - `core/tile.py` linie 450-500: Wymagania technologiczne budynków
+   - `core/technology.py` linie 350-400: Sprawdzanie odblokowanych technologii
+3. **Jak działa:**
+   - **Wymagania:** Każdy budynek ma technology_requirements = [TechnologyType.X, ...]
+   - **Sprawdzenie:** is_technology_researched() sprawdza czy technologia jest odblokowana
+   - **Blokada:** GUI wyświetla zablokowane budynki szaro z ikoną kłódki
+4. **Gdzie używane:**
+   - `gui/build_panel.py` linie 200-300: `update_building_buttons()` sprawdza `is_technology_researched()` dla każdego budynku
+   - `core/game_engine.py` linie 350-400: `can_build()` wywołuje `technology_tree.is_technology_researched()`
+   - `gui/technology_panel.py` linie 300-400: Podświetlanie technologii wymaganych do odblokowania budynków
+   - `gui/build_panel.py` linie 350-400: Tooltips pokazują wymagane technologie dla zablokowanych budynków
+5. **Dodatkowe:** Elektrownia wymaga ELECTRICITY, szpital MEDICINE, fabryka INDUSTRIALIZATION.
+
+-brak linii w większych budynkach np 2x2(brak linii w środku) dla kafelków
+
+1. **Pliki:** `gui/map_canvas.py`
+2. **Lokalizacja w kodzie:**
+   - `gui/map_canvas.py` linie 250-300: Rysowanie ramek w `draw_map()`
+3. **Jak działa:**
+   - **Warunek:** Ramki rysowane tylko dla pustych kafelków: `if not tile.building:`
+   - **Wielokafelkowe:** Główny kafel ma jedną ramkę wokół całego budynku
+   - **Pomocnicze kafelki:** Mają is_main_tile=False i tylko subtelne tło bez ramek
+4. **Dodatkowe:** building_outline_rect rysuje jedną ramkę wokół całego budynku zamiast osobnych dla każdego kafla. 

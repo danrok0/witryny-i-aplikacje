@@ -1,0 +1,55 @@
+{
+  "version": "1.0",
+  "turn": 1,
+  "difficulty": "Normal",
+  "statistics": {
+    "buildings_built": 5,
+    "total_money_spent": 900.0,
+    "max_population": 327,
+    "turns_played": 1,
+    "technologies_researched": 0,
+    "trades_completed": 0,
+    "total_tax_collected": 0,
+    "unemployment_streak": 0,
+    
+    "building_types_built": [],
+    "parks_built": 0,
+    "pollution_level": 0,
+    "renewable_energy_percent": 0,
+    "disasters_survived": 0,
+    "crisis_events_resolved": 0,
+    "perfect_happiness_streak": 0,
+    "allied_cities": 0
+  },
+  "alerts": [],
+  "city_level": 1,
+  "map": {
+    "width": 60,
+    "height": 60,
+    "tiles": []
+  },
+  "economy": {
+    "resources": {
+      "money": {
+        "name": "money",
+        "amount": 50000,
+        "max_capacity": null,
+        "production_rate": 0.0,
+        "consumption_rate": 0.0,
+        "price": 1.0
+      }
+    },
+    "tax_rates": {
+      "residential": 0.05,
+      "commercial": 0.06,
+      "industrial": 0.07
+    },
+    "expenses": {},
+    "history": []
+  },
+  "population": {
+    "groups": {},
+    "total_population": 100,
+    "satisfaction": 75.0
+  }
+}

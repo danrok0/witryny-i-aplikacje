@@ -1,14 +1,22 @@
 """
 System finansowy i zarządzania kredytami dla City Builder.
 Implementuje pożyczki, rating kredytowy, raporty finansowe i analizę ryzyka bankructwa.
+
+Ten moduł zawiera:
+- Typy pożyczek (standardowe, kryzysowe, rozwojowe, infrastrukturalne)
+- System ratingu kredytowego (od excellent do bad)
+- Struktury danych dla pożyczek i raportów finansowych
+- Menedżer finansów z algorytmami oceny ryzyka
+- Automatyczne spłaty pożyczek co turę
+- Porady finansowe dla gracza
 """
-from enum import Enum
-from dataclasses import dataclass
-from typing import Dict, List, Optional, Tuple, Any
-import random
-import math
-from datetime import datetime, timedelta
-import logging
+from enum import Enum  # do definiowania stałych grupowanych (typy pożyczek, rating)
+from dataclasses import dataclass  # automatyczne generowanie klas danych
+from typing import Dict, List, Optional, Tuple, Any  # adnotacje typów
+import random  # do losowania decyzji bankowych
+import math  # do obliczeń matematycznych (odsetki, raty)
+from datetime import datetime, timedelta  # obsługa dat i czasu
+import logging  # system logowania błędów i informacji
 
 class LoanType(Enum):
     """
@@ -70,36 +78,63 @@ class Loan:
             float: łączna kwota odsetek
             
         Wzór: (miesięczna_rata × liczba_rat) - kwota_główna = odsetki
+        
+        Przykład:
+        - Pożyczka: $10,000
+        - Rata miesięczna: $500  
+        - Czas spłaty: 24 tury
+        - Łączne płatności: $500 × 24 = $12,000
+        - Odsetki: $12,000 - $10,000 = $2,000
         """
+        # Oblicz całkowitą kwotę wszystkich rat (pozostałe + aktualna tura)
         total_payments = self.monthly_payment * (self.turns_remaining + 1)
+        # Odsetki = łączne płatności minus kwota pożyczona
         return total_payments - self.principal_amount
 
 class FinancialReport:
     """
     Raport finansowy miasta za jedną turę.
-    Zawiera wszystkie kluczowe wskaźniki finansowe.
+    Zawiera wszystkie kluczowe wskaźniki finansowe używane do analizy kondycji miasta.
+    
+    Wskaźniki obejmują:
+    - Podstawowe: dochody, wydatki, dochód netto
+    - Bilansowe: aktywa, zobowiązania, kapitał własny  
+    - Płynności: gotówka, przepływ gotówki
+    - Wskaźniki: zadłużenie/kapitał, płynność
     """
     
     def __init__(self, turn: int, data: Dict):
         """
-        Tworzy raport finansowy.
+        Tworzy raport finansowy na podstawie danych z gry.
         
         Args:
-            turn: numer tury
+            turn: numer tury dla której tworzony jest raport
             data: słownik z danymi finansowymi (dochody, wydatki, aktywa, etc.)
+            
+        Automatycznie oblicza wskaźniki finansowe na podstawie dostarczonych danych.
         """
-        self.turn = turn
-        self.timestamp = datetime.now()
-        self.income = data.get('income', 0)  # dochody z podatków
-        self.expenses = data.get('expenses', 0)  # wydatki operacyjne
-        self.net_income = self.income - self.expenses
+        self.turn = turn  # numer tury
+        self.timestamp = datetime.now()  # czas utworzenia raportu
+        
+        # Podstawowe dane finansowe z gry
+        self.income = data.get('income', 0)  # dochody z podatków i innych źródeł
+        self.expenses = data.get('expenses', 0)  # wydatki operacyjne (utrzymanie, płace)
+        self.net_income = self.income - self.expenses  # zysk/strata netto
+        
+        # Dane bilansowe (aktywa i pasywa)
         self.assets = data.get('assets', 0)  # aktywa (gotówka + wartość budynków)
-        self.liabilities = data.get('liabilities', 0)  # zobowiązania (pożyczki)
-        self.equity = self.assets - self.liabilities
-        self.cash = data.get('cash', 0)  # gotówka
-        self.cash_flow = data.get('cash_flow', 0)  # przepływ gotówki (dochody - wydatki)
-        self.debt_to_equity_ratio = self.liabilities / max(self.equity, 1)
-        self.liquidity_ratio = self.cash / max(self.expenses, 1)
+        self.liabilities = data.get('liabilities', 0)  # zobowiązania (pożyczki, długi)
+        self.equity = self.assets - self.liabilities  # kapitał własny miasta
+        
+        # Dane o płynności finansowej
+        self.cash = data.get('cash', 0)  # dostępna gotówka
+        self.cash_flow = data.get('cash_flow', 0)  # przepływ gotówki (+ lub -)
+        
+        # Automatycznie obliczane wskaźniki finansowe
+        # Wskaźnik zadłużenia (im niższy tym lepiej, >1.0 to wysokie zadłużenie)
+        self.debt_to_equity_ratio = self.liabilities / max(self.equity, 1)  # unika dzielenia przez zero
+        # Wskaźnik płynności (ile miesięcy wydatków pokrywa gotówka)
+        self.liquidity_ratio = self.cash / max(self.expenses, 1)  # unika dzielenia przez zero
 
 class FinanceManager:
     """

@@ -118,38 +118,54 @@ class BuildPanel(QWidget):
         container_layout = QGridLayout(container)  # układ siatki (2D) dla przycisków
         
         # Definicja dostępnych budynków - lista obiektów Building
-        # Każdy budynek ma: nazwę, typ, koszt, efekty i warunki odblokowania
+        # Każdy budynek ma: nazwę, typ, koszt, efekty, warunki odblokowania i rozmiar
         self.buildings = [
-            # Kategoria 1: Infrastruktura - podstawowe elementy miasta
+            # Kategoria 1: Infrastruktura - podstawowe elementy miasta (1x1)
             Building("Droga", BuildingType.ROAD, 100, {"traffic": 2}),  # słownik efektów {"nazwa_efektu": wartość}
             Building("Zakret drogi", BuildingType.ROAD_CURVE, 100, {"traffic": 2}, unlock_condition={"city_level": 2}),
             Building("Chodnik", BuildingType.SIDEWALK, 50, {"walkability": 3}, unlock_condition={"city_level": 2}),
             
             # Kategoria 2: Mieszkalne - budynki dla ludności
-            Building("Dom", BuildingType.HOUSE, 500, {"population": 35, "happiness": 12}),
-            Building("Blok", BuildingType.RESIDENTIAL, 800, {"population": 70, "happiness": 10}, unlock_condition={"city_level": 3}),
-            Building("Wieżowiec", BuildingType.APARTMENT, 1500, {"population": 150, "happiness": 7}, unlock_condition={"city_level": 6}),
+            Building("Dom", BuildingType.HOUSE, 500, {"population": 35, "happiness": 12}),  # 1x1
+            Building("Blok", BuildingType.RESIDENTIAL, 800, {"population": 70, "happiness": 10}, 
+                    unlock_condition={"city_level": 3}, size=(2, 2)),  # 2x2 - większy budynek
+            Building("Wieżowiec", BuildingType.APARTMENT, 1500, {"population": 150, "happiness": 7}, 
+                    unlock_condition={"city_level": 6}, size=(2, 3)),  # 2x3 - wysoki budynek
             
             # Kategoria 3: Komercyjne - handel i usługi
-            Building("Sklep", BuildingType.SHOP, 800, {"commerce": 20, "jobs": 12}),
-            Building("Targowisko", BuildingType.COMMERCIAL, 1200, {"commerce": 35, "jobs": 20}, unlock_condition={"city_level": 3}),
-            Building("Centrum handlowe", BuildingType.MALL, 2000, {"commerce": 60, "jobs": 40}, unlock_condition={"city_level": 5}),
+            Building("Sklep", BuildingType.SHOP, 800, {"commerce": 20, "jobs": 12}),  # 1x1
+            Building("Targowisko", BuildingType.COMMERCIAL, 1200, {"commerce": 35, "jobs": 20}, 
+                    unlock_condition={"city_level": 3}, size=(2, 2)),  # 2x2 - większy obszar handlowy
+            Building("Centrum handlowe", BuildingType.MALL, 2000, {"commerce": 60, "jobs": 40}, 
+                    unlock_condition={"city_level": 5}, size=(3, 3)),  # 3x3 - duże centrum
             
             # Kategoria 4: Przemysłowe - produkcja i energia
-            Building("Fabryka", BuildingType.FACTORY, 1500, {"production": 40, "jobs": 35, "pollution": -5}, unlock_condition={"city_level": 4}),
-            Building("Magazyn", BuildingType.WAREHOUSE, 1000, {"storage": 30, "jobs": 15}, unlock_condition={"city_level": 3}),
-            Building("Elektrownia", BuildingType.POWER_PLANT, 3000, {"energy": 150, "jobs": 20, "pollution": -10}, unlock_condition={"city_level": 4}),
+            Building("Fabryka", BuildingType.FACTORY, 1500, {"production": 40, "jobs": 35, "pollution": -5}, 
+                    unlock_condition={"city_level": 4}, size=(2, 2)),  # 2x2 - duży zakład
+            Building("Magazyn", BuildingType.WAREHOUSE, 1000, {"storage": 30, "jobs": 15}, 
+                    unlock_condition={"city_level": 3}, size=(2, 1)),  # 2x1 - długi budynek
+            Building("Elektrownia", BuildingType.POWER_PLANT, 3000, {"energy": 150, "jobs": 20, "pollution": -10}, 
+                    unlock_condition={"city_level": 4}, size=(3, 2)),  # 3x2 - duża elektrownia
             
             # Kategoria 5: Usługi publiczne - edukacja, zdrowie, bezpieczeństwo
-            Building("Ratusz", BuildingType.CITY_HALL, 2500, {"administration": 40, "happiness": 15}, unlock_condition={"city_level": 2}),
-            Building("Szkoła", BuildingType.SCHOOL, 1500, {"education": 30, "jobs": 20, "happiness": 10}, unlock_condition={"city_level": 3}),
-            Building("Szpital", BuildingType.HOSPITAL, 2000, {"health": 35, "jobs": 25, "happiness": 12}, unlock_condition={"city_level": 5}),
-            Building("Uniwersytet", BuildingType.UNIVERSITY, 3000, {"education": 50, "jobs": 40, "happiness": 15}, unlock_condition={"city_level": 7}),
-            Building("Policja", BuildingType.POLICE, 1800, {"safety": 35, "jobs": 15, "happiness": 8}, unlock_condition={"city_level": 4}),
-            Building("Straż Pożarna", BuildingType.FIRE_STATION, 1600, {"safety": 30, "jobs": 12, "happiness": 6}, unlock_condition={"city_level": 4}),
-            Building("Park", BuildingType.PARK, 800, {"happiness": 20, "environment": 15}, unlock_condition={"city_level": 2}),
-            Building("Stadion", BuildingType.STADIUM, 4000, {"happiness": 40, "tourism": 30, "jobs": 35}, unlock_condition={"city_level": 8}),
-            Building("Oczyszczalnia wody", BuildingType.WATER_TREATMENT, 2200, {"water": 70, "jobs": 12}, unlock_condition={"city_level": 5})
+            Building("Ratusz", BuildingType.CITY_HALL, 2500, {"administration": 40, "happiness": 15}, 
+                    unlock_condition={"city_level": 2}, size=(3, 3)),  # 3x3 - prestiżowy budynek
+            Building("Szkoła", BuildingType.SCHOOL, 1500, {"education": 30, "jobs": 20, "happiness": 10}, 
+                    unlock_condition={"city_level": 3}, size=(2, 2)),  # 2x2 - duży kompleks szkolny
+            Building("Szpital", BuildingType.HOSPITAL, 2000, {"health": 35, "jobs": 25, "happiness": 12}, 
+                    unlock_condition={"city_level": 5}, size=(2, 3)),  # 2x3 - duży szpital
+            Building("Uniwersytet", BuildingType.UNIVERSITY, 3000, {"education": 50, "jobs": 40, "happiness": 15}, 
+                    unlock_condition={"city_level": 7}, size=(3, 3)),  # 3x3 - duży kampus
+            Building("Policja", BuildingType.POLICE, 1800, {"safety": 35, "jobs": 15, "happiness": 8}, 
+                    unlock_condition={"city_level": 4}, size=(1, 2)),  # 1x2 - posterunek
+            Building("Straż Pożarna", BuildingType.FIRE_STATION, 1600, {"safety": 30, "jobs": 12, "happiness": 6}, 
+                    unlock_condition={"city_level": 4}, size=(2, 1)),  # 2x1 - remiza z garażami
+            Building("Park", BuildingType.PARK, 800, {"happiness": 20, "environment": 15}, 
+                    unlock_condition={"city_level": 2}, size=(2, 2)),  # 2x2 - większy park
+            Building("Stadion", BuildingType.STADIUM, 4000, {"happiness": 40, "tourism": 30, "jobs": 35}, 
+                    unlock_condition={"city_level": 8}, size=(4, 3)),  # 4x3 - ogromny stadion
+            Building("Oczyszczalnia wody", BuildingType.WATER_TREATMENT, 2200, {"water": 70, "jobs": 12}, 
+                    unlock_condition={"city_level": 5}, size=(2, 2)),  # 2x2 - oczyszczalnia
         ]
         
         # Tworzenie przycisków dla budynków

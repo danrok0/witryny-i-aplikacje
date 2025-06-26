@@ -75,8 +75,10 @@ class Building:
     - Efekty na miasto (np. zwiększenie populacji)
     - Warunki odblokowania (opcjonalne)
     - Rotację (obrót w stopniach)
+    - Rozmiar (ile kafelków zajmuje: 1x1, 2x2, 3x3 itp.)
     """
-    def __init__(self, name: str, building_type: BuildingType, cost: int, effects: dict, unlock_condition: dict = None):
+    def __init__(self, name: str, building_type: BuildingType, cost: int, effects: dict, 
+                 unlock_condition: dict = None, size: tuple = (1, 1)):
         """
         Konstruktor budynku.
         
@@ -86,12 +88,14 @@ class Building:
             cost (int): koszt budowy w pieniądzach
             effects (dict): słownik efektów (np. {'population': 10, 'happiness': 5})
             unlock_condition (dict): warunki odblokowania (np. {'population': 200})
+            size (tuple): rozmiar budynku jako (szerokość, wysokość) w kafelkach
         """
         self.name = name                    # nazwa budynku
         self.building_type = building_type  # typ budynku
         self.cost = cost                    # koszt budowy
         self.effects = effects              # efekty budynku na miasto
         self.rotation = 0                   # rotacja: 0, 90, 180, 270 stopni
+        self.size = size                    # rozmiar budynku (szerokość, wysokość)
         # Operator "or" zwraca pierwszy element jeśli nie jest None/pustý, w przeciwnym razie drugi
         self.unlock_condition = unlock_condition or {}  # warunki odblokowania (domyślnie brak)
 
@@ -206,6 +210,42 @@ class Building:
         """
         self.rotation = (self.rotation + 90) % 360
 
+    def get_building_size(self) -> tuple:
+        """
+        Zwraca rozmiar budynku z uwzględnieniem rotacji.
+        
+        Returns:
+            tuple: (szerokość, wysokość) w kafelkach
+            
+        Uwaga: Przy rotacji o 90° lub 270° szerokość i wysokość są zamieniane miejscami
+        """
+        width, height = self.size
+        
+        # Jeśli budynek jest obrócony o 90° lub 270°, zamień szerokość z wysokością
+        if self.rotation == 90 or self.rotation == 270:
+            return (height, width)
+        else:
+            return (width, height)
+
+    def get_occupied_tiles(self, start_x: int, start_y: int) -> list:
+        """
+        Zwraca listę wszystkich kafelków zajętych przez budynek.
+        
+        Args:
+            start_x, start_y: współrzędne lewego górnego rogu budynku
+            
+        Returns:
+            list: lista tupli (x, y) wszystkich zajętych kafelków
+        """
+        width, height = self.get_building_size()
+        occupied_tiles = []
+        
+        for dx in range(width):
+            for dy in range(height):
+                occupied_tiles.append((start_x + dx, start_y + dy))
+        
+        return occupied_tiles
+
 class Tile:
     """
     Klasa reprezentująca pojedynczy kafelek (płytkę) na mapie miasta.
@@ -215,6 +255,7 @@ class Tile:
     - Typ terenu (trawa, woda, góry itp.)
     - Opcjonalny budynek
     - Status zajętości
+    - Informację czy to główny kafel budynku (dla budynków wielokafelkowych)
     """
     def __init__(self, x: int, y: int, terrain_type: TerrainType = TerrainType.GRASS):
         """
@@ -230,6 +271,7 @@ class Tile:
         self.terrain_type = terrain_type    # typ terenu
         self.building = None                # budynek na kafelku (None = brak)
         self.is_occupied = False            # czy kafelek jest zajęty
+        self.is_main_tile = True            # czy to główny kafel budynku (dla budynków >1x1)
         
     def get_image_path(self) -> str | None:
         """

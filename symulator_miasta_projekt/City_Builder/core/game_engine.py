@@ -94,14 +94,14 @@ class GameEngine:
             'technologies_researched': 0,            # liczba zbadanych technologii
             'trades_completed': 0,                   # liczba ukończonych transakcji handlowych
             'total_tax_collected': 0,               # całkowita suma zebranych podatków
-            'unemployment_streak': 0,               # najdłuższa passa bezrobocia
+            'unemployment_streak': 0,               # najdłuższa pasa bezrobocia
             'building_types_built': set(),          # set() - unikalny zbiór typów zbudowanych budynków
             'parks_built': 0,                       # liczba zbudowanych parków
             'pollution_level': 0,                   # aktualny poziom zanieczyszczenia
             'renewable_energy_percent': 0,         # procent energii odnawialnej
             'disasters_survived': 0,               # liczba przetrwanych katastrof
             'crisis_events_resolved': 0,          # liczba rozwiązanych kryzysów
-            'perfect_happiness_streak': 0,        # najdłuższa passa 100% zadowolenia
+            'perfect_happiness_streak': 0,        # najdłuższa pasa 100% zadowolenia
             'allied_cities': 0                    # liczba sprzymierzonych miast
         }
         
@@ -138,72 +138,161 @@ class GameEngine:
         return buildings  # zwróć listę wszystkich budynków
     
     def can_build(self, x: int, y: int, building: Building) -> tuple[bool, str]:
-        """Check if a building can be placed, returns (can_build, reason)"""
-        # Check tile availability
-        tile = self.city_map.get_tile(x, y)
-        if not tile:
-            return False, "Invalid location"
+        """
+        Sprawdza czy można zbudować budynek na danej pozycji.
         
-        if tile.is_occupied:
-            return False, "Tile already occupied"
+        Ta metoda wykonuje kompletną walidację przed budową, sprawdzając:
+        - Czy budynek jest odblokowany (poziom miasta, technologie)
+        - Czy miasto ma wystarczające środki finansowe
+        - Czy budynek mieści się w granicach mapy
+        - Czy wszystkie potrzebne kafelki są wolne
+        - Czy teren pozwala na budowę (nie na wodzie/górach)
         
-        # Check resources - allow building if debt won't exceed bankruptcy limit
-        cost = self.get_adjusted_cost(building.cost)
-        current_money = self.economy.get_resource_amount('money')
-        money_after_build = current_money - cost
+        Args:
+            x, y: współrzędne lewego górnego rogu budynku (indeks kafelka)
+            building: obiekt budynku do umieszczenia
+            
+        Returns:
+            tuple[bool, str]: (czy_można_budować, powód_odmowy_lub_OK)
+        """
+        # KROK 1: Sprawdź czy budynek jest odblokowany (poziom, technologie)
+        unlocked, reason = self.is_building_unlocked(building)
+        if not unlocked:
+            return False, reason  # zwróć powód blokady
         
-        if money_after_build <= -4000:  # Bankruptcy limit
-            return False, f"Cannot build - would cause bankruptcy! Need ${cost:,.0f}, have ${current_money:,.0f}. Building would result in ${money_after_build:,.0f} debt (limit: -$4,000)"
+        # KROK 2: Sprawdź dostępność środków finansowych (z modyfikatorem trudności)
+        cost = self.get_adjusted_cost(building.cost)  # koszt z uwzględnieniem poziomu trudności
+        if not self.economy.can_afford(cost):
+            money = self.economy.get_resource_amount('money')
+            return False, f"Insufficient funds. Need ${cost:,.0f}, have ${money:,.0f}"
         
-        # Check terrain compatibility - block building on water and mountains
-        if tile.terrain_type.value == 'water':
-            return False, "Cannot build on water"
-        if tile.terrain_type.value == 'mountain':
-            return False, "Cannot build on mountains"
+        # KROK 3: Sprawdź czy budynek mieści się w granicach mapy
+        building_width, building_height = building.get_building_size()  # rozmiar budynku w kafelkach
         
-        return True, "OK"
+        # Sprawdź prawą i dolną granicę mapy
+        if x + building_width > self.city_map.width or y + building_height > self.city_map.height:
+            return False, f"Building extends beyond map boundaries (size: {building_width}x{building_height})"
+        
+        # Sprawdź lewą i górną granicę mapy
+        if x < 0 or y < 0:
+            return False, "Cannot build outside map boundaries"
+        
+        # KROK 4: Sprawdź dostępność wszystkich potrzebnych kafelków
+        occupied_tiles = building.get_occupied_tiles(x, y)  # lista kafelków które budynek zajmie
+        for tile_x, tile_y in occupied_tiles:
+            tile = self.city_map.get_tile(tile_x, tile_y)  # pobierz kafelek
+            if not tile:  # nieprawidłowe współrzędne
+                return False, f"Invalid tile position ({tile_x}, {tile_y})"
+            
+            if tile.is_occupied:  # kafelek już zajęty przez inny budynek
+                return False, f"Tile ({tile_x}, {tile_y}) is already occupied"
+            
+            # KROK 5: Sprawdź kompatybilność terenu
+            # Nie można budować na wodzie i w górach (ograniczenia realistyczne)
+            if tile.terrain_type in [TerrainType.WATER, TerrainType.MOUNTAIN]:
+                terrain_name = "water" if tile.terrain_type == TerrainType.WATER else "mountains"
+                return False, f"Cannot build on {terrain_name} at ({tile_x}, {tile_y})"
+        
+        return True, "OK"  # wszystkie sprawdzenia przeszły pomyślnie
     
     def place_building(self, x: int, y: int, building: Building) -> bool:
-        """Place a building on the map"""
+        """
+        Umieszcza budynek na mapie po pomyślnej walidacji.
+        
+        Proces budowy składa się z następujących kroków:
+        1. Walidacja możliwości budowy
+        2. Zajęcie wszystkich kafelków przez budynek
+        3. Natychmiastowe dodanie efektów budynku
+        4. Pobranie kosztów z budżetu miasta
+        5. Aktualizacja statystyk gry
+        6. Powiadomienie gracza o budowie
+        
+        Args:
+            x, y: współrzędne lewego górnego rogu budynku
+            building: obiekt budynku do umieszczenia
+            
+        Returns:
+            bool: True jeśli budowa się powiodła, False w przeciwnym razie
+        """
+        # KROK 1: Sprawdź czy można budować (używa can_build)
         can_build, reason = self.can_build(x, y, building)
         if not can_build:
-            self.add_alert(f"Cannot build: {reason}")
+            self.add_alert(f"Cannot build: {reason}")  # powiadom gracza o problemie
             return False
         
-        # Place building - use the building directly (already copied in MapCanvas)
-        tile = self.city_map.get_tile(x, y)
+        # KROK 2: Zajmij wszystkie kafelki potrzebne dla budynku
+        occupied_tiles = building.get_occupied_tiles(x, y)  # lista wszystkich kafelków budynku
         
-        tile.building = building  # Nie robimy deepcopy - budynek już jest skopiowany z rotacją
-        tile.is_occupied = True
+        # Ustaw budynek na wszystkich kaflach (główny + pomocnicze)
+        for i, (tile_x, tile_y) in enumerate(occupied_tiles):
+            tile = self.city_map.get_tile(tile_x, tile_y)
+            
+            # Pierwszy kafel (indeks 0) to główny kafel budynku
+            if i == 0:
+                tile.building = building  # główny kafel ma pełny obiekt budynku
+                tile.is_main_tile = True  # oznacz jako główny kafel
+            else:
+                tile.building = building  # pomocnicze kafle też mają referencję do budynku
+                tile.is_main_tile = False  # oznacz jako pomocniczy kafel
+            
+            tile.is_occupied = True  # zaznacz kafel jako zajęty
         
-        # If residential, instantly add population
+        # KROK 3: Zastosuj natychmiastowe efekty budynku
+        # Jeśli budynek mieszkalny - dodaj populację od razu
         if hasattr(building, 'effects') and 'population' in building.effects:
             self.population.add_instant_population(building.effects['population'])
         
-        # Deduct cost
-        cost = self.get_adjusted_cost(building.cost)
-        self.economy.spend_money(cost, self)
+        # KROK 4: Pobierz koszt budowy z budżetu miasta
+        cost = self.get_adjusted_cost(building.cost)  # koszt z modyfikatorem trudności
+        self.economy.spend_money(cost, self)  # wydaj pieniądze na budowę
         
-        # Update statistics
-        self.statistics['buildings_built'] += 1
-        self.statistics['total_money_spent'] += cost
-        self.statistics['building_types_built'].add(building.building_type.value)
+        # KROK 5: Aktualizuj statystyki gry dla osiągnięć i raportów
+        self.statistics['buildings_built'] += 1  # zwiększ licznik zbudowanych budynków
+        self.statistics['total_money_spent'] += cost  # dodaj koszt do łącznych wydatków
+        self.statistics['building_types_built'].add(building.building_type.value)  # dodaj typ do set'a
         
-        # Track specific building types
+        # Śledź specjalne typy budynków (dla konkretnych osiągnięć)
         if building.building_type == BuildingType.PARK:
-            self.statistics['parks_built'] += 1
+            self.statistics['parks_built'] += 1  # licznik parków
         
-        self.add_alert(f"Built {building.name} for ${cost:,.0f}")
-        return True
+        # KROK 6: Powiadom gracza o pomyślnej budowie
+        # Dodaj informację o rozmiarze dla budynków większych niż 1x1
+        building_size_text = f" ({building.size[0]}x{building.size[1]})" if building.size != (1, 1) else ""
+        self.add_alert(f"Built {building.name}{building_size_text} for ${cost:,.0f}")
+        return True  # budowa zakończona sukcesem
     
     def remove_building(self, x: int, y: int) -> bool:
         """Remove a building from the map and refund half its cost. Also remove its effects from city systems and update all stats."""
         tile = self.city_map.get_tile(x, y)
         if not tile or not tile.building:
             return False
+        
         building = tile.building
         building_name = building.name
         building_cost = building.cost
+        
+        # Znajdź wszystkie kafle zajęte przez budynek
+        # Jeśli kliknięto pomocniczy kafel, znajdź główny kafel
+        main_tile = tile
+        main_x, main_y = x, y
+        
+        # Jeśli to nie główny kafel, znajdź główny kafel tego budynku
+        if hasattr(tile, 'is_main_tile') and not tile.is_main_tile:
+            # Przeszukaj pobliskie kafle aby znaleźć główny kafel tego samego budynku
+            for search_x in range(max(0, x - 4), min(self.city_map.width, x + 5)):
+                for search_y in range(max(0, y - 4), min(self.city_map.height, y + 5)):
+                    search_tile = self.city_map.get_tile(search_x, search_y)
+                    if (search_tile and search_tile.building == building and 
+                        hasattr(search_tile, 'is_main_tile') and search_tile.is_main_tile):
+                        main_tile = search_tile
+                        main_x, main_y = search_x, search_y
+                        break
+                if main_tile != tile:
+                    break
+        
+        # Pobierz wszystkie kafle zajęte przez budynek
+        occupied_tiles = building.get_occupied_tiles(main_x, main_y)
+        
         # Usuwanie efektów budynku
         if hasattr(building, 'effects'):
             effects = building.effects
@@ -213,17 +302,27 @@ class GameEngine:
             # Praca
             if 'jobs' in effects:
                 pass
-        tile.building = None
-        tile.is_occupied = False
+        
+        # Usuń budynek ze wszystkich kafelków
+        for tile_x, tile_y in occupied_tiles:
+            tile_to_clear = self.city_map.get_tile(tile_x, tile_y)
+            if tile_to_clear and tile_to_clear.building == building:
+                tile_to_clear.building = None
+                tile_to_clear.is_occupied = False
+                tile_to_clear.is_main_tile = True  # Reset do domyślnej wartości
+        
         # Refund half the cost
         refund = building_cost * 0.5
         self.economy.earn_money(refund)
+        
         # Wymuś pełną aktualizację niektórych systemów/statystyk
         buildings = self.get_all_buildings()
         self.population.calculate_needs(buildings)
         self.population.update_population_dynamics()
         self.update_city_level()
-        self.add_alert(f"Sprzedano {building_name} za ${refund:,.0f}")
+        
+        building_size_text = f" ({building.size[0]}x{building.size[1]})" if building.size != (1, 1) else ""
+        self.add_alert(f"Sprzedano {building_name}{building_size_text} za ${refund:,.0f}")
         return True
     
     def get_adjusted_cost(self, base_cost: float) -> float:
@@ -232,56 +331,70 @@ class GameEngine:
         return base_cost * modifier
     
     def update_turn(self):
-        """Update all systems for one game turn"""
-        if self.paused:
+        """
+        Aktualizuje wszystkie systemy gry o jedną turę.
+        
+        To jest główna metoda zarządzająca logiką gry, wywoływana co turę.
+        Koordynuje wszystkie podsystemy w określonej kolejności aby zapewnić
+        spójność danych i właściwe przetwarzanie zależności między systemami.
+        
+        Kolejność aktualizacji jest ważna:
+        1. Populacja (bazowe potrzeby mieszkańców)
+        2. Ekonomia (podatki, wydatki na podstawie populacji)
+        3. Systemy zaawansowane (technologie, handel, finanse)
+        4. Scenariusze i osiągnięcia (ocena postępu)
+        5. Sprawdzenie sytuacji krytycznych
+        """
+        if self.paused:  # jeśli gra wstrzymana, nie aktualizuj
             return
         
-        # Get all buildings
+        # KROK 1: Pobierz wszystkie budynki z mapy (potrzebne dla wszystkich systemów)
         buildings = self.get_all_buildings()
         
-        # Update population needs and dynamics
-        self.population.calculate_needs(buildings)
-        self.population.update_population_dynamics()
-        self.update_city_level()  # Update city level
+        # KROK 2: Aktualizuj system populacji (pierwszy, bo inne systemy zależą od niego)
+        self.population.calculate_needs(buildings)  # oblicz potrzeby mieszkańców na podstawie budynków
+        self.population.update_population_dynamics()  # aktualizuj wzrost/spadek populacji
+        self.update_city_level()  # sprawdź czy miasto awansowało na wyższy poziom
         
-        # Update economy (pass population_manager)
-        self.economy.update_turn(buildings, self.population)
+        # KROK 3: Aktualizuj ekonomię (podatki zależą od populacji)
+        self.economy.update_turn(buildings, self.population)  # przelicz podatki, koszty utrzymania
         
-        # Update advanced systems
-        self.technology_manager.update_research()
-        self.trade_manager.current_turn = self.turn
-        self.trade_manager.update_turn()
+        # KROK 4: Aktualizuj zaawansowane systemy
+        self.technology_manager.update_research()  # postęp badań naukowych
+        self.trade_manager.current_turn = self.turn  # zsynchronizuj numer tury
+        self.trade_manager.update_turn()  # przetwórz kontrakty handlowe
         
-        # Update financial system
-        self.finance_manager.calculate_credit_score(self.economy, self.population)
-        loan_payments = self.finance_manager.process_loan_payments(self.economy, self.turn)
+        # KROK 5: Aktualizuj system finansowy (kredyty, rating)
+        self.finance_manager.calculate_credit_score(self.economy, self.population)  # oblicz rating kredytowy
+        loan_payments = self.finance_manager.process_loan_payments(self.economy, self.turn)  # spłaty pożyczek
         financial_report = self.finance_manager.generate_financial_report(
-            self.turn, self.economy, self.population, buildings)
+            self.turn, self.economy, self.population, buildings)  # wygeneruj raport finansowy
         
-        # Update scenario progress
+        # KROK 6: Aktualizuj postęp scenariusza (jeśli aktywny)
         if self.scenario_manager.current_scenario:
-            game_state = self.get_city_summary()
-            scenario_update = self.scenario_manager.update_scenario(game_state)
-            if scenario_update.get('completed'):
+            game_state = self.get_city_summary()  # pobierz aktualny stan miasta
+            scenario_update = self.scenario_manager.update_scenario(game_state)  # sprawdź postęp
+            if scenario_update.get('completed'):  # scenariusz ukończony
                 self.add_alert(f"🎯 Scenariusz ukończony: {self.scenario_manager.current_scenario.title}!", 
                              priority="achievement")
-            elif scenario_update.get('failed'):
+            elif scenario_update.get('failed'):  # scenariusz nieudany
                 self.add_alert(f"💥 Scenariusz nieudany: {self.scenario_manager.current_scenario.title}", 
                              priority="critical")
         
-        # Update enhanced statistics
+        # KROK 7: Aktualizuj statystyki gry (dla osiągnięć i raportów)
         self._update_enhanced_statistics(buildings)
         
-        # Check achievements
+        # KROK 8: Sprawdź osiągnięcia (na podstawie aktualnych statystyk)
         newly_unlocked = self.achievement_manager.check_achievements(self.statistics)
-        for achievement in newly_unlocked:
+        for achievement in newly_unlocked:  # powiadom o nowych osiągnięciach
             self.add_alert(f"🏆 Osiągnięcie odblokowane: {achievement.name}!", priority="achievement")
         
-        # Check for critical situations
+        # KROK 9: Sprawdź sytuacje krytyczne (długi, niezadowolenie, braki)
         self._check_critical_situations()
         
-        self.turn += 1
-        self.statistics['turns_played'] = self.turn
+        # KROK 10: Zakończ turę (zwiększ licznik tur)
+        self.turn += 1  # przejdź do następnej tury
+        self.statistics['turns_played'] = self.turn  # aktualizuj statystyki
     
     def _update_enhanced_statistics(self, buildings: List[Building]):
         """Update enhanced statistics for achievements"""
@@ -460,11 +573,16 @@ class GameEngine:
                 self.add_alert("Nieprawidłowa ścieżka pliku", priority="warning")
                 return False
             
+            # Prepare statistics for JSON serialization (convert set to list)
+            statistics_for_save = self.statistics.copy()
+            if 'building_types_built' in statistics_for_save and isinstance(statistics_for_save['building_types_built'], set):
+                statistics_for_save['building_types_built'] = list(statistics_for_save['building_types_built'])
+            
             save_data = {
                 'version': '1.0',
                 'turn': self.turn,
                 'difficulty': self.difficulty,
-                'statistics': self.statistics,
+                'statistics': statistics_for_save,
                 'alerts': self.alerts,
                 'city_level': self.city_level,
                 
@@ -549,6 +667,11 @@ class GameEngine:
             self.turn = save_data.get('turn', 0)
             self.difficulty = save_data.get('difficulty', 'Normal')
             self.statistics = save_data.get('statistics', {})
+            
+            # Convert building_types_built from list back to set if needed
+            if 'building_types_built' in self.statistics and isinstance(self.statistics['building_types_built'], list):
+                self.statistics['building_types_built'] = set(self.statistics['building_types_built'])
+            
             self.alerts = save_data.get('alerts', [])
             self.city_level = save_data.get('city_level', 1)
             
@@ -841,14 +964,14 @@ class GameEngine:
             'technologies_researched': 0,            # liczba zbadanych technologii
             'trades_completed': 0,                   # liczba ukończonych transakcji handlowych
             'total_tax_collected': 0,               # całkowita suma zebranych podatków
-            'unemployment_streak': 0,               # najdłuższa passa bezrobocia
+            'unemployment_streak': 0,               # najdłuższa pasa bezrobocia
             'building_types_built': set(),          # set() - unikalny zbiór typów zbudowanych budynków
             'parks_built': 0,                       # liczba zbudowanych parków
             'pollution_level': 0,                   # aktualny poziom zanieczyszczenia
             'renewable_energy_percent': 0,         # procent energii odnawialnej
             'disasters_survived': 0,               # liczba przetrwanych katastrof
             'crisis_events_resolved': 0,          # liczba rozwiązanych kryzysów
-            'perfect_happiness_streak': 0,        # najdłuższa passa 100% zadowolenia
+            'perfect_happiness_streak': 0,        # najdłuższa pasa 100% zadowolenia
             'allied_cities': 0                    # liczba sprzymierzonych miast
         }
         

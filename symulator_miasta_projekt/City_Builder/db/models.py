@@ -3,7 +3,7 @@ Modele ORM dla bazy danych City Builder
 Implementuje wszystkie tabele z wykorzystaniem SQLAlchemy
 """
 from sqlalchemy import create_engine, Column, Integer, String, Float, Boolean, DateTime, Text, ForeignKey
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
 from datetime import datetime
 from typing import Dict, List, Optional

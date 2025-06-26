@@ -299,61 +299,78 @@ class MainWindow(QMainWindow):
         from core.validation_system import get_validation_system
         import os
         
-        # Ensure saves directory exists
-        saves_dir = os.path.join(os.path.dirname(__file__), 'saves')
-        os.makedirs(saves_dir, exist_ok=True)
-        
-        validator = get_validation_system()
-        
-        while True:
-            filename, ok = QInputDialog.getText(self, 'Zapisz Grę', 'Podaj nazwę zapisu:')
-            if not ok:
-                return
+        try:
+            # Ensure saves directory exists
+            saves_dir = os.path.join(os.path.dirname(__file__), 'saves')
+            os.makedirs(saves_dir, exist_ok=True)
             
-            if not filename.strip():
-                QMessageBox.warning(self, 'Błąd walidacji', 'Nazwa pliku nie może być pusta!')
-                continue
+            validator = get_validation_system()
             
-            # Walidacja nazwy pliku
-            validation_result = validator.validate_save_filename(filename)
-            
-            if not validation_result.is_valid:
-                error_msg = "Błędy w nazwie pliku:\n" + "\n".join(validation_result.errors)
-                QMessageBox.warning(self, 'Błąd walidacji', error_msg)
-                continue
-            
-            # Użyj oczyszczonej nazwy
-            clean_filename = validation_result.cleaned_data
-            
-            # Add .json extension if not present
-            if not clean_filename.endswith('.json'):
-                clean_filename += '.json'
-            
-            # Sprawdzenie czy plik już istnieje
-            filepath = os.path.join(saves_dir, clean_filename)
-            if os.path.exists(filepath):
-                reply = QMessageBox.question(
-                    self, 
-                    'Plik istnieje', 
-                    f'Plik "{clean_filename}" już istnieje. Czy zastąpić?',
-                    QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
-                )
-                if reply != QMessageBox.StandardButton.Yes:
+            while True:
+                filename, ok = QInputDialog.getText(self, 'Zapisz Grę', 'Podaj nazwę zapisu:')
+                if not ok:
+                    return
+                
+                if not filename.strip():
+                    QMessageBox.warning(self, 'Błąd walidacji', 'Nazwa pliku nie może być pusta!')
                     continue
-            
-            # Pokaż ostrzeżenia jeśli są
-            if validation_result.warnings:
-                warning_msg = "Ostrzeżenia:\n" + "\n".join(validation_result.warnings)
-                QMessageBox.information(self, 'Ostrzeżenia', warning_msg)
-            
-            # Zapisz grę
-            success = self.game_engine.save_game(filepath)
-            if success:
-                QMessageBox.information(self, 'Zapisz Grę', f'Gra zapisana jako {clean_filename}')
-            else:
-                QMessageBox.warning(self, 'Zapisz Grę', 'Nie udało się zapisać gry')
-            
-            break
+                
+                # Walidacja nazwy pliku
+                validation_result = validator.validate_save_filename(filename)
+                
+                if not validation_result.is_valid:
+                    error_msg = "Błędy w nazwie pliku:\n" + "\n".join(validation_result.errors)
+                    QMessageBox.warning(self, 'Błąd walidacji', error_msg)
+                    continue
+                
+                # Użyj oczyszczonej nazwy
+                clean_filename = validation_result.cleaned_data
+                
+                # Add .json extension if not present
+                if not clean_filename.endswith('.json'):
+                    clean_filename += '.json'
+                
+                # Sprawdzenie czy plik już istnieje
+                filepath = os.path.join(saves_dir, clean_filename)
+                if os.path.exists(filepath):
+                    reply = QMessageBox.question(
+                        self, 
+                        'Plik istnieje', 
+                        f'Plik "{clean_filename}" już istnieje. Czy zastąpić?',
+                        QMessageBox.StandardButton.Yes | QMessageBox.StandardButton.No
+                    )
+                    if reply != QMessageBox.StandardButton.Yes:
+                        continue
+                
+                # Pokaż ostrzeżenia jeśli są
+                if validation_result.warnings:
+                    warning_msg = "Ostrzeżenia:\n" + "\n".join(validation_result.warnings)
+                    QMessageBox.information(self, 'Ostrzeżenia', warning_msg)
+                
+                # Zapisz grę z obsługą błędów
+                try:
+                    success = self.game_engine.save_game(filepath)
+                    if success:
+                        QMessageBox.information(self, 'Zapisz Grę', f'Gra zapisana jako {clean_filename}')
+                    else:
+                        QMessageBox.warning(self, 'Zapisz Grę', 'Nie udało się zapisać gry - sprawdź logi aplikacji')
+                except Exception as save_error:
+                    import traceback
+                    error_details = str(save_error)
+                    print(f"SAVE ERROR: {error_details}")
+                    traceback.print_exc()
+                    QMessageBox.critical(self, 'Błąd zapisu', 
+                                      f'Wystąpił błąd podczas zapisu:\n{error_details}\n\nSprawdź konsolę dla szczegółów.')
+                
+                break
+                
+        except Exception as e:
+            import traceback
+            error_details = str(e)
+            print(f"SAVE_GAME ERROR: {error_details}")
+            traceback.print_exc()
+            QMessageBox.critical(self, 'Błąd krytyczny', 
+                              f'Krytyczny błąd funkcji zapisu:\n{error_details}\n\nSprawdź konsolę dla szczegółów.')
     
     def load_game(self):
         """

@@ -108,11 +108,11 @@ class TestGameEngine:
         # Test na nieprawidłowych współrzędnych
         can_build, reason = self.engine.can_build(-1, -1, house)
         assert not can_build
-        assert "Invalid location" in reason
+        assert ("Invalid location" in reason or "Cannot build outside map boundaries" in reason or "Building extends beyond map boundaries" in reason)
         
         can_build, reason = self.engine.can_build(100, 100, house)
         assert not can_build
-        assert "Invalid location" in reason
+        assert ("Invalid location" in reason or "Cannot build outside map boundaries" in reason or "Building extends beyond map boundaries" in reason)
         
         # Test na zajętym miejscu
         x, y = find_buildable_location(self.engine)

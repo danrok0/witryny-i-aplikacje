@@ -359,44 +359,59 @@ def analyze_building_efficiency(buildings: List[Any]) -> Dict[str, Any]:
     """
     Analizuje efektywność budynków używając funkcji wyższego rzędu.
     
+    Funkcja demonstruje programowanie funkcyjne w praktyce:
+    - filter() do filtrowania aktywnych budynków
+    - map() do ekstraktowania wartości efektywności
+    - reduce() do agregacji statystyk
+    - lambdy do zwięzłych transformacji
+    
     Args:
-        buildings: Lista budynków
+        buildings: lista budynków miasta do analizy
         
     Returns:
-        Analiza efektywności
+        Dict[str, Any]: słownik z analizą efektywności zawierający:
+        - Ogólne statystyki (liczby budynków)
+        - Wskaźniki efektywności (średnia, min, max)  
+        - Rozkład efektywności (wysokie/średnie/niskie)
     """
-    if not buildings:
+    if not buildings:  # jeśli brak budynków
         return {}
     
-    # Filtruj tylko aktywne budynki
+    # Filtruj tylko aktywne budynki używając lambda w filter()
+    # Lambda sprawdza czy budynek ma atrybut 'is_active' i czy jest True
     active_buildings = list(filter(lambda b: hasattr(b, 'is_active') and b.is_active, buildings))
     
-    if not active_buildings:
+    if not active_buildings:  # jeśli brak aktywnych budynków
         return {'error': 'Brak aktywnych budynków'}
     
-    # Mapuj budynki na ich efektywność
+    # Mapuj budynki na ich efektywność używając lambda w map()
+    # Lambda pobiera efficiency lub domyślną wartość 0.5
     efficiencies = list(map(
         lambda b: getattr(b, 'efficiency', 0.5) if hasattr(b, 'efficiency') else 0.5,
         active_buildings
     ))
     
-    # Oblicz statystyki używając reduce
-    total_efficiency = reduce(lambda a, b: a + b, efficiencies, 0)
-    avg_efficiency = total_efficiency / len(efficiencies)
+    # Oblicz statystyki używając reduce() z lambdami
+    # Reduce "składa" listę w jedną wartość używając funkcji agregującej
+    total_efficiency = reduce(lambda a, b: a + b, efficiencies, 0)  # suma wszystkich wartości
+    avg_efficiency = total_efficiency / len(efficiencies)  # średnia efektywność
     
-    # Znajdź najlepsze i najgorsze budynki
-    max_efficiency = reduce(lambda a, b: max(a, b), efficiencies)
-    min_efficiency = reduce(lambda a, b: min(a, b), efficiencies)
+    # Znajdź najlepsze i najgorsze budynki używając reduce() z lambdami
+    max_efficiency = reduce(lambda a, b: max(a, b), efficiencies)  # maksymalna efektywność
+    min_efficiency = reduce(lambda a, b: min(a, b), efficiencies)  # minimalna efektywność
     
     return {
-        'total_buildings': len(buildings),
-        'active_buildings': len(active_buildings),
-        'average_efficiency': avg_efficiency,
-        'max_efficiency': max_efficiency,
-        'min_efficiency': min_efficiency,
-        'efficiency_distribution': {
+        'total_buildings': len(buildings),  # wszystkie budynki
+        'active_buildings': len(active_buildings),  # tylko aktywne
+        'average_efficiency': avg_efficiency,  # średnia efektywność
+        'max_efficiency': max_efficiency,  # najlepsza efektywność
+        'min_efficiency': min_efficiency,  # najgorsza efektywność
+        'efficiency_distribution': {  # rozkład efektywności
+            # Wysokie efektywność (>80%) - używa filter() z lambdą
             'high': len(list(filter(lambda e: e > 0.8, efficiencies))),
+            # Średnia efektywność (50-80%) - używa filter() z lambdą
             'medium': len(list(filter(lambda e: 0.5 <= e <= 0.8, efficiencies))),
+            # Niska efektywność (<50%) - używa filter() z lambdą  
             'low': len(list(filter(lambda e: e < 0.5, efficiencies)))
         }
     }

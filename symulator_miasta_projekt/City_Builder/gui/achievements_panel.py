@@ -1,44 +1,74 @@
 """
-Panel GUI dla systemu osiągnięć
+Panel GUI dla systemu osiągnięć w City Builder.
+
+Implementuje graficzny interfejs użytkownika do wyświetlania i zarządzania osiągnięciami.
+Zawiera zakładki z różnymi kategoriami, statystykami i wykresami postępu.
 """
+
+# === IMPORTY PYQT6 ===
+# Komponenty interfejsu użytkownika
 from PyQt6.QtWidgets import (QWidget, QVBoxLayout, QHBoxLayout, QTabWidget,
                            QScrollArea, QLabel, QProgressBar, QFrame, QGridLayout,
                            QPushButton, QTextEdit, QGroupBox, QComboBox)
-from PyQt6.QtCore import Qt, pyqtSignal
-from PyQt6.QtGui import QFont, QColor, QPalette
-from core.achievements import AchievementCategory, AchievementRarity
-import matplotlib.pyplot as plt
-from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
-from matplotlib.figure import Figure
+# Główne klasy Qt
+from PyQt6.QtCore import Qt, pyqtSignal               # Podstawowe funkcje Qt
+from PyQt6.QtGui import QFont, QColor, QPalette       # Style i kolory
+
+# === IMPORTY SYSTEMU OSIĄGNIĘĆ ===
+from core.achievements import AchievementCategory, AchievementRarity  # Enums osiągnięć
+
+# === IMPORTY MATPLOTLIB DO WYKRESÓW ===
+import matplotlib.pyplot as plt                                      # Podstawowa biblioteka wykresów
+from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas  # Integracja z Qt
+from matplotlib.figure import Figure                                 # Klasa figury matplotlib
 
 class AchievementWidget(QFrame):
-    """Widget dla pojedynczego osiągnięcia"""
+    """
+    Widget wyświetlający pojedyncze osiągnięcie w interfejsie.
+    
+    Dziedziczy po QFrame aby mieć ramkę wokół osiągnięcia.
+    Pokazuje ikonę, nazwę, opis, punkty i status osiągnięcia.
+    """
     
     def __init__(self, achievement):
-        super().__init__()
-        self.achievement = achievement
-        self.init_ui()
+        """
+        Konstruktor widgetu osiągnięcia.
+        
+        Args:
+            achievement: Obiekt Achievement do wyświetlenia
+        """
+        super().__init__()                  # Wywołaj konstruktor klasy bazowej QFrame
+        self.achievement = achievement      # Zapisz referencję do osiągnięcia
+        self.init_ui()                     # Zainicjalizuj interfejs użytkownika
     
     def init_ui(self):
-        """Inicjalizuje interfejs widgetu osiągnięcia"""
-        self.setFrameStyle(QFrame.Shape.Box)
-        self.setFixedSize(300, 120)
+        """
+        Inicjalizuje interfejs użytkownika widgetu osiągnięcia.
         
-        # Ustaw styl w zależności od stanu
+        Tworzy wszystkie komponenty: ramkę, layout, etykiety, ikonę, etc.
+        Ustawia odpowiedni styl w zależności od tego czy osiągnięcie jest odblokowane.
+        """
+        # === USTAWIENIA PODSTAWOWE RAMKI ===
+        self.setFrameStyle(QFrame.Shape.Box)    # Ustaw styl ramki jako prostokąt
+        self.setFixedSize(300, 120)             # Stały rozmiar: szerokość 300px, wysokość 120px
+        
+        # === STYLE ZALEŻNE OD STANU OSIĄGNIĘCIA ===
+        # Jeśli osiągnięcie jest odblokowane - kolor zielony (sukces)
         if self.achievement.is_unlocked:
             self.setStyleSheet("""
                 QFrame {
-                    background-color: #e8f5e8;
-                    border: 2px solid #4CAF50;
-                    border-radius: 8px;
+                    background-color: #e8f5e8;     /* Jasno zielone tło */
+                    border: 2px solid #4CAF50;     /* Zielona ramka */
+                    border-radius: 8px;            /* Zaokrąglone rogi */
                 }
             """)
         else:
+            # Jeśli osiągnięcie nie jest odblokowane - kolor szary (nieaktywne)
             self.setStyleSheet("""
                 QFrame {
-                    background-color: #f5f5f5;
-                    border: 2px solid #cccccc;
-                    border-radius: 8px;
+                    background-color: #f5f5f5;     /* Jasno szare tło */
+                    border: 2px solid #cccccc;     /* Szara ramka */
+                    border-radius: 8px;            /* Zaokrąglone rogi */
                 }
             """)
         

@@ -1,0 +1,14 @@
+2025-06-25 22:06:51 - ERROR - Error in update_game: '>' not supported between instances of 'float' and 'NoneType' | Info: turn=1
+Traceback (most recent call last):
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\Main.py", line 588, in update_game
+    self.game_engine.update_turn()
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\game_engine.py", line 321, in update_turn
+    self.economy.update_turn(buildings, self.population)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\resources.py", line 243, in update_turn
+    self.earn_money(net_income)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\resources.py", line 125, in earn_money
+    self.modify_resource('money', amount)
+  File "C:\Users\TUF\python\symulator_miasta_projekt\City_Builder\core\resources.py", line 101, in modify_resource
+    if new_amount > resource.max_capacity:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>' not supported between instances of 'float' and 'NoneType'

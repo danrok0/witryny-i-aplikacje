@@ -581,12 +581,31 @@ class CityBuilderCLI:
             return 1
     
     def _start_game(self, args: argparse.Namespace) -> int:
-        """Uruchamia grę."""
+        """Uruchamia grę w trybie CLI."""
         try:
             # Zastosuj argumenty do konfiguracji
             self.apply_args_to_config(args)
             
-            # Uruchom główną aplikację
+            # Sprawdź czy użytkownik chce uruchomić GUI czy CLI
+            if hasattr(args, 'new_game') and args.new_game:
+                # Uruchom CLI (tekstowy interfejs)
+                print("🎮 Uruchamianie CLI (tekstowy interfejs)...")
+                self.run()
+                return 0
+            elif hasattr(args, 'load_game') and args.load_game:
+                # Wczytaj grę w CLI
+                print(f"📂 Wczytywanie gry: {args.load_game}")
+                success = self.game_engine.load_game(args.load_game)
+                if success:
+                    print("✅ Gra wczytana pomyślnie!")
+                    self.run()
+                else:
+                    print("❌ Nie udało się wczytać gry")
+                    return 1
+                return 0
+            else:
+                # Uruchom GUI (graficzny interfejs)
+                print("🖼️ Uruchamianie GUI (graficzny interfejs)...")
             from Main import main
             main()
             return 0
@@ -603,7 +622,6 @@ class CityBuilderCLI:
         w nieskończonej pętli (do momentu wpisania 'quit' lub 'exit').
         """
         self.print_welcome()     # wyświetl ekran powitalny
-        self.game_engine.initialize()  # zainicjalizuj silnik gry
         
         while self.running:      # główna pętla gry
             try:
@@ -694,9 +712,9 @@ class CityBuilderCLI:
         
         # Pobierz dane z silnika gry
         money = self.game_engine.economy.get_resource_amount('money')
-        total_pop = self.game_engine.population_manager.get_total_population()
-        satisfaction = self.game_engine.population_manager.get_average_satisfaction()
-        unemployment = self.game_engine.population_manager.get_unemployment_rate()
+        total_pop = self.game_engine.population.get_total_population()
+        satisfaction = self.game_engine.population.get_average_satisfaction()
+        unemployment = self.game_engine.population.get_unemployment_rate()
         
         # Wyświetl podstawowe statystyki
         print(f"💰 Budżet: ${money:,.2f}")
@@ -704,7 +722,7 @@ class CityBuilderCLI:
         print(f"😊 Zadowolenie: {satisfaction:.1f}%")
         print(f"💼 Bezrobocie: {unemployment:.1f}%")
         print(f"🏢 Budynki: {len(self.game_engine.get_all_buildings())} budynków")
-        print(f"📅 Tura: {getattr(self.game_engine, 'current_turn', 1)}")
+        print(f"📅 Tura: {getattr(self.game_engine, 'turn', 1)}")
         
         # Wyświetl ostrzeżenia jeśli potrzebne
         if money < 1000:
@@ -771,7 +789,20 @@ class CityBuilderCLI:
         
         # Utwórz budynek
         building_enum = building_map[building_type]
-        building = Building(building_enum.value, building_enum, 1000)  # domyślny koszt
+        
+        # Mapa podstawowych efektów dla budynków CLI
+        building_effects = {
+            BuildingType.HOUSE: {"population": 35, "happiness": 12},
+            BuildingType.ROAD: {"traffic": 2},
+            BuildingType.SHOP: {"commerce": 20, "jobs": 12},
+            BuildingType.FACTORY: {"production": 40, "jobs": 35, "pollution": -5},
+            BuildingType.SCHOOL: {"education": 30, "jobs": 20, "happiness": 10},
+            BuildingType.HOSPITAL: {"health": 35, "jobs": 25, "happiness": 12},
+            BuildingType.PARK: {"happiness": 20, "environment": 15}
+        }
+        
+        effects = building_effects.get(building_enum, {})
+        building = Building(building_enum.value, building_enum, 1000, effects)  # domyślny koszt
         
         # Sprawdź czy stać na budynek
         if not self.game_engine.economy.can_afford(building.cost):
@@ -780,12 +811,245 @@ class CityBuilderCLI:
             return
         
         # Spróbuj zbudować
-        success, message = self.game_engine.try_build_building(x, y, building)
+        success = self.game_engine.place_building(x, y, building)
         if success:
             print(f"✅ Zbudowano {building.name} na pozycji ({x}, {y})")
             print(f"💰 Koszt: ${building.cost:,}")
         else:
-            print(f"❌ Nie można zbudować: {message}")
+            print(f"❌ Nie można zbudować na pozycji ({x}, {y})")
+    
+    def demolish_building(self, args: List[str]):
+        """
+        Usuwa budynek z podanych współrzędnych.
+        
+        Args:
+            args: lista argumentów [x, y]
+            
+        Przykład użycia: demolish 10 15
+        """
+        if len(args) < 2:
+            print("❌ Niepoprawna składnia. Użyj: demolish <x> <y>")
+            print("💡 Przykład: demolish 10 15")
+            return
+        
+        try:
+            x = int(args[0])  # współrzędna x
+            y = int(args[1])  # współrzędna y
+        except ValueError:
+            print("❌ Współrzędne muszą być liczbami całkowitymi")
+            return
+        
+        # Sprawdź czy pozycja jest prawidłowa
+        tile = self.game_engine.city_map.get_tile(x, y)
+        if not tile:
+            print(f"❌ Nieprawidłowa pozycja: ({x}, {y})")
+            return
+        
+        if not tile.is_occupied or not tile.building:
+            print(f"❌ Brak budynku na pozycji ({x}, {y})")
+            return
+        
+        # Zapisz informacje o budynku przed usunięciem
+        building_name = tile.building.name
+        refund_amount = tile.building.cost * 0.5  # zwrot 50% kosztu
+        
+        # Usuń budynek przez silnik gry
+        success = self.game_engine.remove_building(x, y)
+        
+        if success:
+            print(f"✅ Usunięto {building_name} z pozycji ({x}, {y})")
+            print(f"💰 Zwrot: ${refund_amount:,.0f}")
+        else:
+            print(f"❌ Nie można usunąć budynku z pozycji ({x}, {y})")
+    
+    def list_buildings(self, args: List[str]):
+        """Wyświetla listę dostępnych typów budynków."""
+        print("\n🏗️  DOSTĘPNE BUDYNKI")
+        print("-" * 50)
+        
+        building_info = {
+            'house': {'name': 'Dom', 'cost': 1000, 'description': 'Podstawowe mieszkanie dla rodziny'},
+            'road': {'name': 'Droga', 'cost': 100, 'description': 'Połączenie transportowe'},
+            'shop': {'name': 'Sklep', 'cost': 2000, 'description': 'Handel i miejsca pracy'},
+            'factory': {'name': 'Fabryka', 'cost': 5000, 'description': 'Produkcja i miejsca pracy'},
+            'school': {'name': 'Szkoła', 'cost': 8000, 'description': 'Edukacja mieszkańców'},
+            'hospital': {'name': 'Szpital', 'cost': 12000, 'description': 'Opieka zdrowotna'},
+            'park': {'name': 'Park', 'cost': 3000, 'description': 'Miejsce rekreacji'}
+        }
+        
+        for key, info in building_info.items():
+            print(f"  {key:<10} | {info['name']:<10} | ${info['cost']:>6,} | {info['description']}")
+        
+        print(f"\n💡 Użyj: build <typ> <x> <y> aby zbudować")
+    
+    def show_population(self, args: List[str]):
+        """Wyświetla szczegółowe informacje o populacji."""
+        print("\n👥 POPULACJA MIASTA")
+        print("-" * 50)
+        
+        total_pop = self.game_engine.population.get_total_population()
+        satisfaction = self.game_engine.population.get_average_satisfaction()
+        unemployment = self.game_engine.population.get_unemployment_rate()
+        
+        print(f"📊 Całkowita populacja: {total_pop:,} mieszkańców")
+        print(f"😊 Średnie zadowolenie: {satisfaction:.1f}%")
+        print(f"💼 Stopa bezrobocia: {unemployment:.1f}%")
+        
+        # Pokaż grupy populacji jeśli istnieją
+        if hasattr(self.game_engine.population, 'groups'):
+            print("\n👥 GRUPY SPOŁECZNE:")
+            for group_name, group in self.game_engine.population.groups.items():
+                print(f"  {group_name}: {group.count:,} osób (zadowolenie: {group.satisfaction:.1f}%)")
+        
+        # Ocena stanu populacji
+        if satisfaction >= 70:
+            print("\n✅ Stan populacji: DOBRY")
+        elif satisfaction >= 50:
+            print("\n⚠️  Stan populacji: ŚREDNI")
+        else:
+            print("\n❌ Stan populacji: ZŁY - podejmij działania!")
+    
+    def show_economy(self, args: List[str]):
+        """Wyświetla szczegółowe informacje o ekonomii."""
+        print("\n💰 EKONOMIA MIASTA")
+        print("-" * 50)
+        
+        money = self.game_engine.economy.get_resource_amount('money')
+        buildings = self.game_engine.get_all_buildings()
+        income = self.game_engine.economy.calculate_taxes(buildings, self.game_engine.population)
+        expenses = self.game_engine.economy.calculate_expenses(buildings, self.game_engine.population)
+        
+        print(f"💰 Budżet: ${money:,.2f}")
+        print(f"📈 Miesięczne dochody: ${income:,.2f}")
+        print(f"📉 Miesięczne wydatki: ${expenses:,.2f}")
+        print(f"📊 Bilans: ${income - expenses:,.2f}")
+        
+        # Stawki podatkowe
+        print(f"\n💸 STAWKI PODATKOWE:")
+        for tax_type, rate in self.game_engine.economy.tax_rates.items():
+            print(f"  {tax_type}: {rate:.1%}")
+        
+        # Ocena stanu ekonomii
+        balance = income - expenses
+        if balance > 1000:
+            print("\n✅ Stan ekonomii: DOBRY")
+        elif balance > 0:
+            print("\n⚠️  Stan ekonomii: STABILNY")
+        else:
+            print("\n❌ Stan ekonomii: DEFICYT - zmniejsz wydatki lub zwiększ podatki!")
+        
+        if money < 0:
+            print("💀 UWAGA: DŁUG! Miasto jest na granicy bankructwa!")
+    
+    def show_events(self, args: List[str]):
+        """Wyświetla informacje o wydarzeniach."""
+        print("\n📅 WYDARZENIA MIASTA")
+        print("-" * 50)
+        
+        current_turn = getattr(self.game_engine, 'turn', 1)
+        print(f"📅 Aktualna tura: {current_turn}")
+        
+        # Sprawdź czy są aktywne alerty
+        if hasattr(self.game_engine, 'alerts') and self.game_engine.alerts:
+            print(f"\n🚨 AKTYWNE ALERTY ({len(self.game_engine.alerts)}):")
+            for i, alert in enumerate(self.game_engine.alerts[-5:], 1):  # Pokaż tylko 5 ostatnich
+                print(f"  {i}. {alert}")
+        else:
+            print("\n✅ Brak aktywnych alertów")
+        
+        # Informacje o następnym wydarzeniu
+        next_event_turn = (current_turn // 8 + 1) * 8  # Wydarzenia co 8 tur
+        turns_to_event = next_event_turn - current_turn
+        print(f"\n⏰ Następne wydarzenie za: {turns_to_event} tur")
+        
+        print(f"\n💡 Użyj 'next' aby przejść do następnej tury")
+    
+    def save_game(self, args: List[str]):
+        """Zapisuje aktualny stan gry."""
+        if len(args) < 1:
+            print("❌ Niepoprawna składnia. Użyj: save <nazwa_pliku>")
+            print("💡 Przykład: save moja_gra")
+            return
+        
+        filename = args[0]
+        if not filename.endswith('.json'):
+            filename += '.json'
+        
+        # Utwórz pełną ścieżkę
+        import os
+        saves_dir = os.path.join(os.path.dirname(__file__), 'saves')
+        os.makedirs(saves_dir, exist_ok=True)
+        filepath = os.path.join(saves_dir, filename)
+        
+        try:
+            success = self.game_engine.save_game(filepath)
+            if success:
+                print(f"✅ Gra zapisana jako: {filename}")
+            else:
+                print(f"❌ Nie udało się zapisać gry")
+        except Exception as e:
+            print(f"❌ Błąd zapisu: {str(e)}")
+    
+    def load_game(self, args: List[str]):
+        """Wczytuje zapisaną grę."""
+        if len(args) < 1:
+            print("❌ Niepoprawna składnia. Użyj: load <nazwa_pliku>")
+            print("💡 Przykład: load moja_gra")
+            return
+        
+        filename = args[0]
+        if not filename.endswith('.json'):
+            filename += '.json'
+        
+        # Utwórz pełną ścieżkę
+        import os
+        saves_dir = os.path.join(os.path.dirname(__file__), 'saves')
+        filepath = os.path.join(saves_dir, filename)
+        
+        if not os.path.exists(filepath):
+            print(f"❌ Plik zapisu nie istnieje: {filename}")
+            return
+        
+        try:
+            success = self.game_engine.load_game(filepath)
+            if success:
+                print(f"✅ Gra wczytana z: {filename}")
+                self.show_status([])  # Pokaż status po wczytaniu
+            else:
+                print(f"❌ Nie udało się wczytać gry")
+        except Exception as e:
+            print(f"❌ Błąd wczytywania: {str(e)}")
+    
+    def next_turn(self, args: List[str]):
+        """Przechodzi do następnej tury."""
+        print("\n⏰ PRZEJŚCIE DO NASTĘPNEJ TURY")
+        print("-" * 40)
+        
+        old_turn = getattr(self.game_engine, 'turn', 1)
+        
+        # Wykonaj aktualizację tury
+        self.game_engine.update_turn()
+        
+        new_turn = getattr(self.game_engine, 'turn', old_turn + 1)
+        print(f"📅 Tura {old_turn} → Tura {new_turn}")
+        
+        # Pokaż krótkie podsumowanie po turze
+        money = self.game_engine.economy.get_resource_amount('money')
+        population = self.game_engine.population.get_total_population()
+        print(f"💰 Budżet: ${money:,.0f}")
+        print(f"👥 Populacja: {population:,}")
+        
+        # Sprawdź alerty
+        if hasattr(self.game_engine, 'alerts') and self.game_engine.alerts:
+            print(f"\n🚨 Nowe alerty:")
+            for alert in self.game_engine.alerts[-3:]:  # Pokaż 3 ostatnie
+                print(f"  • {alert}")
+    
+    def quit_game(self, args: List[str]):
+        """Kończy grę."""
+        print("\n👋 Dziękujemy za grę w City Builder!")
+        print("🏙️  Twoje miasto pozostanie w naszej pamięci...")
+        self.running = False
             
     def show_map(self, args: List[str]):
         """
